@@ -1,0 +1,23 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.box{
+	width:500px;
+	height:320px;
+	margin:40px auto;
+}
+.box ul{
+	width:420px;
+	height:300px;
+	overflow:hidden;
+    border:1px solid #ededed;
+    position:relative;
+}
+.box ul li{
+	float:left;
+	display: inline;
+	width:210px;
+	height: 300px;
+
+}

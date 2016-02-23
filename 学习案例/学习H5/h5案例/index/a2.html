@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<title>桑葚</title>
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<link type="text/css" rel="stylesheet" href="../css/animate.css" />    
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>    
+<script type="text/javascript" src="../js/jquery.mobile.custom.min.js"></script>  
+    
+<script type="text/javascript">
+$(function(){ 
+	setSlide(0.703125);
+	$(".slide").on("swipeleft",function(){
+		slideNext();
+	}).on("swiperight",function(){
+		slidePrev();
+	});
+
+      $(".btn_diy").on("touchend",function(e){  
+        $(".shadow,.diy").show(); 
+		$("body").css("overflow","hidden");  
+        $(".diy").addClass("movefrombottom");      
+ 
+    }); 
+ 
+      $(".btn_taocan").on("touchend",function(e){  
+        $(".shadow,.taocan").show();
+		$("body").css("overflow","hidden");  		  
+        $(".taocan").addClass("movefrombottom");      
+ 
+    });
+    
+    $(".close").on("touchend",function(e){
+        $(".shadow,.diy,.taocan").hide(); 
+		$("body").css("overflow","auto");
+        $(".diy,.taocan").removeClass("movefrombottom");
+    });
+    
+     $(".btn_taocantype").each(function(){
+        $(this).on("touchstart",function(){
+            $(this).addClass("sel").siblings().removeClass("sel");
+        })
+     });
+    
+    $(".btn_diychose").each(function(){
+         $(this).on("touchend",function(){
+            var hassel=$(this).hasClass("sel");
+            if(!hassel){$(this).addClass("sel");}else{$(this).removeClass("sel");} 
+         });
+        
+    });    
+    
+         
+       $(".add").on("touchend",function(){
+         var hassel=$(this).parent().siblings(".td1").children("a").hasClass("sel");   
+        if(hassel){ 
+        var inputval=$(this).parent().find("input[class='ft3']"); 
+        var danjia=$(this).parent().siblings(".td2").children("em").text();  
+        var zongjia=$(this).parent().siblings(".td4").children("em");
+         inputval.val(parseInt(inputval.val())+1);
+        var total=parseInt(danjia)*inputval.val();
+         zongjia.html(total);
+        }else{
+        alert("亲，还没有选diy样式哦~");
+        }    
+       });
+    
+       $(".jian").on("touchend",function(){
+         var hassel=$(this).parent().siblings(".td1").children("a").hasClass("sel"); 
+        if(hassel){            
+        var inputval=$(this).parent().find("input[class='ft3']");
+        var danjia=$(this).parent().siblings(".td2").children("em").text();  
+        var zongjia=$(this).parent().siblings(".td4").children("em");
+         inputval.val(parseInt(inputval.val())-1);
+ 
+        if(inputval.val()<0){
+           inputval.val(0);
+           }   
+       
+         var total=parseInt(danjia)*inputval.val();
+         zongjia.html(total);
+            
+            /*下面是错的计算总共花费 现在还不知道到底是怎么个加减过程*/
+/*        var allTotal=$("dd span.ft0 em").text();
+           
+       $("dd span.ft0 em").html(parseInt(total)+parseInt(allTotal)); */
+        }else{
+        alert("亲，还没有选定该样式哦~");
+        }             
+       });
+ 
+    
+ 
+});  
+</script>
+        
+<style>
+    .ulb9{}  
+</style>
+    
+</head>    
+<body>
+    <div class="viewport">
+        <header>
+    <div class="toolbar">
+        <a class="btn_addr ft2"><img src="../img/coin_back.png" /></a>
+        <span class="ft1">商 品 详 情</span>
+    </div>
+        </header>
+        
+   <div class="slide">
+		<ul>
+			<li><a><img src="../img/slide450_1.png" /></a></li>
+			<li><a><img src="../img/slide450_1.png" /></a></li>
+			<li><a><img src="../img/slide450_1.png" /></a></li>
+            <li><a><img src="../img/slide450_1.png" /></a></li>
+		</ul>
+	</div>  
+
+    <div class="jieshao">
+      <div class="fl"> <span class="ftjs1">纯 色</span><div class="space10"></div><em class="ft4">[ 慈善款，所得10%捐献 ]</em></div>  
+      <div class="fr"><span class="ft0">￥98</span><div class="space10"></div><em class="ft4 linethough">￥139</em></div>    
+    </div>  
+    <div class="btntd">     
+        <span class="btn_taocan fl ftjs1 ">套餐</span> 
+        <span class="btn_diy fr ftjs1 ">DIY</span> 
+    </div>   
+   
+        <div class="divulb9">
+          <span class="sapna2">
+            <img src="../img/coin_starh.png" />
+            <img src="../img/coin_starh.png" />
+            <img src="../img/coin_starh.png" />
+            <img src="../img/coin_starh.png" />  
+            <img src="../img/coin_starhg.png" />
+            <em > 4.5 分</em> 
+            <img src="../img/coin_go_pinglun.png" class="go"/>  
+            <i>143人评价</i>  
+           </span>     
+           <div class="line1"></div>    
+        <ul class="ulb9">
+           <li>
+              <span><img src="../img/75.png" /><img src="../img/130.png" />1861***7878</span> 
+              <p>像对待家里人一样认真,谢谢了,下次还请她帮忙,帮忙 谢谢 谢谢</p>    
+              <div><img src="../img/comment_type.png" /><img src="../img/comment_type2.png" /></div>   
+              <em>2014-12-30  20:07</em>
+            </li>
+            
+            <li>
+              <span><img src="../img/75.png" /><img src="../img/130.png" />1861***7878</span> 
+              <p>像对待家里人一样认真 谢谢了 下次还请她帮忙 帮忙 谢谢 谢谢</p>    
+              <div><img src="../img/comment_type.png" /><img src="../img/comment_type2.png" /></div>   
+              <em>2014-12-30  20:07</em>
+            </li>
+        </ul>        
+        </div> 
+    </div>
+<div class="spacefoot"></div>    
+<footer><a class="btn100">预 约</a></footer>    
+<!--背景黑透明-->
+<div class="shadow" style="display:none;" ></div> 
+
+<!--diy内容-->
+<div class="diy"  style="display:none; ">
+<img src="../img/coin_close.png"  class="close"/>    
+<img src="../img/img_diy.png" />
+<dl>
+<dt class="ft3" >DIY</dt> 
+    <dd>
+        <span class="ft0">￥<em>260</em></span><div class="space10"></div><em class="ft4">DIY 总价</em>
+    </dd>
+</dl> 
+<div class="clear"></div>    
+<table>
+ <tr>
+  <td class="td1"><a class="btn_diychose sel">基础水钻</a></td>
+  <td class="td2">￥<em>10</em>/颗</td>
+  <td class="td3"><a class="jian">-</a><input type="text" value="20" class="ft3" readOnly="true" /><a class="add">+</a></td>
+  <td class="td4">￥<em>200</em></td>     
+</tr>
+  
+    <tr><td colspan="4"><div class="space10"></div></td></tr>
+    
+  <tr>
+  <td class="td1"><a class="btn_diychose  ">骷髅头</a></td>
+  <td class="td2">￥<em>1</em>/颗</td>
+  <td class="td3"><a class="jian">-</a><input type="text" value="20" class="ft3" readOnly="true" /><a class="add">+</a></td>
+  <td class="td4">￥<em>20</em></td>     
+</tr>
+    
+    <tr><td colspan="4"><div class="space10"></div></td></tr>
+    
+   <tr>
+  <td class="td1"><a class="btn_diychose  ">蝴蝶结</a></td>
+  <td class="td2">￥<em>1</em>/颗</td>
+  <td class="td3"><a class="jian">-</a><input type="text" value="20" class="ft3" readOnly="true" /><a class="add">+</a></td>
+  <td class="td4">￥<em>20</em></td>     
+</tr>
+    <tr><td colspan="4"><div class="space10"></div></td></tr>
+ <tr>
+  <td class="td1"><a class="btn_diychose  ">基础水钻</a></td>
+  <td class="td2">￥<em>1</em>/颗</td>
+  <td class="td3"><a class="jian">-</a><input type="text" value="20" class="ft3" readOnly="true" /><a class="add">+</a></td>
+  <td class="td4">￥<em>20</em></td>     
+</tr>
+    <tr><td colspan="4"><div class="space10"></div></td></tr>
+ <tr>
+  <td class="td1"><a class="btn_diychose  ">基础水钻</a></td>
+  <td class="td2">￥<em>10</em>/颗</td>
+  <td class="td3"><a class="jian">-</a><input type="text" value="20" class="ft3" readOnly="true" /><a class="add">+</a></td>
+  <td class="td4">￥<em>200</em></td>     
+</tr>    
+    
+    
+</table>
+</div>
+    
+<!--套餐内容-->
+    
+ <div class="taocan" style="display:none; ">
+   <img src="../img/coin_close.png"  class="close"/>    
+<img src="../img/img_diy.png" />
+<dl>
+<dt class="ft3" >基础套餐</dt> 
+    <dd>
+        <span class="ft0">￥260</span><div class="space10"></div><em class="ft4">套餐总价</em>
+    </dd>
+</dl> 
+<div class="clear"></div> 
+ 
+<a class="btn_taocantype sel fl">基础套餐</a>     
+<a class="btn_taocantype fr">基础套餐+半贴片</a> 
+<a class="btn_taocantype fl">基础套餐+全贴片</a> 
+<a class="btn_taocantype fr">基础套餐+光疗延长</a>  
+<div class="clear"></div> 
+     
+<div class="space20"></div>   
+<p class="ft4">包含基础护手、卸甲油胶、不含卸光疗延长甲、水晶甲、贴片甲。因拍摄差异，图片有色差，图片有色差，请以实际效果为准。</p>   
+<div class="space20"></div>       
+<span class="ft3">耗时：90分钟 <div class="space10"></div>保持25天</span> 
+</div>    
+</body>
+</html>    

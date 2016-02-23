@@ -1,0 +1,58 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:12pt;
+	list-style:none;
+}
+.clearfix:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+* html .clearfix {
+	height:1%;
+} 
+.demo{
+	width:930px;
+	/*height:200px;*/
+	margin:0 auto;
+	overflow:hidden;
+}
+.hr10{
+	clear:both;
+	/*height: 170px;*/
+}
+.demo li{
+	float: left;
+	width:300px;
+	/*margin:10px 0 */
+	padding:10px 10px 0 0;
+	position:relative;
+	height: 170px;
+}
+.demo dl{
+	display:none;
+	width:300px;
+	height:170px;
+	border:2px solid #FF0000;
+	background:#C8C9C0;
+	color:#FFFFFF;
+	position:absolute;
+    left:100%;
+    top:0px;
+    top:10px;
+    /*top: -2px;*/
+    z-index: 20;
+}
+.demo dt{
+	text-align: center;
+	margin-top: 5px;
+}
+.demo dd{
+	margin:8px;
+}
+/*.demo li:hover dl{
+	display: block;
+}*/

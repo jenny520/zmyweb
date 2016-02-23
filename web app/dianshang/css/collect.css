@@ -1,0 +1,126 @@
+a{
+	white-space: normal;
+}
+.search{
+	width:100%;
+	padding:0.1rem 0.2rem;
+	position: relative;
+	border-bottom:0.03rem solid #ddd;
+	padding-left:0.7rem;
+	height:0.7rem;
+	line-height: 0.5rem;
+	text-align: center;
+	color:#333;
+}
+.search a {
+  position: absolute;
+  top: 0.1rem;
+  padding: 0 0.1rem;
+  color: #999999;
+  display: block;
+  left:0.14rem;
+  color:#56b0ff;
+}
+.search a .iconfont{
+  font-size:0.32rem;
+}
+.list{
+	width:100%;
+	padding:0.2rem;
+	padding-bottom:0;
+	background-color:#f2f1ef;
+	overflow: hidden;
+}
+.list li{
+	width:50%;
+	float: left;
+	overflow: hidden;
+	height: 4rem;
+	margin-bottom:0.2rem;
+	position: relative;
+}
+.list li:nth-of-type(2n) .item{
+   margin-left:0.1rem;
+}
+.list li .item{
+	background-color:#fff;
+	margin-right:0.1rem;
+	text-align: center;
+}
+.list .item .brand{
+	width:100%;
+	padding:0.2rem 0.15rem;
+	height:3.2rem;
+	padding-bottom:0;
+}
+.list .item .brand img{
+	width:1.8rem;
+	height: 2.1rem;
+	margin:0 auto;
+}
+.list .item .brand p{
+	width:100%;
+	font-size:0.22rem;
+	color:#333;
+	text-align: left;
+	font-family: '微软雅黑';
+	margin-top:0.1rem;
+	line-height: 0.3rem;
+	border-bottom:0.028rem dotted #d0d0d0;
+	padding-bottom:0.15rem;
+}
+.list .item .priceNum{
+	width:100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	padding:0 0.1rem;
+}
+.list .item .priceNum .discount-price{
+	float:left;
+	font-size:0.34rem;
+	color:#fe5656;
+	font-weight: bold;
+}
+.list .item .priceNum .discount-price em{
+	margin-left:0.05rem;
+}
+.list .item .priceNum .price{
+	float: right;
+	color:#4b4b4b;
+	font-size:0.26rem;
+	font-weight: normal;
+}
+.list li .close{
+	position: absolute;
+	top:0.1rem;
+	right:0.2rem;
+	display: block;
+	width:0.28rem;
+	height: 0.28rem;
+	background-color: #C9C9C9;
+	border-radius: 50%;
+	color:#fff;
+	font-size:0.28rem;
+	line-height: 0.23rem;
+	text-align: center;
+}
+.finish{
+	width:100%;
+	background:#fff;
+	padding:0.2rem 0.4rem;
+	border-top:0.02rem solid #bdbdbd;
+}
+.finish .btn-submit{
+	width:100%;
+	display: block;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	text-align: center;
+	color:#fff;
+	background-color:#5EB4FD;
+	border-radius: 0.2rem;
+	font-size:0.32rem;
+	font-weight: normal;
+	letter-spacing: 0.01rem;
+	font-family: '宋体';
+}

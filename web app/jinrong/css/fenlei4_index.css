@@ -1,0 +1,7 @@
+.attention .a-content .a-img i{
+	color:#A87EC1;
+}
+.attention .a-content .a-img i:last-of-type{
+	font-size:0.54rem;
+	position:relative;
+}

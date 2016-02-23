@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Solution 4-1: Using the email input type</title>
+	<style type="text/css">
+         #myForm .required:after{
+         	content:"*";
+         	color:red;
+         }
+         #myForm input:required{
+         	background:#000000;
+         	color:white;
+         }
+	</style>
+</head>
+<body>
+	<form id="myForm">
+		<fieldset>
+			<legend>Solution 4-1: Using the email input type</legend>
+			<label for="name">Name</label>
+			<input id="name" name="name" type="text"/><br/>
+			<label for="email">Email</label>
+			<input id="email" name="email" type="email"/><br/>
+			<label for="blog">Blog</label>
+			<input id="blog" name="blog" type="url"/><br/>
+			<label>Choose your magic number:</label>
+			<input type="number" min="0" max="100" step="1" value="1"/><br/>
+			<label>Choose your magic number:</label>
+			<input type="range" min="1" max="10" step="1" value="6" onchange="myOutput.value=this.value"/><br/>
+			<label>This is the selected value:</label>
+		    <output name="myOutput">6</output>
+		    <label>Upload one or more files:</label>
+		    <input type="file" name="multipleFileUpload" multiple/><br/>
+		    <input list="food" name="food"/>
+		    <datalist id="food">
+		    	<option value="Spaghetti Aglio e Olio"></option>
+		    	<option value="Lasagne"></option>
+		    	<option value="Fusilli al pesto"></option>
+		    	<option value="Rigatoni alla Carbonara"></option>
+		    </datalist>
+		    <label for="name" class="required">Name</label>
+		    <input id="name" name="name" type="text" placeholder="Insert your first name" required/>
+		    <label>Choose a date from the Date Picker control:
+               <input type="date"/>
+		    </label>
+		    <label>Select a time:
+		    	<input type="time"/>
+		    </label>
+		    <label>Select a date and a time:
+		    	<input type="datetime"/>
+		    </label>
+		    <label>Select a month:
+		    	<input type="month"/>
+		    </label>
+		    <label>Select a week:
+		    	<input type="week"/>
+		    </label>
+			<input type="submit" value="Submit"/>
+		</fieldset>
+	</form>
+</body>
+</html>

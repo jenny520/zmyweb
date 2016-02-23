@@ -1,0 +1,279 @@
+.full-header {
+    position: relative;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    border-bottom: 1px solid #eeeeee;
+    background: #ffffff;
+    padding: 0 0 0 0.14rem;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+}
+.full-header a {
+    position: absolute;
+    top: 0;
+    padding: 0 0.1rem;
+    color: #999999;
+    display: block;
+}
+.full-header .iconleft {
+    left: 0.14rem;
+}
+.full-header .iconright {
+    right: 0.14rem;
+}
+.detail-part {
+    padding: 0 0.24rem;
+    padding-top: 0.2rem;
+    width: 100%;
+    background-color: #fff;
+}
+.detail-part h1 {
+    width: 100%;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #333;
+}
+.detail-part .profile {
+    width: 100%;
+    padding-bottom: 0.15rem;
+    border-bottom: 1px solid #ddd;
+}
+.detail-part .profile a {
+    display: inline-block;
+    background-color: #eee;
+    text-align: center;
+    padding: 0 0.28rem;
+    border-radius: 0.2rem;
+    height: 0.52rem;
+    line-height: 0.52rem;
+    margin-right: 0.1rem;
+    font-size: 0.22rem;
+    margin-top: 0.05rem;
+}
+.detail-part .profile-list {
+    padding: 0.3rem 0;
+}
+.detail-part .profile-list .ub {
+    height: 0.45rem;
+    line-height: 0.45rem;
+    font-size: 0.24rem;
+}
+.detail-part .profile-list .ub .ub-f1 a {
+    color: #333;
+}
+.detail-part .profile-list .ub .price a {
+    color: #ea4f39;
+}
+.detail-part .profile-list .money-invi-type {
+    font-size: 0.24rem;
+    background-color: #eee;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    text-align: center;
+    width: 1.6rem;
+}
+.collection {
+    width: 100%;
+    padding: 0.2rem 0;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    height: 0.8rem;
+    line-height: 0.4rem;
+    font-size: 0.24rem;
+}
+.collection a {
+    display: inline-block;
+    width: 32%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+.collection a i {
+    position: relative;
+    top: -0.05rem;
+}
+.collection a:last-child {
+    border: none;
+}
+.invest-require {
+    width: 100%;
+    margin-top: 0.3rem;
+    background-color: #fff;
+    font-size: 0.24rem;
+}
+.invest-require aside {
+    padding: 0.2rem;
+    height: 0.8rem;
+    line-height: 0.4rem;
+    border-bottom: 1px solid #ddd;
+}
+.invest-require article {
+    width: 100%;
+    padding: 0.2rem;
+    line-height: 0.4rem;
+}
+.program-require a {
+    height: 0.6rem;
+    line-height: 0.6rem;
+    display: block;
+    padding-left: 0.2rem;
+}
+.program-require a i {
+    position: relative;
+    top: -0.02rem;
+    margin-right: 0.1rem;
+}
+.contact-list {
+    margin-top: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+}
+.contact-list li {
+    width: 100%;
+    padding: 0.2rem;
+    padding-right: 0.4rem;
+    height: 0.9rem;
+    line-height: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.26rem;
+    position: relative;
+    display: block;
+}
+.contact-list li i {
+    position: relative;
+    top: -0.03rem;
+    margin-right: 0.2rem;
+}
+.contact-list li a {
+    color: #333;
+}
+.contact-list li i.blue-color {
+    color: #00aff5;
+}
+.contact-list span {
+    float: right;
+    width: 0.4rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #ea4f39;
+    color: #fff;
+    margin-right: 0.2rem;
+}
+.contact-list em {
+    position: absolute;
+    display: block;
+    top: 0.17rem;
+    right: 0.1rem;
+    margin-right: 0;
+    height: 0.4rem;
+    margin-left: 0.1rem;
+}
+.bottombar {
+    width: 100%;
+    padding: 0.1rem 0.4rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+}
+.bottombar aside {
+    float: left;
+    width: 50%;
+    padding: 0 0.1rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    font-size: 0.24rem;
+}
+.bottombar aside a {
+    width: 100%;
+    color: #fff;
+    border-radius: 0.1rem;
+    display: block;
+    height: 0.6rem;
+    line-height: 0.6rem;
+}
+.bottombar .red-color a {
+    background-color: #ea4f39;
+}
+.bottombar .orange-color a {
+    background-color: #fe771d;
+}
+footer {
+    width: 100%;
+}
+footer section {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background-color: #fff;
+}
+footer section a {
+    float: left;
+    display: inline;
+    padding: 0 0.3rem;
+    color: #4761ab;
+}
+footer section .right {
+    float: right;
+}
+footer article {
+    width: 100%;
+    text-align: center;
+    padding: 0.2rem 0 1rem 0;
+    background-color: #eee;
+}
+footer article .version {
+    line-height: 0.6rem;
+    height: 0.6rem;
+}
+footer article .version a {
+    padding: 0 0.3rem;
+    color: #4761ab;
+}
+footer article .version .touch {
+    color: #e94f37;
+}
+footer article .copyright {
+    font-size: 0.24rem;
+    color: #999;
+}
+.toTop {
+    position: fixed;
+    right: 0.3rem;
+    bottom: 3rem;
+    width: 0.9rem;
+    height: 0.9rem;    /*opacity: 0;*/
+    transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+}
+.toTop.show {
+    opacity: 1;
+}
+.toTop aside {
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: #000;
+    opacity: 0.4;
+    border-radius: 50%;
+}
+.toTop span {
+    position: absolute;
+    top: 0.18rem;
+    left: 0.2rem;
+    width: 0.6rem;
+    height: 0.8rem;
+    color: #fff;
+    font-size: 0.24rem;
+    display: block;
+}

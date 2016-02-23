@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css1.css">
+</head>
+<body>
+<div class="top">
+    <div class="top_bar">
+        <div class="logo">
+        	<img src="images/logo.png" width="328px" height="79px">
+        </div>
+        <div class="at1">
+            <a>注册</a>
+            <a>登录</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+    <div class="content">
+		<div>
+			<h3>确认订单消息</h3>
+		</div>
+		<div class="content-list">
+			<table>
+				<thead>
+					<tr class="thead1">
+						<th style="width: 360px">
+							<div class="name">
+								<a href="#">店铺：吴裕泰官方旗舰店</a>
+							</div>
+						</th>
+						<th>单价(元)</th>
+						<th>数量</th>
+						<th>优惠(元)</th>
+						<th>小计(元)</th>
+						<th style="width:200px">配送方式</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="tbody1">
+						<td>
+						    <img src="images/tubiao.png" width="51px" height="51px" style="float:left;padding-right:4px">
+						    <p style="float:left">
+						        <a href="#" style="font-size:14px;color:#000">吴裕泰 桂圆/红枣/枸杞花草</a>
+						    </p>
+						</td>
+						<td>138</td>
+						<td>1</td>
+						<td>
+							<select>
+								<option>省20.1元</option>
+							</select>
+						</td>
+						<td>59.90</td>
+						<td>
+							<div class="method">
+								<label>
+									<input type="radio" checked="checked"/>&nbsp;普通配送
+								</label>
+								<select>
+									<option>快递12元</option>
+								</select>
+							</div>
+							<div class="method">
+								<label>
+									<input type="checkbox"/>&nbsp;
+									<span>运费险</span>
+								</label>
+								<select>
+									<option>天猫会员专享</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="tfoot">
+				<span>店铺合计(含运费): ¥71.90</span>
+			</div>
+			<div class="checkbar">
+				<div class="integral">
+					<label>
+						<input type="checkbox"/>使用天猫支付
+					</label>
+				</div>
+				<div class="realPay">
+				    <p class="p1">
+				    	<span class=real>实付款</span>
+					    <span class="money">￥71.90</span>
+				    </p>
+				    <p class="p2">
+				    	<span>可获得天猫积分:</span>
+				    	<span class="num">29点</span>
+				    </p>
+				</div>
+				<div class="coupon">
+					<label for="user">
+						<input type="checkbox" id="user"/>使用天猫点券
+					</label>
+				</div>
+				<div class="payMethod">
+					<label for="anonymity">
+						<input type="checkbox" id="anonymity" checked="checked" disabled="disabled" />匿名支付
+					</label>
+					<label for="another">
+						<input type="checkbox" id="another"/>找人代付
+					</label>
+					<label for="credit" class="credit">
+						<input type="checkbox" id="credit" disabled="disabled" />信用卡分期支付
+					</label>
+				</div>
+				<div class="submit">
+					<a href="#" class="back">返回购物车修改</a>
+					<a href="#" class="order">提交订单</a>
+				</div>
+		</div>
+	</div>
+</body>
+</html>

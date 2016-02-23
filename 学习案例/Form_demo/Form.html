@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form_demo</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript">
+       function show(index){
+       	var ddnode = document.getElementById("type").getElementsByTagName("dd");
+       	for(var i = 0;i<ddnode.length;i++){
+       		if(index==i){
+       			ddnode[i].className="selected";
+       		}else{
+       			ddnode[i].className="";
+       		}
+       	}
+       }
+	</script>
+</head>
+<body>
+
+	<!-- <form action="" method="post"> -->
+		<!-- <label>配送类型:</label>
+        <input type="radio" name="tradio" checked="checked"><label>全部</label>
+        <input type="radio" name="tradio"><label>京东配送</label>
+        <input type="radio" name="tradio"><label>第三方配送</label> -->
+        <div class="type">
+        <dl id="type">
+          <dt>配送类型</dt>
+          <dd onclick="show(0)"><a href="#"><b></b>全部</a></dd>
+          <dd onclick="show(1)"><a href="#"><b></b>京东配送</a></dd>
+          <dd onclick="show(2)"><a href="#"><b></b>第三方配送</a></dd>
+        </dl>
+        </div>
+	<!-- </form> -->
+</body>
+</html>

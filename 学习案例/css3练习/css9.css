@@ -1,0 +1,40 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+@keyframes changecolor{
+	from{
+		background-color:red;
+	}
+	to{
+		background-color:green;
+	}
+}
+@-moz-keyframes changecolor{
+	from{
+		background-color:red;
+	}
+	to{
+		background-color:green;
+	}
+}
+@-webkit-keyframes changecolor{
+	from{
+		background-color:red;
+	}
+	to{
+		background-color:green;
+	}
+}
+div{
+	width:200px;
+	height:200px;
+	background-color:red;
+	text-align:center;
+	margin:20px auto;
+	line-height:200px;
+	color:#fff;
+}
+div:hover{
+	animation:changecolor 5s ease-out .1s;
+}

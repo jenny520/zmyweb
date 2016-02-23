@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>navigation_demo</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <!-- <script type="text/javascript" src="js.js"></script> -->
+   <script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+   <script type="text/javascript">
+       $(document).ready(function(){
+       	$("a").hover(function(){
+       		$(this).stop().animate({
+       			width:"160px"
+       		},200);
+       	},function(){
+       		$(this).stop().animate({
+       			width:"120px"
+       		},200);
+       	});
+       });
+   </script>
+</head>
+<body>
+	<ul>
+	  <li><a href="#">首&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp页</a></li>
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">产品展示</a></li>
+      <li><a href="#">售后服务</a></li>
+      <li><a href="#">联系我们</a></li>
+	</ul>
+</body>
+</html>

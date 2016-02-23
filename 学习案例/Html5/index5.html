@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>video</title>
+	<script type="text/javascript" src="../jquery-file.jquery-1.7.2.js"></script>
+	<script type="text/javascript" src="api/1.1.8/html5media.js"></script>
+	<script type="text/javascript" src="js6.js"></script>
+	<style type="text/css">
+        #time{
+        	padding:5px;
+        	width:50px;
+            font-size:12px;
+            color:#00FFFF;
+            background:#FF0000;
+        }
+	</style>
+</head>
+<body>
+	<div id="video_container">
+		<video width="300px" height="150px" src="IMP/video.mp4" preload = 'auto' autobuffer></video>
+	</div>
+	<div id="video_controller">
+		<button id="btn_play">Play</button>
+		<button id="btn_pause">Pause</button>
+		<input type="range" min="0" max="1" step="0.1" id="volume"/>
+		<input type="range" step="any" id="seekbar"/>
+		<button id="btn_mute">Mute</button>
+		<label id="time">-:--:--</label>
+	</div>
+</body>
+</html>

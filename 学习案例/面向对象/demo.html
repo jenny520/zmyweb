@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript">
+        var arr1 = new Array(12,13,23,45);
+        var arr2 = new Array(34,78,38);
+        Array.prototype.sum = function(){
+        	var result = 0;
+        	for(var i = 0;i<this.length;i++){
+        		result +=this[i];
+        	}
+        	return result;
+        }
+        alert(arr1.sum());
+        alert(arr2.sum());
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,117 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background: #eee;
+}
+h1{
+	text-align: center;
+	margin-top: 30px;
+}
+.container{
+	width:980px;
+	height: 450px;
+	margin:60px auto;
+	position:relative;
+}
+.container img{
+	position:absolute;
+	padding:10px 10px 15px;
+	background:#FFFFFF;
+	border:1px solid #ddd;
+	transition:1s;
+    -moz-transition:1s;	/* Firefox 4 */
+    -webkit-transition: 1s;	/* Safari 和 Chrome */
+    -o-transition: 1s;	/* Opera */
+}
+img:hover{
+	transform:rotate(0deg) scale(1.2);
+	-webkit-transform: rotate(0deg) scale(1.2);
+	-moz-transform:rotate(0deg) scale(1.2);
+	-o-transform:rotate(0deg) scale(1.2);
+	-ms-transform:rotate(0deg) scale(1.2);
+	box-shadow: 10px 10px 15px #BFBFBF;
+	z-index: 33;
+}
+.container .pic1{
+	top:40px;
+	left:20px;
+	transform:rotate(20deg);
+	-webkit-transform: rotate(20deg);
+	-moz-transform:rotate(20deg);
+	-o-transform:rotate(20deg);
+	-ms-transform: rotate(20deg);
+}
+.container .pic2{
+	top:60px;
+	left:600px;
+	transform:rotate(40deg);
+	-webkit-transform: rotate(40deg);
+	-moz-transform:rotate(40deg);
+	-o-transform:rotate(40deg);
+	-ms-transform: rotate(40deg);
+}
+.container .pic3{
+	top:20px;
+	left:100px;
+	transform:rotate(70deg);
+	-webkit-transform: rotate(70deg);
+	-moz-transform:rotate(70deg);
+	-o-transform:rotate(70deg);
+	-ms-transform: rotate(70deg);
+}
+.container .pic4{
+	top:80px;
+	left:60px;
+	transform:rotate(100deg);
+	-webkit-transform: rotate(100deg);
+	-moz-transform:rotate(100deg);
+	-o-transform:rotate(100deg);
+	-ms-transform: rotate(100deg);
+}
+.container .pic5{
+	top:80px;
+	left:150px;
+	transform:rotate(120deg);
+	-webkit-transform: rotate(120deg);
+	-moz-transform:rotate(120deg);
+	-o-transform:rotate(120deg);
+	-ms-transform: rotate(120deg);
+}
+.container .pic6{
+	top:130px;
+	left:200px;
+	transform:rotate(280deg);
+	-webkit-transform: rotate(280deg);
+	-moz-transform:rotate(280deg);
+	-o-transform:rotate(280deg);
+	-ms-transform: rotate(280deg);
+}
+.container .pic7{
+	top:80px;
+	left:300px;
+	transform:rotate(50deg);
+	-webkit-transform: rotate(50deg);
+	-moz-transform:rotate(50deg);
+	-o-transform:rotate(50deg);
+	-ms-transform: rotate(50deg);
+}
+.container .pic8{
+	top:80px;
+	left:400px;
+	transform:rotate(70deg);
+	-webkit-transform: rotate(70deg);
+	-moz-transform:rotate(70deg);
+	-o-transform:rotate(70deg);
+	-ms-transform: rotate(70deg);
+}
+.container .pic9{
+	top:50px;
+	left:500px;
+	transform:rotate(100deg);
+	-webkit-transform: rotate(100deg);
+	-moz-transform:rotate(100deg);
+	-o-transform:rotate(100deg);
+	-ms-transform: rotate(100deg);
+}

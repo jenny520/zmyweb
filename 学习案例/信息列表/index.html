@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Info-list</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript">
+        window.onload = function(){
+        	var lis = document.getElementsByTagName('li');
+        	var dlnode = document.getElementById('content');
+        	for(var i = 0;i<lis.length;i++){
+        		lis[i].id = i;
+        		lis[i].onmouseover = function(){
+                     dlnode.style.display = 'block';
+        		}
+        		lis[i].onmouseout = function(){
+        			dlnode.style.display = 'none';
+        		}
+        	}
+        }
+	</script>
+</head>
+<body>
+	<div id="tab" class="tab">
+		<h3>阅读排行</h3>
+		<ul>
+			<li>
+			 <a href="javascript:void(0)">假如给我三天光明</a>
+			 <dl style="display: none" id="content">
+			 	<dt>舌尖上的中国</dt>
+			 	<dd>作者是：三毛</dd>
+			 	<dd>价格是：20元</dd>
+			 </dl>
+			</li>
+			<li>
+             <a href="javascript:void(0)">人生</a>
+			</li>
+			<li>
+			 <a href="javascript:void(0)">梦想不过是个痛快的决定</a>
+			</li>
+			<li>
+			 <a href="javascript:void(0)">国富论</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

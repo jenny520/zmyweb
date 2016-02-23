@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的生活</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://m.sui.taobao.org/dist/css/sm.min.css">
+    <link rel="stylesheet" href="http://m.sui.taobao.org/dist/css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="page-group">
+	    <div class="page page-current" id='router'>
+	        <header class="bar bar-nav">
+	            <h1 class='title'>路由</h1>
+	        </header>
+	        <div class="content">
+	            <div class="content-block">
+	                <ul>
+	                    <li><a href="http://m.sui.taobao.org/docs-demos/router2">ajax加载新页面</a></li>
+	                    <li><a href="#router3">内联的新页面</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+        <div class="page" id='router3'>
+	        <header class="bar bar-nav">
+	            <a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+	                <span class="icon icon-left"></span>
+	                返回
+	            </a>
+	            <h1 class='title'>路由</h1>
+	        </header>
+	        <div class="content">
+		        <div class="content-block">
+		            这是内联编写的页面，点击左上角的 <a href="#" class='back'>返回</a> 按钮返回上一页。
+		        </div>
+	        </div>
+	    </div>
+	</div>
+	<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='http://m.sui.taobao.org/dist/js/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='http://m.sui.taobao.org/dist/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript">$.init()</script>
+
+</body>
+</html>

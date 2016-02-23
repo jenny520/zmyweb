@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>s-form</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<!-- <script type="text/javascript" src="js.js"></script> -->
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<!-- <script type="text/javascript">
+       $(document).ready(function(){
+       	// $("li").has("ul").mouseover(function(){
+       	// 	$(this).children("ul").css("display","block");
+       	// })
+       	// $("li").has("ul").mouseout(function(){
+       	// 	$(this).children("ul").css("display","none");
+       	// })
+       })
+	</script> -->
+	<!-- <script type="text/javascript">
+       $(document).ready(function(){
+       	$(".top_nav li").mouseover(function(){
+       		$(this).find("ul").slideDown(300);
+       	})
+       	$(".top_nav li").mouseout(function(){
+       		$(this).find("ul").slideUp(300);
+       	})
+       })
+	</script> -->
+	<script type="text/javascript">
+       window.onload=function(){
+       	var lis = document.getElementsByTagName("li");
+       	for(var i=0;i<lis.length;i++){
+       		lis[i].onmouseover = function(){
+       			var u = this.getElementsByTagName("ul")[0];
+                if(u!=undefined){
+                	u.style.display = "block";
+                	AddH(u.id);
+                }
+       		}
+       		lis[i].onmouseout = function(){
+       			var u = this.getElementsByTagName("ul")[0];
+       			SubH(u.id);
+       		}
+       	}
+       }
+       function AddH(id){
+            var idh = document.getElementById(id);
+            var ch = idh.offsetHeight;
+            h+=1;
+            if(ch)
+
+       }
+       function SubH(id){
+       	setTimeout();
+       }
+	</script>
+</head>
+<body>
+	<ul class="top_nav">
+	  <li><a href="#"><span class="node">首页</span></a></li>
+	  <li><a href="#">课程大厅</a></li>
+	  <li>
+	    <a href="#">学习中心</a>
+	    <ul id="submenu">
+	       <li>
+	         <a href="#">前端课程</a>
+	         <ul>
+	         	<li><a href="#">Html</a></li>
+	         	<li><a href="#">Css3</a></li>
+	         	<li><a href="#">javascript</a></li>
+	         </ul>
+	       </li>
+	       <li>
+	         <a href="#">手机开发</a>
+	         <ul>
+	         	<li><a href="#">Html</a></li>
+	         	<li><a href="#">Css3</a></li>
+	         	<li><a href="#">javascript</a></li>
+	         </ul>
+	       </li>
+	       <li><a href="#">后台编程</a></li>
+	    </ul>
+	  </li>
+	  <li><a href="#">关于我们</a></li>
+	</ul>
+</body>
+</html>

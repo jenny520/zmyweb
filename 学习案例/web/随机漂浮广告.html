@@ -1,0 +1,24 @@
+<html >
+<head>
+<title>无标题文档</title>
+<script language="javascript">
+	function move(arg){
+		var mytimeout = setTimeout("move()",1000);
+		document.getElementById("picDiv").style.left=Math.random()*500;
+		document.getElementById("picDiv").style.top=Math.random()*500;
+		setTimeout("move()",1000);
+	}
+	function stopMove(){
+		clearTimeout(mytimeout);
+	}
+
+</script>
+</head>
+
+<body onLoad="move()">
+<div style="border:0px red solid; width:1000px; height:500px; position:absolute; margin-left:14px; margin-top:44px;" id="picDiv" onMouseOver="stopMove()">
+	<img src="images/meinv.jpg" style="width:157px; height:228px;" />
+</div>
+</body>
+</html>
+																																																																																																																																																																																																																																																																																																																																																																																								

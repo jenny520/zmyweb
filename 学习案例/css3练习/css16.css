@@ -1,0 +1,50 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+h1{
+	font-size:20px;
+	margin:0;
+	color:#fff;
+}
+#page:after,#page:before{
+	content:"";
+	display:table;
+}
+#page:after{
+	clear:both;
+	content:"";
+}
+#page{
+	margin-bottom:20px;
+}
+#header{
+	width:100%;
+	background-color:green;
+	margin-bottom:10px;
+	padding:20px;
+}
+.main{
+	width:60%;
+	padding:20px;
+	background-color:orange;
+	float:left;
+}
+.sidebar{
+	width:38%;
+	float:right;
+	background-color:#f36;
+	padding:20px;
+}
+#footer{
+	width:100%;
+	background-color:#f36;
+	padding:20px;
+	clear:both;
+}
+#header,.main,.sidebar,#footer{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}

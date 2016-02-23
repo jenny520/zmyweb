@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<table border="1px" cellpadding="0px" cellspacing="0px" id="myTables">
+		<tr>
+			<td>内容一</td>
+			<td>内容二</td>
+		</tr>
+		<tr>
+			<td>内容三</td>
+			<td>内容四</td>
+		</tr>
+	</table>
+	<button onclick="deleteContent()">删除内容</button>
+	<script type="text/javascript">
+	    function deleteContent(){
+            var tableNode = document.getElementById('myTables');
+            rangeObj = document.createRange();
+            var row = tableNode.rows[0];
+            rangeObj.setStartBefore(row);
+            rangeObj.setEndAfter(row);
+            rangeObj.deleteContents();
+	    }
+	</script>
+</body>
+</html>

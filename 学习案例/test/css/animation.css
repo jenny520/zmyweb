@@ -1,0 +1,14 @@
+.box{
+	width:100px;
+	height:100px;
+	background-color:pink;
+	position: absolute;
+	top:20px;
+}
+.content{
+	width:100px;
+	height:100px;
+	background-color:pink;
+	position: absolute;
+	top:130px;
+}

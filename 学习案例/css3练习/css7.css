@@ -1,0 +1,74 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+@keyframes changecolor{
+	0%{
+		background-color:red;
+	}
+	20%{
+		background-color:blue;
+	}
+	40%{
+		background-color:orange;
+	}
+	60%{
+		background-color:green;
+	}
+	80%{
+		background-color:yellow;
+	}
+	100%{
+		background-color:red;
+	}
+}
+@-moz-keyframes changecolor{
+	0%{
+		background-color:red;
+	}
+	20%{
+		background-color:blue;
+	}
+	40%{
+		background-color:orange;
+	}
+	60%{
+		background-color:green;
+	}
+	80%{
+		background-color:yellow;
+	}
+	100%{
+		background-color:red;
+	}
+}
+@-webkit-keyframes changecolor{
+	0%{
+		background-color:red;
+	}
+	20%{
+		background-color:blue;
+	}
+	40%{
+		background-color:orange;
+	}
+	60%{
+		background-color:green;
+	}
+	80%{
+		background-color:yellow;
+	}
+	100%{
+		background-color:red;
+	}
+}
+div{
+	width:300px;
+	height:200px;
+	background-color:red;
+	color:#fff;
+	margin:20px auto;
+}
+div:hover{
+	animation:changecolor 5s ease-out .2s infinite;
+}

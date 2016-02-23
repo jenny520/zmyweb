@@ -1,0 +1,121 @@
+.p-nav {
+	width: 100%;
+	padding: 0.2rem 0.3rem;
+	background-color: #eee;
+	height:0.8rem;
+}
+.p-nav span {
+	display: block;
+	line-height: 0.4rem;
+}
+.p-nav i {
+	color: #00A67C;
+	margin-right: 0.1rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+.p-nav i.iconfont {
+	position: relative;
+	top: -0.04rem;
+}
+.list{
+	width:100%;
+	padding:0 0.2rem;
+}
+.list li{
+	width:100%;
+	background-color:#fff;
+	padding:0.2rem;
+	margin-bottom:0.2rem;
+}
+.list li .p-total{
+	width:100%;
+	padding-bottom:0.3rem;
+	border-bottom:1px solid #ddd;
+}
+.list li .p-total .p-img{
+	width:25%;
+	float:left;
+	overflow: hidden;
+	background-color:#eee;
+}
+.list li .p-total .p-img img{
+	width:100%;
+	border:1px solid #ddd;
+	border-radius: 5px;
+	background-size:contain;
+	padding:1px;
+}
+.list li .p-total .p-content{
+	margin-left:28%;
+}
+.list li .p-total .p-content h3{
+	width:100%;
+	font-size:.34rem;
+	font-weight: bold;
+}
+.list li .p-total .p-content h3 a{
+	color:#333;
+}
+.list li .p-total .p-content p{
+	width:100%;
+	font-size:0.20rem;
+}
+.list li .p-total .p-content .p-orange{
+	padding:0.15rem 0;
+}
+.list li .p-total .p-content .p-orange a{
+	color:orange;
+}
+.list li .p-total .p-content p a{
+	white-space: normal;
+}
+.list li .number{
+	display: block;
+	padding-top:0.1rem;
+}
+.load {
+	width: 100%;
+	padding: 0.4rem 0;
+	height: 1.2rem;
+	line-height: 0.4rem;
+	text-align: center;
+	border-top: 1px solid #ddd;
+	background-color: #fefefe;
+}
+.load img {
+	margin: 0 auto;
+	background-size: 100% 100%;
+}
+.toTop {
+	position: fixed;
+	right: 0.3rem;
+	bottom: 3rem;
+	width: 0.9rem;
+	height: 0.9rem;
+	transition: opacity 0.5s ease;
+	-webkit-transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+	-ms-transition: opacity 0.5s ease;
+	cursor: pointer;
+}
+.toTop.show {
+	opacity: 1;
+}
+.toTop aside {
+	width: 1rem;
+	height: 1rem;
+	background-color: #000;
+	opacity: 0.4;
+	border-radius: 50%;
+}
+.toTop article {
+	position: absolute;
+	top: 0.12rem;
+	left: 0.24rem;
+	width: 0.6rem;
+	height: 0.8rem;
+	color: #fff;
+	font-size: 0.24rem;
+}

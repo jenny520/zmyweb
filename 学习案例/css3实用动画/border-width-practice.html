@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css6.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+        	var flag =1;
+        	$('.open').click(function(event){
+        		if(flag){
+        			$(this).addClass('btn');
+        			flag=0;
+        		}else{
+        			$(this).removeClass('btn');
+        			flag=1;
+        		}
+        	});
+        })
+	</script>
+</head>
+<body>
+	<a href="#" class="open" title='展开更多' opentitle='折起'></a>
+</body>
+</html>

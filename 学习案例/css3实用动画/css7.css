@@ -1,0 +1,73 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background-color:#000;
+}
+@keyframes sway{
+	100%{
+		transform:rotate(30deg);
+		-moz-transform:rotate(30deg);
+		-webkit-transform:rotate(30deg);
+	}
+}
+@-moz-keyframes sway{
+	100%{
+		transform:rotate(30deg);
+		-moz-transform:rotate(30deg);
+	}
+}
+@-webkit-keyframes sway{
+	100%{
+		transform:rotate(30deg);
+		-webkit-transform:rotate(30deg);
+	}
+}
+@keyframes second{
+	to{
+		transform:rotate(360deg);
+	}
+}
+@-moz-keyframes second{
+	to{
+		-moz-transform:rotate(360deg);
+	}
+}
+@-webkit-keyframes second{
+	to{
+		-webkit-transform:rotate(360deg);
+	}
+}
+.stage{
+	width:120px;
+	height:auto;
+	margin:0px auto;
+	position:relative;
+	transform-origin: center top;
+	-moz-transform-origin:center top;
+	-webkit-transform-origin:center top;
+	animation:sway 2.2s infinite alternate ease-in-out;
+	-moz-animation:sway 2.2s infinite alternate ease-in-out;
+	-webkit-animation:sway 2.2s infinite alternate ease-in-out;
+	transform:rotate(-30deg);
+	-moz-transform:rotate(-30deg);
+	-webkit-transform:rotate(-30deg);
+}
+.stage img{
+	width:120px;
+	height: 411px;
+}
+.stage .second{
+	width:8%;
+	height:55px;
+	position:absolute;
+	left:45.5%;
+	bottom:11.5%;
+	-webkit-transform-origin:center 72.4%;
+	-moz-transform-origin:center 72.4%;
+	transform-origin:center 72.4%;
+	animation:second 60s infinite;
+	-moz-animation:second 60s infinite;
+	-webkit-animation:second 60s infinite;
+}

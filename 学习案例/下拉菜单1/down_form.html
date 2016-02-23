@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+	<title>down_form</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+	   $(document).ready(function(){
+	   	$('.ul li').hover(function(){
+	   		$(this).find('ul:first').css('visibility','visible');
+	   	},function(){
+	   		$(this).find('ul:first').css('visibility','hidden');
+	   	})
+	   })
+	</script>
+</head>
+<body>
+	<div class="nav">
+		<ul class="ul">
+			<li class="li"><a href="#" class="a">首页</a></li>
+			<li class="li li1">
+			  <a href="#" class="a">课程中心</a>
+			  <ul class="s_ul">
+				<li class="li"><a href="#" class="a">javascript</a></li>
+                <li class="li2"><a href="#" class="a">css</a></li>
+				<li><a href="#" class="a">javajkl</a></li>
+			  </ul>
+			</li>  
+			<li class="li li1">
+			  <a href="#" class="a">学习中心</a>
+			  <ul class="s_ul">
+				<li><a href="#" class="a">javascript</a></li>
+				<li><a href="#" class="a">java</a></li>
+				<li><a href="#" class="a">css</a></li>
+			  </ul>
+			</li>
+			<li class="li"><a href="#" class="a">经典案例</a></li>
+			<li class="li"><a href="#" class="a">关于我们</a></li>
+		</ul>
+	</div>
+</body>
+</html>

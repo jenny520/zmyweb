@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+        	$('.sidebar ul li').hover(function(){
+                $(this).find('.sidebarBox').stop().animate({
+                	width:'120px'
+                },300).css('background-color','red');
+        	},function(){
+                $(this).find('.sidebarBox').stop().animate({
+                	width:'40px'
+                },300).css('background-color','#0FF6EF');
+        	});
+        	$('.sidebar .stopBox').hover(function(){
+        		$(this).css('background-color','red');
+        	},function(){
+        		$(this).css('background-color','#0FF6E6');
+        	})
+            $('.sidebar .stopBox').click(function(){
+                goTop();
+            })
+       })
+        function goTop(){
+               $('html,body').animate({'scrollTop':0},300);
+            }
+	</script>
+</head>
+<body style="height:2000px;">
+    <div class="sidebar">
+    	<ul>
+    		<li>
+    			<a href="#">
+    				<div class="sidebarBox">
+    					<img src="img/1.png" width="30px" height="30px">客服
+    				</div>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="#">
+    				<div class="sidebarBox">
+    					<img src="img/2.png" width="30px" height="30px"><span>客服</span>
+    				</div>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="#">
+    				<div class="sidebarBox">
+    					<img src="img/6.png" width="30px" height="30px"><span>客服</span>
+    				</div>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="#">
+    				<div class="sidebarBox">
+    					<img src="img/4.png" width="30px" height="30px"><span>客服</span>
+    				</div>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="#">
+    				<div class="sidebarBox">
+    					<img src="img/5.png" width="30px" height="30px"><span>客服</span>
+    				</div>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="javascript:;" class="stopBox">
+    				<img src="img/3.png" width="30px" height="30px"><span>客服</span>
+    			</a>
+    		</li>
+    	</ul>
+    </div>
+</body>
+</html>

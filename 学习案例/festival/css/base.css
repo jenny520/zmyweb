@@ -1,0 +1,154 @@
+/*初始化*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-size:1.5625vw;
+}
+
+/* HTC and Width = 400 */
+html {
+  font-size: 20px;
+}
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 21.33333333px !important;
+  }
+}
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 22.08px !important;
+  }
+}
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 25.6px !important;
+  }
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, dl, dt, dd, li, cite, fieldset, em, i {
+  list-style: none;
+  font-weight: normal;
+  font-style: normal;
+}
+sup, sub {
+  vertical-align: baseline;
+}
+a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+ul, ol, li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+body, th, td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse
+  border-spacing:0;
+}
+input, textarea {
+  outline: none;
+}
+a {
+  blr: expression_r(this.onFocus=this.blur());
+}
+area {
+  blr: expression_r(this.onFocus=this.blur());
+}
+*:not(input, textarea) {
+  -webkit-touch-callout: inherit;
+  -webkit-user-select: auto;
+}
+body {
+  width: 100%;
+  font-size:;
+  font-family: 'Microsoft Yahei' Hiragino Sans GB, Arial, Helvetica, "ºÚÌå", sans-serif;
+  color: #878787;
+  background-color:#f5f5f5;
+ -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 0.28rem;
+}
+a {
+  color: #878787;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover {
+  text-decoration: none;
+}
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+dt, dd {
+  display: inline-block;
+}
+textarea, input ,select{
+  resize: none;
+  outline: none;
+  border: none;
+}
+textarea,input,select,button{
+  resize: none;
+  -webkit-appearance: none;
+}
+ul, ol, li {
+  list-style: none;
+}
+em {
+  font-style: normal;
+}
+img {
+  display: block;
+  border: none;
+}
+.hide{
+  display: none!important;
+}
+.disabled{
+  background-color: #ccc !important;
+  border: 1px solid #ddd;
+  color: #333 !important;
+}
+.disabled2{
+  background-color: #ccc !important;
+  color: #fff !important;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.clearfix::after {
+  clear: both;
+  display: block;
+  line-height: 0;
+  visibility: hidden;
+  content: '';
+}
+.clear {
+  clear: both;
+}
+.text-overflow{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-overflow-more{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://m.sui.taobao.org/dist/css/sm.min.css">
+    <link rel="stylesheet" href="http://m.sui.taobao.org/dist/css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<title>popup</title>
+</head>
+<body>
+    <div class="page-group">
+        <div class="page page-current" id="page-1454466841746">
+            <header class="bar bar-nav">
+                <h1 class="title">日历</h1>
+            </header>
+            <div class="content native-scroll">
+                <div class="content-block">
+                    <div class="list-block">
+                        <ul>
+                        <!-- Text inputs -->
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">生日</div>
+                                        <div class="item-input">
+                                            <input type="text" placeholder="Your name" id="birthday" readonly="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='http://m.sui.taobao.org/dist/js/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='http://m.sui.taobao.org/dist/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript">
+        $(function() {
+            $(document).on("pageInit", function() {
+                $("#birthday").calendar({
+                    value: ['2015-12-05'],
+                    minDate: '2015-12-09',
+                    onChange: function(p, v, d) {
+                        console.log(v);
+                    }
+                });
+            });
+          $.init();
+        });
+
+
+    </script>
+</body>
+</html>

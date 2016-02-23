@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>select_demo</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript">
+       function addLoadEvent(func){
+       	var oldonload = window.onload;
+       	if(typeof window.onload!='function'){
+       		window.onload = func;
+       	}else{
+       		window.onload = function(){
+       			oldonload();
+       			func();
+       		}
+       	}
+
+       }
+       function getDom(id){
+       	return document.getElementById(id);
+       }
+       function showProvince(){
+       	getDom("selectProvince").onclick=showAllProvince;
+       }
+       function showAllProvince(){
+       	getDom("allProvince").style.display = "block";
+       	getDom("layer").style.display = "block";
+       	getDom("selectProvince").style.backgroundPosition="190px -17px";
+       	getDom("selectProvince").style.color = "#A7A99A";
+       	getDom("selectProvince").className = "show";
+       	getDom("layer").onclick = function(){
+       		hideProvince();
+       	}
+       	selectProvince();
+       }
+       function hideProvince(){
+       	getDom("allProvince").style.display = "none";
+       	getDom("layer").style.display = "none";
+       	getDom("selectProvince").style.backgroundPosition="190px 1px";
+       	getDom("selectProvince").style.color = "#000000";
+       	getDom("selectProvince").className="hide";
+       }
+       function selectProvince(){
+       	var linodes = document.getElementById("allProvince").getElementsByTagName("li");
+       	var links;
+       	for(var i = 0 ; i<linodes.length;i++){
+       		links = linodes[i].getElementsByTagName("span");
+             for(var j=0;j<links.length;j++){
+             	links[j].onclick=function(){
+             		getDom("selectProvince").innerHTML = this.innerHTML;
+             		hideProvince();
+             	}
+             }
+       	}
+       }
+       addLoadEvent(showProvince);
+	</script>
+</head>
+<body>
+ <div id="box">
+    <div class="province">
+ 	<strong>送货至：</strong>
+ 	<span id="selectProvince">北京</span>
+ 	<ul id="allProvince">
+ 	  <li><b>A</b><span>安徽</span></li>
+ 	  <li><b>B</b><span>北京</span></li>
+ 	  <li><b>C</b><span>重庆</span></li>
+ 	  <li><b>F</b><span>福建</span></li>
+ 	  <li><b>G</b><span>广东</span><span>广西</span></li>
+ 	  <li><b>H</b><span>河北</span><span>河南</span><span>黑龙江</span></li>
+ 	  <li><b>J</b><span>吉林</span><span>江苏</span></li>
+ 	  <li><b>L</b><span>辽宁</span></li>
+ 	  <li><b>N</b><span>内蒙古</span></li>
+ 	  <li><b>Q</b><span>青海</span></li>
+ 	  <li><b>S</b><span>上海</span><span>山东</span></li>
+ 	  <li><b>T</b><span>天津</span></li>
+ 	  <li><b>X</b><span>新疆</span></li>
+ 	  <li><b>Y</b><span>云南</span></li>
+ 	  <li><b>Z</b><span>浙江</span></li>
+ 	</ul>
+ 	</div>
+ </div>
+ <div id="layer"></div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>fullPage.js-证券时报网移动产品</title>
+
+<link rel="stylesheet" href="images/style.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	if($.browser.msie && $.browser.version < 10){
+		$('body').addClass('ltie10');
+	}
+	$.fn.fullpage({
+		slidesColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
+		anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+		menu: '#menu'
+	});
+});
+</script>
+
+</head>
+
+<body>
+<ul id="menu">
+	<li data-menuanchor="page1" class="active"><a href="#page1" title="证券时报网"><span>证券时报网</span></a></li>
+	<li data-menuanchor="page2"><a href="#page2" title="财苑社区"><span>财苑社区</span></a></li>
+	<li data-menuanchor="page3"><a href="#page3" title="爱股快信"><span>爱股快信</span></a></li>
+	<li data-menuanchor="page4"><a href="#page4" title="股票情报"><span>股票情报</span></a></li>
+	<li data-menuanchor="page5"><a href="#page5" title="新股助手"><span>新股助手</span></a></li>
+</ul>
+
+<div class="section section1">
+	<!-- <div class="bg bg1-1"></div> -->
+	<!-- <div class="bg bg1-2"></div> -->
+	<div class="bg bg1-3"></div>
+	<a class="logo1" href="">证券时报网</a>
+	<div class="middle">
+		<div class="left left1 animate" rel="0,50%,50%,50%,700">
+			<a class="link a1-1" href="http://wap.stcn.com/">开始体验</a>
+		</div>
+		<div class="right right1 animate" rel="100%,50%,50%,50%"></div>
+	</div>
+	<div class="qtcode"></div>
+	<a class="godown" href="#page2"><span></span></a>
+</div>
+
+<div class="section section2">
+	<!-- <div class="bg bg2-1"></div> -->
+	<!-- <div class="bg bg2-2"></div> -->
+	<div class="bg bg2-3"></div>
+	<div class="top"></div>
+	<a class="logo2" href="">财苑社区</a>
+	<div class="middle">
+		<div class="left left2 animate" rel="0,50%,60%,50%">
+			<div class="left2-1"></div>
+			<div class="left2-2"></div>
+		</div>
+		<div class="right right2 animate" rel="100%,50%,50%,50%">
+			<a class="link a2-1" href="http://www.17sucai.com/" target="_blank">iPhone版</a>
+			<a class="link a2-2" href="http://www.17sucai.com/" target="_blank">Android版</a>
+		</div>
+		<div class="tip"></div>
+		<div class="hand"></div>
+	</div>
+	<div class="qtcode"></div>
+	<a class="godown" href="#page3"><span></span></a>
+</div>
+
+<div class="section section3">
+	<!-- <div class="bg bg3-1"></div> -->
+	<!-- <div class="bg bg3-2"></div> -->
+	<div class="bg bg3-3"></div>
+	<div class="bg bg3-4"><div class="bg"></div></div>
+	<a class="logo3" href="">爱股快信</a>
+	<div class="middle">
+		<div class="left left3 animate" rel="0,50%,50%,50%">
+			<a class="link a3-1" href="http://www.17sucai.com/" target="_blank">iPhone版</a>
+			<a class="link a3-2" href="http://www.17sucai.com/" target="_blank">Android版</a>
+		</div>
+		<div class="right right3 animate" rel="100%,50%,50%,50%"></div>
+	</div>
+	<div class="qtcode"></div>
+	<a class="godown" href="#page4"><span></span></a>
+</div>
+
+<div class="section section4">
+	<!-- <div class="bg bg4-1"></div> -->
+	<!-- <div class="bg bg4-2"></div> -->
+	<a class="logo4" href="">股票情报</a>
+	<div class="middle">
+		<div class="left left4 animate" rel="0,50%,50%,50%"></div>
+		<div class="left4-1"></div>
+		<div class="left4-2"></div>
+		<div class="left4-4"></div>
+		<div class="left4-5"><div class="dian"><span></span></div></div>
+		<div class="left4-3"></div>
+		<div class="right right4 animate" rel="100%,50%,50%,50%">
+			<a class="link a4-1" href="http://www.17sucai.com/" target="_blank">iPhone版</a>
+			<a class="link a4-2" href="http://www.17sucai.com/" target="_blank">Android版</a>
+		</div>
+	</div>
+	<div class="qtcode"></div>
+	<a class="godown" href="#page5"><span></span></a>
+</div>
+
+<div class="section section5">
+
+	<!-- <div class="bg bg5-1"></div> -->
+	<!-- <div class="bg bg5-2"></div> -->
+	<div class="bg bg5-3"></div>
+	<div class="bg bg5-4"></div>
+	<a class="logo5" href="">新股助手</a>
+	<div class="middle">
+		<div class="left left5 animate" rel="0,50%,50%,50%"></div>
+		<div class="right right5 animate" rel="100%,50%,50%,50%">
+			<a class="link a5-1" href="http://www.17sucai.com/" target="_blank">iPhone版</a>
+			<a class="link a5-2" href="http://www.17sucai.com/" target="_blank">Android版</a>
+		</div>
+	</div>
+	<div class="qtcode"></div>
+</div>
+
+</body>
+</html>

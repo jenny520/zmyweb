@@ -1,0 +1,31 @@
+$(document).ready(function(){
+	$('#a-btn').button();
+	$('#dragger').draggable();
+	$('#droppable').droppable();
+	$('#droppable').on('drop',function(event,ui){
+		$(this).text('success');
+	})
+	$('#resizable').resizable();
+	$('#submit').button();
+	$('#selectable').selectable();
+	$('#submit').on('click',function(){
+		if($('#right').hasClass('ui-selected')){
+			alert('回答正确');
+		}
+	});
+	$('#sortable').sortable();
+	$('#accordion').accordion();
+	var avialableTags=['css','html','js','c++','java','android','ios','appla'];
+	$('#tags').autocomplete({
+		source:avialableTags
+	});
+	$('#datepicker').datepicker();
+	$('#btn3').button().on('click',function(){
+         $('#btn1').button();
+         $('#btn2').button();
+         $('#dialog').dialog();
+         $('#btn1').click(function(){
+         	$('#dialog').hide();
+         })
+	})
+})

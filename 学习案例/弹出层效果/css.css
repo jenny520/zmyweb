@@ -1,0 +1,60 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.btn{
+	width:60px;
+	height: 30px;
+	background-color:#FA1C17;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center; 
+	color:#FFFFFF;
+	border:none;
+	margin:10px;
+	cursor: pointer;
+}
+#mask{
+	width:100%;
+	height: 1000px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	/*background-color:#070707;*/
+	/*opacity:0.75;
+	filter: alpha(opacity=75);
+	z-index: 100;*/
+}
+*html body { 
+    _background-attachment:fixed; 
+    _background-image:url(about:blank); 
+} 
+*html #logo{
+	position: absolute;
+    bottom: auto;
+    top: expression(100+((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+'px');
+}
+#logo{
+	position:fixed;
+	left:30%;
+	top:20%;
+	width:670px;
+	height:380px;
+	z-index: 200;
+}
+.logoContent{
+	width:670px;
+	height:380px;
+	background:url(img/loginBg.png);
+	background-repeat: no-repeat;
+}
+.close{
+	width:30px;
+	height: 30px;
+	background:url(img/close.png);
+	background-repeat: no-repeat;
+	position:absolute;
+	top:5px;
+	right:5px;
+	cursor: pointer;
+}

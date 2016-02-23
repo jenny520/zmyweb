@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+           $('#user-valid').hide();
+           $('#user').blur(function(){
+           	console.log(3);
+            var txt = $('#user').val();
+           	var re = /^\w+@[a-z0-9]+\.[a-z]+$/i;
+           	var re1 = /^\d{4}\-[0-9]\-[0-3]{1}\d{1}/;
+            if(re1.test(txt)){
+              $('#user-valid').show().text('合法的邮箱');
+            }else{
+              $('#user-valid').show().text('不合法的邮箱');
+            }
+           })
+        })
+	</script>
+</head>
+<body>
+	<div>
+		<input type="text" value="" id="user"/>
+		<span id='user-valid'>12</span>
+	</div>
+	<button id="btn" style="margin-top:20px">submit</button>
+</body>
+</html>

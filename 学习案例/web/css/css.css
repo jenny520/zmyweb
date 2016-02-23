@@ -1,0 +1,144 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:9pt;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility:hidden;
+}
+#list{
+	width:1000px;
+	margin:0px auto;
+}
+.box{
+	padding:20px 0px;
+	/*height: 273px;*/
+	padding-left:20px;
+	/*float: left;*/
+	border:1px solid #efefef;
+	margin-right:40px;
+	margin-bottom:20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #efefef;
+	margin-top:5px;
+}
+.box .p-img{
+	width:300px;
+	height: 245px;
+	float:left;
+	margin-right:10px;
+	overflow: hidden;
+}
+.box .btn{
+	display: inline-block;
+	padding:5px;
+	text-align: center;
+	text-decoration: none;
+	position:absolute;
+	left:210px;
+	bottom:10px; 
+}
+.txt{
+	margin-bottom: 10px;
+}
+.user{
+	color:#369;
+}
+.pic{
+	width:200px;
+	border:1px solid #E6E6E6;
+	box-shadow: 0px 0px 2px #E1E2DE;
+	margin-bottom: 10px;
+}
+.time{
+	float: left;
+	padding-left:20px;
+	background:url(images/bg1.jpg);
+	background-repeat: no-repeat;
+	color:#D7D7D7;
+	line-height: 20px;
+}
+.prefer{
+	float: right;
+	color:#369;
+	text-decoration: none;
+	padding-left: 20px;
+	background:url(images/bg2.jpg);
+	background-repeat: no-repeat;
+}
+.praise_total{
+	height: 20px;
+	line-height: 19px;
+	padding:5px 5px 5px 25px;
+	background:url(images/praise.png);
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	background-color: #D2D2D2;
+	margin:10px 0px;
+}
+.comment_box{
+	border-top:1px solid #C9C9C9;
+	padding:10px 0px;
+}
+.comment_box .pic1{
+	float: left;
+	width:40px;
+	height: 40px;
+	margin-right:15px;
+}
+.comment_box .comment_con{
+	width:385px;
+	float: left;
+	line-height: 20px;
+}
+.comment_time{
+	color:#D7D7D7;
+	position:relative;
+}
+.comment_praise{
+	display: inline-block;
+	position: absolute;
+	top:-1px;
+	right:50px;
+	text-decoration: none;
+	color:#369;
+	padding-left: 15px;
+	background:url(images/bg2.jpg);
+	background-repeat: no-repeat;
+}
+.comment{
+	border: 1px solid #eee;
+    color: #ccc;
+    display: block;
+    height: 20px;
+    padding: 5px;
+    resize: none;
+    width: 428px;
+    font-size: 16px;
+}
+.btn {
+    background: none repeat scroll 0 0 #4679ac;
+    border: 1px solid #0c528d;
+    color: #fff;
+    display: none;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    width: 65px;
+}
+.btn-off{
+	background:#CCCCCC;
+	border-color: #CCCCCC;
+	display: none;
+}
+.word {
+    color: #666;
+    display: none;
+    float: right;
+    margin: 7px 10px 0 0;
+}

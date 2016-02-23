@@ -1,0 +1,27 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.wrapper{
+	margin:100px auto;
+	width:300px;
+	height:200px;
+	border:2px dotted blue;
+}
+.wrapper div{
+	width:300px;
+	height:200px;
+	line-height:200px;
+	text-align:center;
+	background-color:green;
+	color:#fff;
+	-webkit-transform:rotate(-20deg);
+	-moz-transform:rotate(-20deg);
+	transform:rotate(-20deg);
+}
+.wrapper span{
+	display:block;
+	-webkit-transform:rotate(20deg);
+	-moz-transform:rotate(20deg);
+	transform:rotate(20deg);
+}

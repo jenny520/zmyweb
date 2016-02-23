@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>用户中心</title>
+<link rel="stylesheet" type="text/css" href="img/style.css"/>
+</head>
+<script type="text/javascript" src="img/tab.js"></script>
+<script type="text/javascript" src="img/jquery-1.3.2.min.js"></script>
+<!--[if lt IE 7]>
+<script type="text/javascript" src="img/putaojiayuan.js"></script>
+<![endif]-->
+
+<body>
+<div class="top">
+  <div class="top_bar">
+    <div class="logo"></div>
+    <div class="at1">手机访问WAP.INBAI.COM</div>
+    <div class="clear"></div>
+  </div>
+  <div class="nav">
+    <ul>
+      <li><a href="index.html">亿贝首页</a></li>
+      <li><a href="call.html">亿贝CALl</a></li>
+      <li><a href="tongxun.html">亿贝通讯录</a></li>
+      <li><a href="dongtai2.html">最新动态</a></li>
+      <li><a href="liuyang.html">留言板</a></li>
+      <li class="hover"><a href="help.html">帮助中心</a></li>
+    </ul>
+  </div>
+</div>
+<div class="content">
+  <div class="main">
+    <div class="banner2"><img src="img/banner2.jpg"  width="1000" height="100"/></div>
+    <div class="bar"><b>用户中心</b><span>当前位置：<a href="#">首页 ></a><a href="#">用户中心</a></span></div>
+    <div class="left1">
+      <div class="wenti1"> 
+        <script>
+			$(function(){
+				$('dt').hover(function(){
+					if($(this).hasClass('expand1')) return;
+					$(this).attr('class','focus1');
+				},function(){
+					if($(this).hasClass('expand1')) return;
+					$(this).attr('class','original1');}
+				);
+ 
+				$('dt').click(function(){
+					if($(this).hasClass('expand1')){
+						$(this).next().hide();
+						$(this).attr('class','original1');;
+						return;
+					}
+					$('dd').hide();
+					$('dt').attr('class','original1');
+					$(this).attr('class','expand1');
+					$(this).next().show();
+				});
+ 
+			})
+		</script>
+        <dl>
+          <dt class="original1">我的通讯录</dt>
+          <dd> <a href="#" class="h_hover2">联系人列表</a> <a href="#" >历史备份记录</a></dd>
+          <dt class="original1">个人信息</dt>
+          <dd><a href="#"  class="h_hover">基本信息</a> <a href="#" >修改密码</a> <a href="#" >密码保护</a></dd>
+          <dt class="original1">帐号管理</dt>
+          <dd> <a href="#">近期活动</a> <a href="#"  >往期活动</a> </dd>
+        </dl>
+      </div>
+    </div>
+    <div class="right1">
+      <div class="bar3"><b>联系人列表</b>
+        <div class="jslx"><span>检索类型：</span>
+          <select class="select1">
+            <option>按姓名检索</option>
+          </select>
+          <div class="beij">
+            <input type="text" value="" class="txt4" />
+            <input type="submit" value="" class="search" />
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <ul class="list2">
+        <li class="t_bg"><span class="N1">编 号</span><span class="N2">姓  名</span><span class="N3">号  码</span></li>
+        <li class="bg1"><span class="N1">1</span><span class="N2"><a href="#">阿 勇</a></span><span class="N3">138 2310 3126</span></li>
+        <li><span class="N1">2</span><span class="N2"><a href="#">阿 勇</a></span><span class="N3">138 2310 3126</span></li>
+        <li class="bg1"><span class="N1">3</span><span class="N2"><a href="#">阿 勇</a></span><span class="N3">138 2310 3126</span></li>
+        <li><span class="N1">4</span><span class="N2"><a href="#">阿 勇</a></span><span class="N3">138 2310 3126</span></li>
+        <li class="bg1"><span class="N1">5</span><span class="N2"><a href="#">阿 勇</a></span><span class="N3">138 2310 3126</span></li>
+        <li><span class="N1">6</span><span class="N2"><a href="#">阿 勇</a></span><span class="N3">138 2310 3126</span></li>
+        <li class="bg1"><span class="N1">7</span><span class="N2"><a href="#">阿 勇</a></span><span class="N3">138 2310 3126</span></li>
+        <li><span class="N1">8</span><span class="N2"><a href="#">阿 勇</a></span><span class="N3">138 2310 3126</span></li>
+        <li class="bg1"><span class="N1">9</span><span class="N2"><a href="#">阿 勇</a></span><span class="N3">138 2310 3126</span></li>
+        <li><span class="N1">10</span><span class="N2"><a href="#">阿 勇</a></span><span class="N3">138 2310 3126</span></li>
+      </ul>
+      <div class="clear"></div>
+      <div class="more2"><a href="#"><img src="img/more1.jpg" /></a><a href="#"><img src="img/more2.jpg" /></a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#"><img src="img/more3.jpg" /></a><a href="#"><img src="img/more4.jpg" /></a></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="foot">
+  <div class="foot_nav"><a href="#">帮助中心</a>|<a href="#">隐私条款</a>|<a href="#">关于我们</a>  来源:<a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
+  <div class="foot_bar"><img src="img/logo2.jpg"  width="114" height="42" align="left"/>&copy;2009.INBAI Technology Co.Ltd<br />
+    粤ICP备09104593</div>
+  <div class="clear"></div>
+</div>
+</body>
+</html>

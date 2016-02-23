@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<title>jQuery响应式自适应宽屏焦点图特效 - 【科e互联】</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="js/mobilyslider.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+    $('.slider').mobilyslider({
+        content:'.sliderContent',
+        children:'div',
+        transition:'horizontal',
+        animationSpeed:200,
+        autoplay: true,
+        autoplaySpeed:3000,
+        pauseOnHover:true,
+        bullets:true,
+        arrows:true,
+        arrowsHide:true,
+        prev:'prev',
+        next:'next',
+        animationStart: function(){},
+        animationComplete: function(){}
+    });   
+});
+
+</script>
+<!--[if IE 6]>
+        <script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+        <script>
+          DD_belatedPNG.fix('.png_bg');
+        </script>
+    <![endif]-->
+</head>
+<body class="keBody">
+<!--效果html开始-->
+  <div class="banner">
+    <div class="slider">
+      <div class="sliderContent">
+        <div class="item" style="z-index: 2; background-position: initial initial; background-repeat: initial initial;">
+        <a href="#" hidefocus="true" style="outline: none;">
+        <img src="images/banner1.jpg" alt="" width="300px" height="250px">
+        </a>
+        </div>
+        
+        <div class="item" style="z-index: 1; background-position: initial initial; background-repeat: initial initial;">
+        <a href="#" hidefocus="true" style="outline: none;">
+        <img src="images/banner2.jpg" alt="" width="300px" height="250px">
+        </a>
+        </div>
+        
+        <div class="item" style="z-index:0;background-position:initial initial;background-repeat: initial initial;">
+        <a href="#" hidefocus="true" style="outline: none;">
+        <img src="images/3-31.jpg" alt="" width="300px" height="250px">
+        </a>
+        </div>
+      </div>
+      <div class="sliderArrows" style="display:none;">
+      <a href="#" class="prev png_bg" hidefocus="true" style="outline:none;">Previous</a>
+      <a href="#" class="next png_bg" hidefocus="true" style="outline: none;">Next</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

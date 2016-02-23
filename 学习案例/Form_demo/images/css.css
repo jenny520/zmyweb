@@ -1,0 +1,45 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:14px;
+}
+.typelist{
+	width:330px;
+	height: 30px;
+	margin: 20px auto;
+	border: 1px solid #80FFFF;
+}
+.typelist ul{
+	list-style-type: none;
+	line-height: 25px;
+	padding-left: 15px;
+}
+.typelist li{
+	float:left;
+	padding-left: 20px;
+	position:relative;
+	margin-right: 5px;
+}
+.typelist label{
+	padding-left: 10px;
+}
+.typelist input{
+	display: none;
+}
+.typelist li b{
+	width:20px;
+	height:20px;
+	display: block;
+	position:absolute;
+	top:6px;
+	left: 0px;
+	background:url(images/checkbox.gif);
+	background-repeat: no-repeat;
+	background-position: -12px -18px;
+}
+.typelist li:hover b{
+	background-position: -12px -118px;
+}
+.typelist ul .selected b{
+	background-position: -12px -218px;
+}

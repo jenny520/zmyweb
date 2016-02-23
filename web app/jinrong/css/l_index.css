@@ -1,0 +1,165 @@
+.hide {
+	display: none;
+}
+.full-header {
+	width: 100%;
+	height: 0.8rem;
+	position: relative;
+	line-height: 0.8rem;
+	text-align: center;
+	font-size: 0.32rem;
+	padding-left: 0.14rem;
+	background-color: #fff;
+	color: #333;
+}
+.full-header a {
+	position: absolute;
+	left: 0.14rem;
+	padding: 0 0.1rem;
+	top: 0;
+	height: 0.8rem;
+}
+.login-style {
+	width: 100%;
+	height: 0.82rem;
+}
+.login-style li {
+	width: 50%;
+	float: left;
+	text-align: center;
+	line-height: 0.82rem;
+	height: 0.82rem;
+	border-bottom: 1px solid #ccc;
+	color: #333;
+	cursor: pointer;
+}
+.login-style .active {
+	height: 0.82rem;
+	line-height: 0.82rem;
+	border-bottom: 2px solid #4761ab;
+	color: #4663a9;
+}
+.register-content {
+	width: 100%;
+	padding: 0.24rem;
+	padding-bottom: 1.6rem;
+}
+.register-content .username-unhappy {
+	color: #ea4f39;
+	padding-left: 0.24rem;
+	line-height: 0.48rem;
+}
+.register-content form {
+	width: 100%;
+}
+.register-content .fn-mg10 {
+	width: 100%;
+	margin-bottom: 0.2rem !important;
+}
+.register-content .fn-mg10 p {
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 0.84rem;
+	line-height: 0.8rem;
+	background-color: #fff;
+	border-radius: 5px;
+	color: #878787;
+	font-size: 0.26rem;
+}
+.register-content .verification p {
+	width: 58%;
+	float: left;
+}
+.register-content .verification .btn-code {
+	display: block;
+	float: right;
+	width: 38%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	float: right;
+	text-align: center;
+	background-color: #ddd;
+}
+.register-content .fn-mg10 .icon-field {
+	width: 0.8rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	text-align: center;
+	float: left;
+}
+.register-content .fn-mg10 .input-field {
+	display: block;
+	margin-left: 0.8rem;
+	padding-right: 0.1rem;
+}
+.register-content .fn-mg10 .input-field input {
+	width: 100%;
+	height: 0.6rem;
+	line-height: normal;
+	border: 0;
+	color: #787878;
+}
+.register-content .btn-big {
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	background-color: #ea4f39;
+	color: #fff;
+	font-size: 0.32rem;
+	text-align: center;
+	display: block;
+	border-radius: 5px;
+}
+.register-content .forget-pass {
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.6rem;
+}
+.register-content .forget-pass .fn-left {
+	float: left;
+}
+.register-content .forget-pass .fn-right {
+	float: right;
+	color: #4761ab;
+}
+footer {
+	width: 100%;
+}
+footer section {
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	background-color: #fff;
+}
+footer section a {
+	float: left;
+	display: inline;
+	padding: 0 0.3rem;
+	color: #4761ab;
+}
+footer section .right {
+	float: right;
+}
+footer article {
+	width: 100%;
+	text-align: center;
+	padding: 0.2rem 0 1rem 0;
+	background-color: #eee;
+}
+footer article .version {
+	line-height: 0.6rem;
+	height: 0.6rem;
+}
+footer article .version a {
+	padding: 0 0.3rem;
+	color: #4761ab;
+}
+footer article .version .touch {
+	color: #e94f37;
+}
+footer article .copyright {
+	font-size: 0.24rem;
+	color: #999;
+}

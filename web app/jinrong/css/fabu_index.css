@@ -1,0 +1,53 @@
+.main{
+	width:100%;
+	padding:0 0.2rem;
+}
+.main h3{
+	width:100%;
+	height:0.8rem;
+	line-height: 0.8rem;
+	font-size:0.28rem;
+}
+.main .list{
+	width:100%;
+	display: -webkit-box;
+	display: -moz-box;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	height:7rem;
+}
+.main .list li{
+	flex: 1;
+	background-color:#fff;
+	padding:0.1rem 0.05rem;
+	margin-right:0.05rem;
+	font-size:0.18rem;
+}
+.main .list li a{
+	display: block;
+	width:100%;
+	height:0.6rem;
+	line-height: 0.6rem;
+	padding-left:0.05rem;
+}
+.main .new{
+	width:4rem;
+	height:0.7rem;
+	line-height: 0.7rem;
+	border-radius: 5px;
+	background-color:#CBCBCB;
+	display: block;
+	color:#fff;
+	margin:0.3rem 0;
+	text-align: center;
+	font-family: '宋体';
+}
+.main .current{
+	background-color:#FB6156;
+	color:#fff;
+}
+.hide{
+	display: none;
+}

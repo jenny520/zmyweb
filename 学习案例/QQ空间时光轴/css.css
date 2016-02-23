@@ -1,0 +1,76 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background:url(images/1.jpg);
+	background-repeat:no-repeat;
+	background-position:center 0px;
+	background-attachment: fixed;
+	padding-top: 41px;
+	margin:0px;
+}
+.top{
+	width:100%;
+	height:41px;
+	background:#001e3b;
+	position:fixed;
+	top:0px;
+	z-index: 99;
+	box-shadow: 0px 1px 1px #9D9D9D;
+}
+.header{
+	width:960px;
+	height:200px;
+	margin:0px auto;
+	background:#E7E7E7;
+	opacity: 0.7;
+}
+.container{
+	width:960px;
+	margin:0 auto;
+	position: relative;
+}
+.scrubber{
+	width:47px;
+	min-height: 200px;
+	position:absolute;
+	top:29px;
+	left:0px;
+	z-index: 100;
+	/*background:#E2E2E2;*/
+	background:rgba(255,255,255,.2);
+}
+.scrubber a{
+	display: block;
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+	text-align: right;
+	border-right: 2px solid #cBcBcB;
+	border-right-color: rgba(200,200,200,.5);
+	padding-right: 5px;
+	color:#a5a5a5;
+	text-decoration: none;
+	text-shadow: 0px 1px rgba(0,0,0,.3);
+}
+.content{
+	min-height: 1000px;
+	background: url(images/spine.png);
+	background-repeat: repeat-y;
+	background-position: 121px 0px;
+	padding-left:160px;
+	position:relative;
+	padding-top:50px;
+}
+.scrubber a:hover,.scrubber a.current{
+	border-right-color:#7ebad0;
+	color:#7ebad0;
+	font-weight: bold;
+}
+.scrubber a:hover{
+	text-decoration:underline;
+}
+.scrubber a.current:hover{
+	text-decoration: none;
+}

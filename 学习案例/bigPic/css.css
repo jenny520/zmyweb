@@ -1,0 +1,27 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.box{
+	width:1000px;
+	height: 200px;
+	position:relative;
+	margin:100px auto;
+}
+.pic{
+	position:absolute;
+	left:0px;
+	bottom:0px;
+}
+.pic a{
+	text-decoration: none;
+	display: inline-block;
+	position:relative;
+	outline-style: none;
+	margin-right:4px;
+}
+.pic img{
+	display:inline-block;
+	width: 100px;
+	border:none;
+}

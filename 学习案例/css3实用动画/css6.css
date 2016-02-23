@@ -1,0 +1,38 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.open{
+	display:block;
+	margin:50px auto;
+	width:100px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	background-color:#000;
+	color:#fff;
+	text-decoration: none;
+	font-size:12px;
+	border-radius: 5px;
+}
+.open:before{
+	content:attr(title);
+}
+.btn.open:before{
+	content:attr(opentitle);
+}
+.open:after{
+	content:'';
+	position:relative;
+	left:5px;
+	top:10px;
+	border-width:5px;
+	border-style:solid;
+	border-color:#fff transparent transparent transparent;
+	width:0px;
+	height: 0px;
+}
+.btn.open:after{
+	border-color:transparent transparent #fff transparent;
+	top:-8px;
+}

@@ -1,0 +1,99 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background:#808080;
+	cursor:move;
+}
+#box{
+	position:absolute;
+	top:100px;
+	left:200px;
+	width:460px;
+	height: 360px;
+}
+#box .img1{
+	opacity:0.8;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+/*#box */.img2{
+	position:absolute;
+	top:0px;
+	left:0px;
+	clip:rect(0px,200px,200px,0px);
+}
+#main{
+	position:absolute;
+	width:200px;
+	height:200px;
+	border:1px solid #FFFFFF;
+}
+.min_Dic{
+	position:absolute;
+	width:10px;
+	height: 10px;
+	background:#FFFFFF;
+}
+.left_up{
+	cursor: nw-resize;
+	left:-6px;
+	top:-5px;
+}
+.top_center{
+	left:50%;
+	top:-5px;
+	margin-left: -5px;
+	cursor: n-resize;
+}
+.right_up{
+	right:-5px;
+	top:-5px;
+	cursor: ne-resize;
+}
+.left_center{
+	left:-6px;
+	top:50%;
+	margin-top: -5px;
+	cursor:w-resize;
+}
+.left_down{
+	left:-6px;
+	bottom:-5px;
+	cursor: sw-resize;
+}
+.bottom_center{
+	left:50%;
+	margin-left: -5px;
+	bottom:-5px;
+	cursor: s-resize;
+}
+.right_down{
+	right:-5px;
+	bottom:-5px;
+	cursor: se-resize;
+}
+.right_center{
+	right:-5px;
+	top:50%;
+	margin-top: -5px;
+	cursor: e-resize;
+}
+.right_up{
+	right:-5px;
+	top:-5px;
+	cursor: ne-resize;
+}
+#preview{
+	position:absolute;
+	width:460px;
+	height: 360px;
+	left:720px;
+	top:100px;
+}
+#preview img{
+	position:absolute;
+	clip:rect(0px,200px,200px,0px);
+}

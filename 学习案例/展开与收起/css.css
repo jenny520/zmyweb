@@ -1,0 +1,37 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+a{
+	text-decoration: none;
+}
+#pn{
+	width:600px;
+	height:auto;
+	background:#DDDDDD;
+	font-size:9pt;
+	color:#000000;
+	padding:15px 5px;
+	margin:0 auto;
+	/*line-height: 2;*/
+	box-shadow: 0px 0px 5px #6B6B6B;
+}
+#pn p{
+	margin-top: 12px;
+}
+.slide{
+	border-top: 4px solid #676767;
+	width:600px;
+    margin:0 auto;
+}
+.slide .btn-slide{
+	width:130px;
+	height: 40px;
+	background-color:#6B6F5E;
+	text-align: center;
+	line-height: 40px;
+	margin:0 auto;
+	color: #FFFFFF;
+	display: block;
+	cursor: pointer;
+}

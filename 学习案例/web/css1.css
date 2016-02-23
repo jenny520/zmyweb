@@ -1,0 +1,192 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:12px;
+}
+a{
+	text-decoration: none;
+}
+.top{
+	background:url(images/h2.png) repeat;
+	height:79px;
+	width:100%; 
+	overflow:hidden;
+}
+.top_bar{ 
+	width:1200px; 
+	margin:0 auto
+}
+.logo{ 
+	width:328px; 
+	height:79px; 
+	float:left;
+}
+.at1{ 
+	width:209px; 
+	height:50px; 
+	float:right; 
+	line-height:50px; 
+	color:#fff;
+    text-indent:50px; 
+    margin:18px 0 0 0
+}
+.at1 a{
+	color:#ffffff;
+	margin-right:20px;
+	cursor: pointer; 
+	text-decoration: none;
+}
+.content{
+	width:1000px;
+	margin:0px auto;
+}
+.content h3{
+	font-size:16px;
+	font-weight: normal;
+	height: 36px;
+	line-height: 36px;
+	border-bottom:1px solid #efefef;
+	padding-left:10px;
+}
+.thead1{
+	font-size:12px;
+	font-weight: normal;
+	color:#999;
+}
+.thead1 .name{
+	text-align: left;
+}
+.thead1 a{
+	font-size:14px;
+	color:#000;
+}
+.thead1 th{
+	font-weight: normal;
+	width:100px;
+	padding: 6px;
+    border-spacing: 2px;
+    border-bottom:3px solid #B2D1FF;
+}
+.tbody1 td{
+	text-align: center;
+	font-size:14px;
+	font-weight: normal;
+	color:#666;
+	padding-top:10px;
+}
+.tbody1 .method{
+	text-align: left;
+	margin-bottom:15px;
+}
+.tbody1 .method label{
+	margin-right: 3px;
+	font-weight: normal;
+}
+.tbody1 .method span{
+	background-color:#11C644;
+	color:#fff;
+	font-weight: normal;
+}
+.tfoot{
+	background-color:#F2F6FF;
+	padding:15px;
+	text-align: right;
+	margin-bottom:20px;
+}
+.tfoot span{
+	color:#999;
+}
+.checkbar{
+	text-align: right;
+	margin-top:30px;
+}
+.checkbar .integral{
+	display: inline-block;
+	width:101px;
+	height: 44px;
+	line-height: 19px;
+	vertical-align: bottom;
+	margin-right:20px;
+}
+.integral input{
+	margin-right:5px;
+	vertical-align:-2px;
+}
+.checkbar .realPay{
+	display: inline-block;
+	width:138px;
+	height: 52px;
+	margin-bottom:30px;
+}
+.realPay .real{
+	color:#999;
+}
+.realPay .money{
+	font-size: 22px;
+    color:#CC0000;
+    font-weight: bold;
+}
+.realPay .p1{
+	height: 37px;
+}
+.realPay .p2{
+	color:#999;
+	margin-left:10px;
+}
+.realPay .p2 .num{
+	color:#404040;
+	font-size:14px;
+}
+.coupon{
+	height: 60px;
+	background-color:#fcfcfc;
+	border-bottom: 1px dotted #ccc;
+	margin-bottom:20px;
+}
+.coupon label{
+	display: block;
+	/*padding-top:20px;*/
+	font-size:12px;
+	line-height: 60px;
+	color:#000;
+	margin-right:20px;
+}
+.coupon #user{
+	vertical-align: -2px;
+	margin-right:3px;
+}
+.payMethod{
+	padding-top:12px;
+}
+.payMethod label{
+	padding-right: 25px;
+}
+.payMethod input{
+	vertical-align: -2px;
+	margin-right: 5px;
+}
+.payMethod input:disabled{
+	color:#B6B5B5;
+}
+.payMethod .credit{
+	padding-right: 0px;
+}
+.submit{
+	margin:40px 0px;
+}
+.submit .back{
+	color:#b10000;
+	text-decoration: none;
+	margin-right:25px;
+}
+.submit .order{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	background-color:#b10000;
+	padding:0px 50px;
+	text-align: center;
+	color:#fff;
+	font-size:16px;
+	font-family: '微软雅黑';
+}

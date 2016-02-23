@@ -1,0 +1,42 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:14px;
+	line-height: 1.8;
+	font-family: "微软雅黑";
+}
+body{
+	background:url(images/bg.jpg);
+}
+#demo{
+	background:#FFFFFF;
+	width:500px;
+	border-radius: 10px;
+	box-shadow:0px 0px 10px #D5D5D5;
+	margin:30px auto;
+	padding:20px 30px;
+	position:relative;
+}
+#demo h2{
+	margin:20px 0px;
+	color:#005FBD;
+	font-size: 20px;
+}
+#demo p{
+	margin:14px 0px;
+}
+#demo .tooltip{
+	color:#0080FF;
+	cursor: help;
+}
+.tooltip-box{v
+	display: block;
+	background:#FFFFFF;
+	border:1px solid #00FFFF;
+	padding:20px;
+	line-height: 1;
+	color:#AAAAAA;
+	font-size: 12px;
+	border-radius: 5px;
+	overflow:auto;
+}

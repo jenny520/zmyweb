@@ -1,0 +1,56 @@
+*{
+	padding:0;
+	margin:0;
+}
+#light_mask{
+	position: fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:#000;
+	opacity:0.5;
+	filter: alpha(opacity=50);
+	z-index: 10000;
+}
+#light_popup{
+	width:300px;
+	height: 300px;
+	position: fixed;
+	background-color:#9c0;
+	left:50%;
+	top:50%;
+	margin-left:-150px;
+	margin-top:-150px;
+	z-index: 10001;
+}
+.light_view{
+	position: relative;
+	border:5px solid #fff;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.light_btn{
+	width:30%;
+	position: absolute;
+	top:0;
+	z-index: 1;
+	height:100%;
+	cursor: pointer;
+}
+.prevBtn{
+	left:0;
+}
+.nextBtn{
+	right:0;
+	text-align: right;
+}
+.light_img{
+	display: block;
+}
+.light_caption{
+	position: relative;
+	background-color:#6c0;
+	top:-60px;
+	margin:0 5px;
+}

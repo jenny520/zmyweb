@@ -1,0 +1,52 @@
+.main{
+	width:100%;
+	padding:0.2rem;
+}
+.main .m-title{
+	width:100%;
+	padding:0.2rem;
+	background-color:#fff;
+}
+.main .m-title textarea{
+	width:100%;
+	height:1rem;
+	border:1px solid #ddd;
+	color:#878787;
+	padding:0.2rem;
+	border-radius: 3px;
+}
+.main .search{
+	width:100%;
+	height:0.7rem;
+	line-height: 0.7rem;
+	background-color:#ea4f39;
+	text-align: center;
+	color:#fff;
+	border-radius: 0.35rem;
+	display: block;
+	margin:0.2rem 0;
+}
+.main .m-title p{
+	width:100%;
+	height:0.6rem;
+	line-height: 0.6rem;
+	font-size:0.3rem;
+}
+.main .m-title p a{
+	color:#3985BE;
+}
+.main ul{
+	width:100%;
+	background-color:#fff;
+}
+.main ul li{
+	width:100%;
+	padding:0.1rem 0.2rem;
+	border-top:1px solid #ddd;
+	line-height: 0.6rem;
+	font-size:0.3rem;
+	letter-spacing: 0.02rem;
+}
+.main ul li span{
+	color:#ea4f39;
+}

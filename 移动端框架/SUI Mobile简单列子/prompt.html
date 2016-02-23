@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://m.sui.taobao.org/dist/css/sm.min.css">
+    <link rel="stylesheet" href="http://m.sui.taobao.org/dist/css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<title>对话框</title>
+</head>
+<body>
+    <header class="bar bar-nav">
+        <h1 class="title">prompt</h1>
+    </header>
+    <div class="content">
+        <div class="content-block">
+            <p><a href="#" class="prompt-ok">Prompt with text and Ok callback</a></p>
+            <p><a href="#" class="prompt-ok-cancel">Prompt with text, Ok and Cancel callbacks</a></p>
+            <p><a href="#" class="prompt-title-ok">Prompt with text, title and Ok callback</a></p>
+            <p><a href="#" class="prompt-title-ok-cancel">Prompt with text, title, Ok and Cancel callback</a></p>
+                
+        </div>
+    </div>
+	<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='http://m.sui.taobao.org/dist/js/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='http://m.sui.taobao.org/dist/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript">
+        $(function(){
+            $(document).on('click','.prompt-ok', function () {
+                $.prompt('What is your name?', function (value) {
+                    $.alert('Your name is "' + value + '". You clicked Ok button');
+                });
+            });
+
+            $(document).on('click','.prompt-ok-cancel', function () {
+                $.prompt('What is your name?',
+                    function (value) {
+                      $.alert('Your name is "' + value + '". You clicked Ok button');
+                    },
+                    function (value) {
+                      $.alert('Your name is "' + value + '". You clicked Cancel button');
+                    }
+                );
+            });
+            $(document).on('click', '.prompt-title-ok',function () {
+                $.prompt('What is your name?', 'Custom Title', function (value) {
+                    $.alert('Your name is "' + value + '". You clicked Ok button');
+               });
+            });
+            $(document).on('click', '.prompt-title-ok-cancel',function () {
+                $.prompt('What is your name?', 'Custom Title',
+                    function (value) {
+                      $.alert('Your name is "' + value + '". You clicked Ok button');
+                    },
+                    function (value) {
+                      $.alert('Your name is "' + value + '". You clicked Cancel button');
+                    }
+                );
+            });
+        })
+    </script>
+</body>
+</html>

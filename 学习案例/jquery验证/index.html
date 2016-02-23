@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript" src="../jquery-validate/jquery.validate.js"></script>
+	<script type="text/javascript">
+           $(document).ready(function(){
+        	$('#demoForm').validate({
+        		rules:{
+        			username:{
+        				required:true,
+                        minlength:2,
+                        maxlength:12,
+                        remote:{
+                        	url:'remote.json',
+                        	type:'post',
+                        	data:{
+                        		loginTimer:function(){
+                        			return +new Date();
+                        		}
+                        	}
+                        }
+        			},
+        			password:{
+        				required:true,
+        				minlength:2,
+        				maxlength:12
+        			}
+        		},
+        		messages:{
+        			username:{
+        				required:"用户名不能为空",
+                        minlength:"至少为2位",
+                        maxlength:"最大不超过10位"
+        			},
+        			password:{
+        				required:"密码不能为空",
+        				minlength:"至少为2位",
+        				maxlength:"最大不超过12位"
+        			}
+        		}
+        	});
+        	$('#sub').click(function(){
+        		alert($('#demoForm').valid()?'yes':'no');
+        	});
+        })
+	</script>
+</head>
+<body>
+	<form id="demoForm">
+        <div>
+             <label for="username">用户名</label>
+             <input id="username" class="valid" type="text" name="username">
+        </div>
+        <div style="width:270px">
+             <label for="password">密码</label>
+             <input id="password" type="password" name="password" class="valid">
+        </div>
+        <div>
+             <label for="password">确认密码</label>
+             <input id="password" type="password" name="password" class="valid">
+        </div>
+        <div>
+        	<input class="sub" type="button" value="登录" id="sub"/>
+        </div>
+        <div>
+            <input class="sub" type="submit" value="登录">
+        </div>
+    </form>
+</body>
+</html>

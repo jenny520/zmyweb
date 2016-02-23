@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.boxy-menu {
+	height: 150px;
+	margin: 30px auto;
+	width: 420px;
+}
+.boxy-menu.hidden li {
+	border: none;
+	display: none !important;
+}
+.boxy-menu li {
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	height: 150px;
+	display: inline;
+	float: left;
+	font-family: Arial;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	margin-left:10px;
+}
+.boxy-menu li.menuitem {
+	background: #639A29;
+}
+.top {
+	color: #fff;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 150px;
+	text-align: center;
+	display: none;
+}
+.bottom {
+	display: none;
+	color:#fff;
+	padding:20px;
+}
+.piece {
+	background: #639A29;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

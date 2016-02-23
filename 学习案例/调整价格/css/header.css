@@ -1,0 +1,8 @@
+/* CSS Document */
+.img_switch {margin:0 auto;WIDTH:1000px;HEIGHT: 261px; overflow:hidden}
+.img_switch_content {HEIGHT: 261px;position:relative;}
+.img_switch_text {width: 262px;position: absolute;z-index:10; bottom:5px;left:10px;HEIGHT: 15px; z-index:10000 !important}
+.number_nav {DISPLAY: inline;FLOAT: left;}
+.number_nav UL {font:12px Arial, Helvetica, sans-serif;padding: 0px;MARGIN: 0px;LIST-STYLE-TYPE: none;color:#fff;}
+.number_nav UL LI {float: left;font-weight: bold;background: #000;float: left;margin-right: 8px;width: 23px;cursor: pointer;line-height: 17px;height: 17px;text-align: center;filter:alpha(opacity=75);-moz-opacity:0.75;opacity: 0.75;}
+#pic {OVERFLOW: hidden}

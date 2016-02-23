@@ -1,0 +1,34 @@
+/**{
+	padding:0px;
+	margin:0px;
+}
+#block{
+	width:400px;
+	height: 400px;
+	background-color: #FF80C0;
+	margin:20px auto;
+	transition:background-color 2s;
+	-webkit-transition:background-color 2s;
+	-moz-transition:background-color 2s;
+	-ms-transition:background-color 2s;
+	-o-transition:background-color 2s;
+}
+#block:hover{
+	background-color: #0080C0;
+}*/
+.experiment{
+	perspective: 800px;
+	perspective-origin: 50% 50%;
+	transform-style: preserve-3d;
+	-webkit-perspective: 800;
+	-webkit-perspective-origin: 50% 50%;
+	-webkit-transform-style: -webkit-preserve-3d;
+}
+.ment{
+	width:200px;
+	height: 200px;
+	background:#00FFFF;
+	margin:20px auto;
+	transform: rotateZ(45deg);
+	-webkit-transform:rotateZ(45deg);
+}

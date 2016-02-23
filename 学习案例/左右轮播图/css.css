@@ -1,0 +1,130 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.mod18{   
+	width: 400px; 
+	height: 300px; 
+	position: relative; 
+	background: #f7f7f7;
+}
+.mod18 .btn{
+	position:absolute;
+	width:40px;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	top:90px;
+	cursor:pointer;
+	z-index:99;
+	font-size:40px;
+	font-weight:bold;
+	color:#2F2D2D;
+	background:#FFFFFF;
+	display:none;
+}
+.mod18 .prev{
+	left:0;
+}
+.mod18 .next{
+	right:0px;
+}
+.mod18 .cf li{
+	position:relative;
+	color:#fff;
+}
+.mod18 li{
+	float: left;
+}
+.mod18 .cf a{
+	display:block;
+	width:400px;
+	height:240px;
+	position:absolute;
+	color:#fff;
+}
+.mod18 .cf li span{
+	display:block;
+	width:360px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	padding:10px 20px;
+	line-height:22px;
+	text-align:left;
+	background:#1F1E1E;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+}
+.mod18 .picBox{
+	width:400px;
+	height:240px;
+	position:relative;
+	overflow:hidden;
+}
+.mod18 .picBox ul{
+	height:240px;
+	width:4000px;
+	position:absolute;
+}
+.mod18 .picBox li{
+	width:400px;
+	height:240px;
+	border:none;
+}
+.mod18 .picBox li img{
+	border-style: none;
+}
+.mod18 .listBox{
+	width: 400px;
+	height: 60px;
+	position: relative;  
+	overflow: hidden;
+	background:#000;
+}
+.mod18 .listBox img{
+	position:relative;
+}
+.mod18 .listBox .news-smallimg-mask{
+	width:62px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:#000;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+}
+.mod18 .listBox ul{
+	height:40px;
+	width:720px;
+	position:absolute;
+	margin:10px 0px 10px 12px;
+}
+.mod18 .listBox li{
+	width:62px;
+	height:40px;
+	cursor:pointer;
+	position:relative;
+	margin-right:17px;
+}
+.mod18 .listBox li i{
+	display:none;
+}
+.mod18 .listBox li img{
+	width:62px;
+	height:40px;
+}
+.mod18 .listBox .on{
+	width:62px;
+	height: 40px;
+	border:1px solid #10F4F6;
+	background:transparent;
+}
+.mod18 .listBox a{
+	display: inline-block;
+	width:62px;
+	height: 40px;
+}

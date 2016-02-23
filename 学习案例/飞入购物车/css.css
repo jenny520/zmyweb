@@ -1,0 +1,44 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background-color:#222222;
+}
+.Box{
+	width:430px;
+	height:385px;
+	margin:50px auto;
+	background-color:#FFFFFF;
+}
+.Box li{
+	float: left;
+	width:200px;
+	height:365px;
+	margin-left:10px;
+	list-style: none;
+	margin-top:20px;
+}
+.Box li a{
+	display: block;
+	text-decoration: none;
+	width:200px;
+	height: 40px;
+	background-image:url(images/1.jpg);
+	margin-top:10px;
+}
+.fixBox{
+	width:200px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #F71212;
+	position:fixed;
+	right:0px;
+	bottom:0px;
+}
+.fixBox a{
+	text-decoration: none;
+	color:#FFFFFF;
+	margin-left:25px;
+	font-size:12px;
+}

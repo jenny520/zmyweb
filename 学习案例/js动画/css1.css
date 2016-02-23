@@ -1,0 +1,12 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:9pt;
+}
+#div2{
+	width:200px;
+	height: 200px;
+	background:#FF0000;
+	filter: alpha(opacity:30);
+	opacity: 0.3;
+}

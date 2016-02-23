@@ -1,0 +1,23 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.tagShow{
+	width:1000px;
+	margin:20px auto;
+}
+.tagShow .tabTagBox{
+	width:1000px;
+	height: 40px;
+	overflow: visible;
+	/*overflow: auto;*/
+}
+.tagShow .tabTagBox h1{
+	width:60px;
+	height: 40px;
+	line-height:40px;
+	font-size:18px;
+	font-weight: normal;
+	color:#000000;
+	float:left;
+}

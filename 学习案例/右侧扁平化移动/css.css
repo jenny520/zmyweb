@@ -1,0 +1,69 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+a{
+	text-decoration: none;
+}
+.sidebar{
+	width:40px;
+	height:160px;
+	position: fixed;
+	right: 0px;
+	top: 200px;
+	z-index:200;
+}
+*html .sidebar{
+	_position:absolute;
+    _bottom:auto;
+   _top:expression(eval(document.documentElement.scrollTop));
+   margin-top:200px;
+}
+*html{
+background-image:url(about:blank);
+background-attachment:fixed;
+}
+.sidebar li{
+	width:40px;
+	height:40px;
+	list-style: none;
+	border-bottom: 1px solid #F8F8F8;
+	position:relative;
+}
+.sidebar .sidebarBox{
+	line-height: 40px;
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:40px;
+	height: 40px;
+	overflow: hidden;
+	/*transition: width 2s;
+    -moz-transition: width 2s;	/* Firefox 4 */
+    /*-webkit-transition: width 2s;
+    -o-transition: width 2s;*/
+	background:#0FF6E6;
+}
+/*.sidebar .sidebarBox:hover{
+	width:100px;
+	background:#FB1F1F;
+}*/
+.sidebar .sidebarBox img{
+	float: left;
+	margin:5px;
+	margin-right: 15px;
+	border:none;
+}
+.sidebar .stopBox{
+	width:40px;
+	height: 40px;
+	overflow: hidden;
+	background:#0FF6E6;
+	line-height: 40px;
+	display: block;
+}
+.sidebar .stopBox img{
+	float: left;
+	margin:5px;
+	border:none;
+}

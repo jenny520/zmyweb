@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RangeAPI</title>
+</head>
+<body>
+	<div id="div" style="width:200px;height: 100px;background-color:#fa0">
+		当前元素内容
+	</div>
+	<button onclick="delectContent(true)">删除当前内容</button>
+	<button onclick="delectContent(false)">删除当前元素</button>
+	<script type="text/javascript">
+	    function delectContent(flag){
+	    	var divNode = document.getElementById('div');
+	    	rangeNode = document.createRange();
+            if(flag){
+            	rangeNode.selectNodeContents(divNode);
+            	rangeNode.deleteContents();
+            }else{
+            	rangeNode.selectNode(divNode);
+            	rangeNode.deleteContents();
+            }
+	    }
+	</script>
+</body>
+</html>

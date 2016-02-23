@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript">
+       // var str = 'abst 3456 89';
+       // var re = /\d/g;
+       // alert(str.replace(re,'0'));
+       // window.onload = function(){
+       // 	var txt1 =document.getElementById('txt1');
+       // 	var txt2 = document.getElementById('txt2');
+       // 	var btn = document.getElementById('btn');
+       // 	btn.onclick = function(){
+       // 		var re = /<[^<>]+>/g;
+       // 		txt2.value = txt1.value.replace(re,'');
+       // 	}
+       // }
+       // var str = 'abcpc erpc';
+       // var re = /[abc]pc/g;
+       // alert(str.match(re));
+       window.onload = function(){
+        var txt = document.getElementById('txt');
+        var btn = document.getElementById('btn');
+        btn.onclick = function(){
+            var re = /^\w+@[a-z0-9]+\.[a-z]+$/i;
+            if(re.test(txt.value)){
+              alert('合法的邮箱');
+            }else{
+              alert('不合法');
+            }
+        }
+       }
+	</script>
+</head>
+<body>
+  <!--  <textarea id="txt1" rows="10" cols="10"></textarea>
+   <button id="btn">过滤</button>
+   <textarea id="txt2" rows="10" cols="10"></textarea> -->
+   <input type="text" id='txt'/>
+   <input type="button" id='btn' value='按钮'/>
+   <video src="video.mp4" width="320" height="240" controls="controls">
+     Your browser does not support the video tag.
+  </video>
+</body>
+</html>

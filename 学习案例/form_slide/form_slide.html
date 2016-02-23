@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form_slide</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+       $(document).ready(function(){
+        $('#menuList').on('click','.nav-btn',function(event){
+          if($(this).hasClass('btn-active')){
+            $('#expandZone #closeBtn').click();
+          }
+          var curIndex = $(this).index(),mlValue = '-' + curIndex * 100 + '%';
+          if($('#expandZone').hasClass('active')){
+            $('#expandZone .expdiv').animate({marginLeft:mlValue});
+          }
+          else{
+          $('#expandZone .expdiv').css({'margin-left':mlValue});
+          $('#expandZone').animate({height:'130px'}).addClass('active');
+          }
+          $(this).addClass('btn-active').siblings().removeClass('btn-active');
+          return false;
+        });
+        $('#expandZone #closeBtn').on('click',function(){
+          $('#expandZone').animate({height:'0px'},function(){
+          $('#expandZone').removeClass('active');
+          $('#menuList .btn-active').removeClass('btn-active');
+          });
+          return false;
+        });
+       });
+	</script>
+</head>
+<body>
+	<div id="menuList" class="navlist">
+       <a href="" class="nav-btn" data-device="#homeItem">首页<span>&nbsp;&nbsp;&nbsp;</span></a>
+       <a href="" class="nav-btn" data-device="#courseItem">课程大厅<span>&nbsp;&nbsp;&nbsp;</span></a>
+       <a href="" class="nav-btn" data-device="#learnItem">学习中心<span>&nbsp;&nbsp;&nbsp;</span></a>
+       <a href="" class="nav-btn" data-device="#personalItem">个人中心<span>&nbsp;&nbsp;&nbsp;</span></a>
+       <a href="" class="nav-btn" data-device="#aboutItem">关于我们<span>&nbsp;&nbsp;&nbsp;</span></a>
+	</div>
+	<div id="expandZone" class="expand">
+		<div class="expdiv">
+			<div class="expdiv_list">
+			   <a href="#" target="_blank" class="btn zj" id="download-link"><span class="icon"></span>
+               <span class="text">慕课网主页</span></a>
+			</div>
+			<div class="expdiv_list">
+			   <a href="#" target="_blank" class="btn zj" id="A4"><span class="icon"></span>
+               <span class="text">前端课程</span></a>
+               <a href="#" target="_blank" class="btn zj" id="A5"><span class="icon"></span>
+               <span class="text">手机开发</span></a>
+               <a href="#" target="_blank" class="btn zj" id="A6"><span class="icon"></span>
+               <span class="text">后台编程</span></a>
+			</div>
+			<div class="expdiv_list">
+			   <a href="#" target="_blank" class="btn zj" id="A1"><span class="icon"></span>
+               <span class="text">Javascript</span></a>
+               <a href="#" target="_blank" class="btn zj" id="A2"><span class="icon"></span>
+               <span class="text">CSS</span></a>
+               <a href="#" target="_blank" class="btn zj" id="A3"><span class="icon"></span>
+               <span class="text">JQuery</span></a>
+			</div>
+			<div class="expdiv_list">
+				个人信息：
+			</div>
+			<div class="expdiv_list">
+				公司地址：北京市西城区德外大街10号
+			</div>
+		</div>
+		<div id="closeBtn" class="close_btn"></div>
+	</div>
+</body>
+</html>

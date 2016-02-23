@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/sm.min.css">
+    <link rel="stylesheet" type="text/css" href="css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<title>操作表</title>
+</head>
+<body>
+    <div class="page-group">
+        <div class="page page-current" id="page-1455676187081">
+            <header class="bar bar-nav">
+                <h1 class="title">picker</h1>
+            </header>
+            <div class="content native-scroll" style="">
+                <div class="content-block-title">单个选择</div>
+                <div class="content-block">
+                    <div class="list-block">
+                        <ul>
+                        <!-- Text inputs -->
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">手机</div>
+                                        <div class="item-input">
+                                            <input type="text" placeholder="选择手机" id="picker" readonly="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-block-title">多列选择</div>
+                <div class="content-block">
+                    <div class="list-block">
+                        <ul>
+                        <!-- Text inputs -->
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">称呼</div>
+                                        <div class="item-input">
+                                            <input type="text" placeholder="选择称呼" id="picker-name" readonly="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <script type="text/javascript" src="http://g.alicdn.com/sj/lib/zepto/zepto.min.js" charset='utf-8'></script>
+    <script type="text/javascript" src='js/sm.js'></script>
+    <script type="text/javascript" src='js/sm-extend.js'></script>
+    <script type="text/javascript">
+        $(function() {
+            $(document).on("pageInit", function() {
+            $("#picker").picker({
+                toolbarTemplate: '<header class="bar bar-nav">\
+                    <button class="button button-link pull-right close-picker">确定</button>\
+                    <h1 class="title">请选择你的手机</h1>\
+                    </header>',
+                cols: [
+                    {
+                        textAlign: 'center',
+                        values: ['iPhone 4', 'iPhone 4S', 'iPhone 5', 'iPhone 5S', 'iPhone 6', 'iPhone 6 Plus', 'iPad 2', 'iPad Retina', 'iPad Air', 'iPad mini', 'iPad mini 2', 'iPad mini 3']
+                    }
+                ]
+            });
+            $("#picker-name").picker({
+              toolbarTemplate: '<header class="bar bar-nav">\
+              <button class="button button-link pull-right close-picker">确定</button>\
+              <h1 class="title">请选择称呼</h1>\
+              </header>',
+              cols: [
+                {
+                  textAlign: 'center',
+                  values: ['赵', '钱', '孙', '李', '周', '吴', '郑', '王']
+                },
+                {
+                  textAlign: 'center',
+                  values: ['杰伦', '磊', '明', '小鹏', '燕姿', '菲菲', 'Baby']
+                },
+                {
+                  textAlign: 'center',
+                  values: ['先生', '小姐']
+                }
+              ]
+            });
+          });
+          $.init();
+        });
+
+
+    </script>
+</body>
+</html>

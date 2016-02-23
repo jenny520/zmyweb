@@ -1,0 +1,51 @@
+$(window).load(function(){
+	$(".div_a").addClass("current");
+    var a,b,r,num=0;
+ /*   a=$(".b1").offset().left;
+	b=$(".b1").offset().top;*/
+	r=20;
+	num=360;
+	for(i=0;i<=10*num;i++){
+	a=Math.cos(i*Math.PI*(360/num)/180)*r+"px";	
+	b=Math.sin(i*Math.PI*(360/num)/180)*r+"px";
+	$(".b1").animate({right:a,top:b},.5);
+
+	}
+
+	/*var x=a+sin_cos(ang,r,'sin');
+	var y=b-sin_cos(ang,r,'cos');
+	$(".b1").animate({left:x,top:y},10000);
+	function sin_cos(ang,r,fx){
+		return Math[fx](ang*Math.PI/180)*r;
+	}*/
+	$(".div_b").waypoint(function(){
+		$(".div_b").addClass("current");
+	},{
+		offset : "30%"
+	}); 
+	$(".div_c").waypoint(function(){
+		$(".div_c").addClass("current");
+	},{
+		offset : "30%"
+	}); 
+	$(".div_d").waypoint(function(){
+		$(".div_d").addClass("current");
+	},{
+		offset : "30%"
+	}); 
+	$(".div_e").waypoint(function(){
+		$(".div_e").addClass("current");
+	},{
+		offset : "30%"
+	});
+	$(".div_f").waypoint(function(){
+		$(".div_f").addClass("current");
+	},{
+		offset : "30%"
+	});
+	$(".div_g").waypoint(function(){
+		$(".div_g").addClass("current");
+	},{
+		offset : "30%"
+	});
+});

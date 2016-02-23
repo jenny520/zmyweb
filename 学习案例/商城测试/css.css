@@ -1,0 +1,273 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:12px;
+	list-style: none;
+	text-decoration: none;
+}
+.topDiv{
+	width:1210px;
+	height:200px;
+}
+.nav{
+	width:100%;
+	height: 44px;
+	border-bottom:2px solid #c81623;
+	/*overflow: hidden;*/
+}
+.nav .cWidth{
+	width:1210px;
+    height:44px;
+    margin:0px auto;
+   /*overflow: hidden;*/
+}
+.nav .catalogue{
+	float:left;
+	width:214px;
+	height:44px;
+	position:relative;
+	overflow:visible;
+	z-index: 10;
+}
+.catalogue .cdt a{
+	height: 44px;
+    line-height: 44px;
+    background-color:#b1191a;
+    width:194px;
+    overflow: hidden;
+	color:#ffffff;
+	padding:0px 10px;
+	font-size:16px;
+	display: block;
+}
+.catalogue .cdd{
+	height: 466px;
+	margin-top:2px;
+	background-color: #c81623;
+}
+.cdd .citem{
+	width:213px;
+	border-left:1px solid #c81623;
+	position:relative;
+	height: 31px;
+	color:#ffffff;
+}
+.citem h3{
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family: "microsoft yahei";
+	font-weight: 400;
+	height: 31px;
+	line-height: 31px;
+	padding:0px 10px;
+}
+.citem h3 a{
+	color:#ffffff;
+	font-size: 14px;
+}
+.citem i{
+	position: absolute;
+	right:14px;
+	top:9px;
+	font-size:14px;
+	height: 14px;
+	width: 4px;
+	line-height: 14px;
+	color:#f7f7f7;
+	font-weight: 400;
+}
+.cdd .cdd-content{
+	width:996px;
+	border:1px solid #b61d1d;
+	background-color:#f7f7f7;
+	position:absolute;
+	left:213px;
+	top:45px;
+	/*overflow: hidden;*/
+	display: none;
+}
+.cdd-content .dd-spacer{
+	position:absolute;
+	/*top:0px;*/
+	left:-3px;
+	width:5px;
+	height:31px;
+	background-color:#f7f7f7;
+	overflow: hidden;
+}
+.cdd-content .ds1{
+   top:0px;
+}
+.cdd-content .ds2{
+   top:31px;
+}
+.cdd-content .ds3{
+   top:62px;
+}
+.cdd-content .ds4{
+   top:93px;
+}
+.cdd-content .ds5{
+   top:124px;
+}
+.cdd-content .ds6{
+   top:155px;
+}
+.cdd-content .ds7{
+   top:186px;
+}
+.cdd-content .ds8{
+   top:217px;
+}
+.cdd-content .ds9{
+   top:248px;
+}
+.cdd-content .ds10{
+   top:279px;
+}
+.cdd-content .ds11{
+   top:310px;
+}
+.cdd-content .ds12{
+   top:341px;
+}
+.cdd-content .ds13{
+   top:372px;
+}
+.cdd-content .ds14{
+   top:403px;
+}
+.cdd-content .ds15{
+   top:434px;
+}
+.cdd-content .item-brands{
+	width:168px;
+	float:right;
+	margin-right:20px;
+	display: inline;
+	padding-top:20px;
+	margin-bottom:15px;
+	overflow: hidden;
+}
+.item-brands a{
+    float: left;
+    padding:1px 0px 0px 1px;
+    height: 35px;
+}
+.cdd-content .item-channel{
+	width:770px;
+	display:inline;
+	float:left;
+	padding:20px 0px 10px 20px;
+	height: 24px;
+	overflow: hidden;
+}
+.item-channel a{
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	padding:0px 0px 0px 8px;
+	background-color:#7c7171;
+	color:#ffffff;
+	margin-right:10px;
+}
+.item-channel a:hover{
+	background-color:#c81623;
+}
+.item-channel a:hover i{
+	background-color:#b1191a;
+}
+.item-channel a i{
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	margin-left:8px;
+	text-align: center;
+	background-color:#5c5251;
+	width:23px;
+	font-weight: 700;
+}
+.cdd-content .subitem{
+	width:770px;
+	display:inline;
+	float:left;
+	padding:6px 0px 1006px 20px;
+	margin-bottom:-1000px;
+	min-height: 399px;
+}
+.subitem dl{
+	width:100%;
+	line-height: 2em;
+	overflow: hidden;
+}
+.subitem dt{
+	float:left;
+	text-align: right;
+	width:54px;
+	font-size:12px;
+	font-weight: 700;
+	padding:8px 30px 0px 0px;
+	position:relative;
+}
+.subitem dt i{
+	position:absolute;
+	right:13px;
+	top:10px;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	font-weight: 700;
+}
+.subitem dd{
+	padding:8px 0px;
+	border-top:1px solid #e0e0e0;
+	float:left;
+	width:620px;
+}
+.subitem .sub1 dd{
+	border-top: none;
+}
+.subitem dd a{
+	display: inline-block;
+	border-left:1px solid #e0e0e0;
+	padding:0px 8px;
+	margin:4px 0px;
+	height: 16px;
+	line-height: 16px;
+}
+.subitem dd a:hover{
+	color:#c81623;
+}
+.cdd-content .item-promotions{
+	width:168px;
+	display: inline;
+	float:right;
+	margin-right: 20px;
+	/*overflow: hidden;*/
+}
+.item-promotions a{
+	display: block;
+	margin-bottom:1px;
+	line-height: 134px;
+	height: 134px;
+}
+.nav .navtimer{
+	float:left;
+	height: 44px;
+	line-height: 44px;
+}
+.navtimer li{
+	float: left;
+    text-align: center;
+}
+.navtimer li a{
+	padding:0 20px;
+	text-align: center;
+	font-size:15px;
+	font-weight: 400;
+	color:#333;
+}
+.navtimer a:hover{
+	color:#c81623;
+}

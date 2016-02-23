@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+{
+		margin:0px;
+		padding:0px;
+		font-size:12px;
+	}
+	table
+	{
+		 width:100%;
+		border:1px #CCCCCC solid;
+	}
+	th
+	{
+		text-align:right;
+		width:200px;
+		background-color:#99FF99;
+		border:1px #CCCCCC solid;
+		height:40px;
+	}
+	td
+	{
+		text-align:left;
+		border:1px #CCCCCC solid;
+		height:40px;
+	}
+	.myinput
+	{
+		width:600px;
+		height:30px;
+		 border:1px #CCCCCC solid;
+	}
+	.btn
+	{
+		font-size:12px;width:60px;height:30px;background:url(../images/images/bt_bg.gif);
+	}
+	.myhead
+	{
+		background:url(../images/images/main_10.gif) repeat-x; height:38px; line-height:38px;
+		font-size:12px;
+	}

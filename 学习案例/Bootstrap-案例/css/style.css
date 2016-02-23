@@ -1,0 +1,12 @@
+.pageone{
+	height:750px;
+}
+.pageone-bg{
+	position: absolute;
+	height:800px;
+	width:100%;
+	background-size:cover;
+	background-image:url(../images/chrome-big.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+}

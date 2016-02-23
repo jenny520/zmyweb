@@ -1,0 +1,46 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:12px;
+}
+.box{
+	width:150px;
+	height:66px;
+	/*overflow: hidden;*/
+	margin:100px auto;
+}
+.box ul{
+	width:153px;
+	height:66px;
+	border:1px solid #efefef;
+}
+.box ul li{
+	width:50px;
+	height:65px;
+	float:left;
+	list-style: none;
+	border-right:1px solid #efefef;
+	border-bottom:1px solid #efefef;
+	overflow: hidden;
+}
+.box ul li a{
+	display: block;
+	width:50px;
+	height:20px;
+	padding-top:45px;
+	text-align: center;
+	position:relative;
+	text-decoration: none;
+}
+.box ul li a img{
+	position:absolute;
+	top:10px;
+	left:10px;
+}
+.box ul li a span{
+	color:#000000;
+}
+.box .currentLi{
+	border-top:2px solid red;
+	border-bottom:none;
+}

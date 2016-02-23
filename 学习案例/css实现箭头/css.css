@@ -1,0 +1,22 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:12px;
+}
+.wrap{
+	width:200px;
+	height:50px;
+	top:50px;
+	position:relative;
+	background:#24E528;
+}
+.arrow{
+	position: absolute;
+	width:0px;
+	height: 0px;
+	left:40%;
+	top:-30px;
+	border-width: 16px;
+	border-color:transparent transparent #24E528;
+	border-style: dashed dashed solid;
+}

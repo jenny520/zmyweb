@@ -1,0 +1,62 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+@keyframes redToBlue{
+	from{
+		background-color:red;
+	}
+	20%{
+		background-color:green;
+	}
+	40%{
+		background-color:lime;
+	}
+	60%{
+		background-color:yellow;
+	}
+	to{
+		background-color:blue;
+	}
+}
+@-moz-keyframes redToBlue{
+	from{
+		background-color:red;
+	}
+	20%{
+		background-color:green;
+	}
+	40%{
+		background-color:lime;
+	}
+	60%{
+		background-color:yellow;
+	}
+	to{
+		background-color:blue;
+	}
+}
+@-webkit-keyframes redToBlue{
+	from{
+		background-color:red;
+	}
+	20%{
+		background-color:green;
+	}
+	40%{
+		background-color:lime;
+	}
+	60%{
+		background-color:yellow;
+	}
+	to{
+		background-color:blue;
+	}
+}
+div{
+	width:200px;
+	height:200px;
+	background-color:red;
+	margin:20px auto;
+	animation:redToBlue 20s ease 1s backwards;
+}

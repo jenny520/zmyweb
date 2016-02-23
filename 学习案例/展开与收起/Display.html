@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zhankai</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<!-- <script type="text/javascript" src="js.js" defer="user"></script> -->
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+       $(document).ready(function(){
+            $('#strHref').toggle(function(){
+            	$(this).text('收起');
+            	$('#hpn').show(1000);
+            },
+            function(){
+            	$(this).text('更多选项+');
+            	$('#hpn').hide(1000);
+            }
+            );
+       })
+	</script>
+</head>
+<body>
+	<div id="pn">
+		<p>手机 - 商品筛选</p>
+		<p>网络；移动4G,联通3G 电信3G</p>
+		<div id="hpn" style="display: none">
+			<p>价格：5000以上 4000-4999 3000-3999</p>
+			<p>特点：JDPhone计划“0”元购机 防水 长待机 1008P全高清屏</p>
+		</div>
+	</div>
+	<div class="slide" id="slide"><p><a href="javascript:void(0)" id="strHref" class="btn-slide">更多选项+</a></p></div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+div{
+	width:400px;
+	height: 400px;
+	margin:20px auto;
+	background-color:#32E9F7;
+}
+a{
+	display:block;
+	background-image:url(images/i2.jpg);
+	background-repeat: no-repeat;
+	width:200px;
+	height:150px;
+}

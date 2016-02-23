@@ -1,0 +1,148 @@
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+}
+body{
+	background-color:#47c9af;
+	color:#74777b;
+	font-weight: 300;
+	font-size:1.5em;
+	font-family: "Raleway","Arail";
+	font-smoothing:antialiased;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	outline: none;
+}
+.nav{
+	width:800px;
+	height: 300px;
+	margin:200px auto;
+}
+.nav li{
+	display: inline-block;
+	margin:0px 1em;
+}
+.nav .tooltip{
+	display: inline-block;
+	font-weight: 700;
+	color:rgba(0,0,0,.3);
+	padding:0.15em 0.25em 0;
+	position:relative;
+	z-index: 99;
+	transition: color 1s;
+	-webkit-transition: color 1s;
+	-moz-transition: color 1s;
+	-ms-transition: color 1s;
+}
+.tooltip-content{
+	position: absolute;
+	left:50%;
+	width:80px;
+	height: 80px;
+	background-color:#fff;
+	border-radius: 50%;
+	z-index:999;
+	margin-left:-40px;
+	bottom:100%;
+	margin-bottom:20px;
+	text-align: center;
+	opacity: 0;
+	transition: all 1s;
+    -moz-transition: all 1s;	/* Firefox 4 */
+    -webkit-transition:all 1s;	/* Safari 和 Chrome */
+    -o-transition: all 1s;
+}
+.tooltip-content i{
+	margin-top:25px;
+	color:#47c9af;
+	opacity: 0;
+	transition: all 1s;
+    -moz-transition: all 1s;	/* Firefox 4 */
+    -webkit-transition:all 1s;	/* Safari 和 Chrome */
+    -o-transition: all 1s;
+}
+.tooltip-effect-2 .tooltip-content i{
+    transform:translate3d(0,10px,0);
+	-moz-transform:translate3d(0,10px,0);
+	-webkit-transform:translate3d(0,10px,0);
+	-ms-transform:translate3d(0,10px,0);
+}
+.tooltip-content:after{
+	display: block;
+	content:"";
+	width:20px;
+	height:30px;
+	background:url(../img/tooltip1.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top:100%;
+	left:50%;
+	margin:-12px 0px 0px -10px;
+}
+.tooltip:hover{
+	color:#fff;
+}
+.tooltip:hover .tooltip-content,
+.tooltip:hover .tooltip-content i{
+	opacity: 1;
+	 transform:translate3d(0,0px,0) rotate3d(1,1,1,0deg) scale3d(1,1,1);
+    -webkit-transform:translate3d(0,0px,0) rotate3d(1,1,1,0deg) scale3d(1,1,1);
+    -moz-transform:translate3d(0,0px,0) rotate3d(1,1,1,0deg) scale3d(1,1,1);
+    -ms-transform:translate3d(0,0px,0) rotate3d(1,1,1,0deg) scale3d(1,1,1);
+}
+.tooltip-effect-1 .tooltip-content{
+    transform:translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+    -webkit-transform:translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+    -moz-transform:translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+    -ms-transform:translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+    transform-origin:center bottom;
+    -webkit-transform-origin:center bottom;
+    -moz-transform-origin:center bottom;
+    -ms-transform-origin:center bottom;
+}
+.tooltip-effect-2 .tooltip-content{
+	transform:translate3d(0,10px,0);
+	-moz-transform:translate3d(0,10px,0);
+	-webkit-transform:translate3d(0,10px,0);
+	-ms-transform:translate3d(0,10px,0);
+}
+.tooltip-effect-3 .tooltip-content{
+	transform:translate3d(0,10px,0) rotate3d(0,1,0,-90deg);
+    -webkit-transform:translate3d(0,10px,0) rotate3d(0,1,0,-90deg);
+    -moz-transform:translate3d(0,10px,0) rotate3d(0,1,0,-90deg);
+    -ms-transform:translate3d(0,10px,0) rotate3d(0,1,0,-90deg);
+    transform-origin:center bottom;
+    -webkit-transform-origin:center bottom;
+    -moz-transform-origin:center bottom;
+    -ms-transform-origin:center bottom;
+}
+.tooltip-effect-4 .tooltip-content{
+    transform:translate3d(0,-10px,0);
+	-moz-transform:translate3d(0,-10px,0);
+	-webkit-transform:translate3d(0,-10px,0);
+	-ms-transform:translate3d(0,-10px,0);
+}
+.tooltip-effect-5 .tooltip-content i{
+	transform:translate3d(0,-10px,0);
+	-moz-transform:translate3d(0,-10px,0);
+	-webkit-transform:translate3d(0,-10px,0);
+	-ms-transform:translate3d(0,-10px,0);
+}
+.tooltip-effect-1 .tooltip-content i{
+	transform:scale3d(0,0,1);
+	-webkit-transform:scale3d(0,0,1);
+	-moz-transform:scale3d(0,0,1);
+	-ms-transform:scale3d(0,0,1);
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+	<div class="slider">
+	    <!-- 修改View -> Template (关键字替换),增加template id -->
+		<div class="main" id="template-main">
+			<div class="main-i {{css}}" id="main-{{index}}">
+				<div class="caption">
+					<h2>{{h1}}</h2>
+					<h3>{{h2}}</h3>
+				</div>
+				<img src="img/{{index}}.jpg" class="pic">
+			</div>
+		</div>
+		<div class="ctrl" id="template-ctrl">
+			<a href="javascript:void(0);" class="ctrl-i" id="ctrl-{{index}}">
+				<img src="img/{{index}}.jpg">
+			</a>
+		</div>
+	</div>
+</body>
+</html>

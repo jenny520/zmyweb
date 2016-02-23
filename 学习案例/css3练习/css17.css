@@ -1,0 +1,24 @@
+*{
+	padding:0px;
+	margin:0px;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+}
+html,body{
+	height:100%;
+}
+body{
+	display:-webkit-flex;
+	display:flex;
+	display:-moz-flex;
+	-webkit-flex-direction: row;
+	flex-direction:row;
+	-moz-flex-direction:row;
+	-webkit-align-items:center;
+	-moz-align-items:center;
+	align-items:center;
+	-webkit-justify-content:center;
+	justify-content:center;
+	-moz-justify-content:center;
+}

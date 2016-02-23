@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+       *{
+        padding:0px;
+        margin:0px;
+       }
+       body{
+        background-color:#0CFCF5;
+       }
+       .listBox{
+       	width:220px;
+        height:140px;
+       	margin: 10px auto;
+       	position:relative;
+        background-color:#7C7878;
+        filter:alpha(opacity=90);
+        opacity:0.9;
+        /*filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);*/
+       }
+       .clear{
+        clear:both;
+        height:0px;
+        overflow:hidden;
+       }
+       ul{
+        position:absolute;
+        left:0px;
+        top:0px;
+        width:220px;
+        height:140px;
+        list-style:none;
+       }
+       ul li{
+        position:relative;
+        width:100px;
+        height:140px;
+        float:left;
+        margin-right:10px;
+       }
+       ul img{
+        position:relative;
+       }
+       .mask{
+       	display:block;
+       	width:100px;
+       	height:140px;
+        background-color:#162FE4;
+        /*background-color:#2D2B2B;
+        opacity:0.8;
+        filter: alpha(opacity=80);
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);*/
+        position:absolute;
+        left:0px;
+        top:0px;
+        cursor:pointer;
+       }
+	</style>
+	<script type="text/javascript">
+	window.onload = function(){
+       var spans = document.getElementById('listBox').getElementsByTagName('span');
+       var myImg = document.getElementById('myImg');
+       for(var i = 0;i<spans.length;i++){
+        spans[i].onclick = function(){
+          this.style.zIndex = -3;
+          // myImg.style.zIndex = 3;
+        }
+       }
+    }
+	</script>
+</head>
+<body>
+   <div id="listBox" class="listBox">
+      <ul class="cf1">
+        <li>
+          <img width="100" height="140" src="images/1.jpg" alt="钟表" id="myImg"/>
+          <span class="mask" id="mask"></span>
+        </li>
+        <li>
+          <img width="100" height="140" src="images/1.jpg" alt="钟表" id="myImg1"/>
+          <span class="mask" id="mask1"></span>
+        </li>
+      </ul>
+      <div class="clear"></div>
+   </div>
+</body>
+</html>

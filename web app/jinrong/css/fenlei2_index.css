@@ -1,0 +1,44 @@
+.attention .a-content .a-img i{
+	color:#07C1D5;
+}
+.list{
+	padding:0.2rem 0;
+	position:relative;
+}
+.list li{
+	float:left;
+	width:50%;
+	padding-right:0.2rem;
+	padding-bottom:0.2rem;
+	margin-bottom:0;
+}
+.list li .l-content{
+	width:100%;
+	background-color:#fff;
+}
+.list li .l-content .p-img{
+	width:100%;
+}
+.list li .l-content .p-img img{
+	width:100%;
+	background-size:cover;
+}
+.list li .l-content .p-text{
+	width:100%;
+	padding:0.2rem;
+	line-height: 0.4rem;
+}
+.list li .p-name{
+	width:100%;
+	background-color:#FAFAFA;
+	height:0.8rem;
+	line-height: 0.8rem;
+	font-size:0.24rem;
+	padding:0 0.1rem;
+}
+.list li .p-name .name{
+	float: left;
+}
+.list li .p-name a:nth-of-type(2){
+	float:right;
+}

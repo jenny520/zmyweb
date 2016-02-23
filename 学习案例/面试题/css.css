@@ -1,0 +1,262 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:微软雅黑;
+  font-size:13px;
+}
+a{
+  text-decoration: none;
+}
+ul,li{
+  list-style: none;
+}
+.top{
+  height:38px;
+  background-color: #3c3837;
+  line-height: 38px;
+}
+.cWidth{
+  width:1210px;
+  margin:0px auto;
+}
+.top_a{
+  width: 80%;
+  margin: 0 auto;
+}
+ .top_b{
+  float: right;
+  width: 200px;
+}
+ .top_b a{
+  text-decoration:none;
+  color: rgb(187, 180, 172);
+}    
+.logo{
+  position:absolute; 
+  width:127px;
+  height:38px;
+  left: 200px;
+}
+.container{
+  width: 180px;
+  height: 27px;
+}
+.nav{
+  width:100%;
+  height: 100px;
+  background-color:#96BF43;
+}
+.nav ul{
+  margin-left:150px;
+}
+.nav ul li{
+  width:120px;
+  height: 100px;
+  float:left;
+  overflow: hidden;
+  cursor: pointer;
+  position:relative;
+}
+.nav ul li .p-detail{
+  position:absolute;
+  bottom:20px;
+  left:0px;
+  width:120px;
+  text-align: center;
+  height: 24px;
+  line-height: 24px;
+}
+.nav ul li .p-detail a{
+  color:#fff;
+}
+#myjquery{
+  width:960px;
+  height:300px;
+  position:relative;
+  overflow:hidden;
+  margin:0px auto;
+}
+#myjquery #jqueryContent{
+  width:960px;
+  height:300px;
+  overflow:hidden;
+}
+#myjquery #jqueryContent div{
+  width:960px;
+  height:300px;
+  opacity:1;
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index: 1;
+}
+#myjquery #jqueryContent .smask{
+  opacity: 0;
+  z-index: 0;
+}
+#myjquery #myjqueryNav{
+  width:75px;
+  height:10px;
+  position:absolute;
+  left:442.5px;
+  top:270px;
+  z-index: 3;
+}
+#myjquery #myjqueryNav li{
+  float:left;
+  width:10px;
+  height: 10px;
+  border-radius:50%;
+  margin-right:5px;
+  display: inline;
+  background-color:#FFFFFF;
+  cursor:pointer;
+}
+#myjquery #myjqueryNav .current{
+  background-color:#FC6415;
+}
+#myjquery .nav{
+  position:absolute;
+  display:none;
+    height: 50px;
+    width:20px;
+    background-color:#ffffff;
+    opacity:0.5;
+    z-index:2;
+    text-decoration: none;
+    line-height: 50px;
+    text-align: center;
+    font-size:16px;
+    top:125px;
+}
+#myjquery .leftNav{
+  left:0px;
+}
+#myjquery .rightNav{
+  right: 0px;
+}
+.container{
+  width:960px;
+  margin:20px auto;
+  position: relative;
+  height: 566px;
+}
+.container .left-container{
+  width:642px;
+  height: 526px;
+ /* background:url(首页_files/u0_normal.png) no-repeat;*/
+  padding:20px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  border:1px solid #96BF43;
+  overflow: hidden;
+}
+.container .left-container .icon{
+  width:26px;
+  height: 26px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  background:url(首页_files/u272_normal.png) no-repeat;
+}
+.container .left-container .news-title{
+  text-align: left;
+  height: 22px;
+  line-height: 22px;
+  margin-bottom:15px;
+}
+.container .news-title .bg{
+  font-size: 16px;
+  color:#859555;
+  font-weight: bold;
+  margin-right:10px;
+}
+.container .news-title .sg{
+  font-size:14px;
+  color:#859555;
+  font-weight: bold;
+}
+.container .new-title .more{
+  position: absolute;
+  right:20px;
+  top:20px;
+  width:50px;
+  height: 18px;
+}
+.container .new-title .more a{
+  color:#859555;
+}
+.container .left-container .line{
+  width:636px;
+  height: 5px;
+  background:url(首页_files/u177_line.png) no-repeat;
+  margin-bottom:5px;
+}
+.container .left-container thead th{
+  color:#666;
+  line-height: 36px;
+  height: 36px;
+}
+.container .left-container .t-line{
+  height: 3px;
+  width:636px;
+  background:url(首页_files/u178_line.png) no-repeat;
+}
+.container .right-container{
+  position: absolute;
+  right:0px;
+  top:0px;
+  width:256px;
+  height:566px;
+}
+.news{
+  width:225px;
+  height:239px;
+  position: relative;
+  padding:15px;
+  border:1px solid #96BF43;
+  margin-bottom:25px;
+}
+.news .news-title{
+  height: 40px;
+  line-height: 40px;
+}
+.news-title h2{
+  font-size:16px;
+  color:#859555;
+  font-weight: 700;
+}
+.news-title .more{
+ position: absolute;
+ top:15px;
+ right:10px;
+}
+.more a{
+  font-size: 12px;
+  font-weight: 400;
+  color:#859555;
+}
+.news .news-content{
+  height: 140px;
+}
+.news-content li{
+  height: 35px;
+  line-height: 35px;
+}
+.news-content li span{
+    font-size:12px;
+    font-weight: 700;
+    margin-right:10px;
+}
+.news-content li a{
+  color:#859555;
+}
+.cWidth .box{
+  width:960px;
+  margin:0px auto;
+}
+.box .news{
+  float:left;
+  margin-right:20px;
+}

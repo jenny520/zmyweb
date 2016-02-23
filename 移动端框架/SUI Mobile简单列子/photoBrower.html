@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/sm.min.css">
+    <link rel="stylesheet" type="text/css" href="css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<title>图片浏览</title>
+</head>
+<body>
+    <header class="bar bar-nav">
+        <h1 class="title">图片浏览器</h1>
+    </header>
+    <div class="content">
+        <div class="content-block row">
+            <div class="col-50"><a href="#" class="button pb-standalone">Standalone</a></div>
+            <div class="col-50"><a href="#" class="button pb-popup">Popup</a></div>
+        </div>
+        <div class="content-block"><a href="#" class="button pb-standalone-captions">With Captions</a></div>
+        <div class="content-block"><a href="#" class="button pb-standalone-video">With Video</a></div>
+    </div>
+    <script type="text/javascript" src="http://g.alicdn.com/sj/lib/zepto/zepto.min.js" charset='utf-8'></script>
+    <script type="text/javascript" src='js/sm.js'></script>
+    <script type="text/javascript" src='js/sm-extend.js'></script>
+    <script type="text/javascript">
+        /*=== 默认为 standalone ===*/
+        $(function(){
+          /*=== 默认为 standalone ===*/
+          var myPhotoBrowserStandalone = $.photoBrowser({
+              photos : [
+                  '//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg',
+                  '//img.alicdn.com/tps/i1/TB1SKhUHVXXXXb7XXXX0HY8HXXX-1024-1024.jpeg',
+                  '//img.alicdn.com/tps/i4/TB1AdxNHVXXXXasXpXX0HY8HXXX-1024-1024.jpeg',
+              ]
+          });
+          //点击时打开图片浏览器
+          $(document).on('click','.pb-standalone',function () {
+            myPhotoBrowserStandalone.open();
+          });
+           
+          /*=== Popup ===*/
+          var myPhotoBrowserPopup = $.photoBrowser({
+              photos : [
+                  '//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg',
+                  '//img.alicdn.com/tps/i1/TB1SKhUHVXXXXb7XXXX0HY8HXXX-1024-1024.jpeg',
+                  '//img.alicdn.com/tps/i4/TB1AdxNHVXXXXasXpXX0HY8HXXX-1024-1024.jpeg',
+              ],
+              type: 'popup'
+          });
+          $(document).on('click','.pb-popup',function () {
+            myPhotoBrowserPopup.open();
+          });
+
+          /*=== 有标题 ===*/
+          var myPhotoBrowserCaptions = $.photoBrowser({
+              photos : [
+                  {
+                      url: '//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg',
+                      caption: 'Caption 1 Text'
+                  },
+                  {
+                      url: '//img.alicdn.com/tps/i1/TB1SKhUHVXXXXb7XXXX0HY8HXXX-1024-1024.jpeg',
+                      caption: 'Second Caption Text'
+                  },
+                  // 这个没有标题
+                  {
+                      url: '//img.alicdn.com/tps/i4/TB1AdxNHVXXXXasXpXX0HY8HXXX-1024-1024.jpeg',
+                  },
+              ],
+              theme: 'dark',
+              type: 'standalone'
+          });
+          $(document).on('click','.pb-standalone-captions',function () {
+            myPhotoBrowserCaptions.open();
+          });
+      })
+    </script>
+</body>
+</html>

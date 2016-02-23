@@ -1,0 +1,162 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:14px;
+}
+li{
+	list-style-type:none;
+}
+a{
+	text-decoration: none;
+	color: #656565;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.comWidth{
+	width:1000px;
+	margin:0 auto;
+}
+/*top*/
+.topBar{
+	height: 31px;
+	background: #F7F7F7;
+	line-height: 31px;
+}
+.topBar a:hover{
+	color: #FF0000;
+}
+.topBar .collection{
+	background: url(images/t1.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 19px;
+	font-weight: bold;
+}
+/*logo*/
+.logoBar{
+	height: 85px;
+	background:#265CFF;
+}
+.logo{
+	padding-left: 41px;
+	padding-top: 13px;
+}
+.logo_title{
+	margin-left: 20px;
+	margin-top:30px;
+}
+.logo_title h3{
+	color: #FFFFFF;
+	font-size: 22px;
+	font-family: "微软雅黑";
+	font-weight: normal;
+}
+.hr_25{
+    height: 25px;
+    clear: both;
+}
+.hr_50{
+	height: 160px;
+	clear: both;
+}
+.content{
+	width:1000px;
+	margin:0 auto;
+	position: relative;
+}
+.login_content{
+	width:400px;
+	border:1px solid #D4D4D4;
+	margin:0px auto;
+	padding:40px 60px 35px 80px;
+	
+}
+.login_username,.login_password{
+	margin-bottom: 20px;
+}
+.login_content .p{
+	line-height: 21px;
+	font-size: 12px;
+	color:#D2D2D2;
+}
+.login_content .input{
+	line-height: 32px;
+	padding-left: 4px;
+	width:300px;
+	height: 32px;
+	background:url(images/c1.gif);
+	background-repeat: no-repeat;
+	background-position: 99% center;
+	border:none;
+	border:1px solid #D2D2D2;
+}
+.login_content .box{
+	position:relative;
+	top:2px;
+	margin-right: 2px;
+}
+.login_content label{
+	margin-right:10px;
+}
+.login_btn{
+	text-align: center;
+	margin-top: 25px;
+	width:300px;
+	line-height: 30px;
+	border:1px solid #D2D2D2;
+	background:url(images/c2.gif);
+	background-repeat: repeat-x;
+	background-position:left top;
+}
+.login_btn .a{
+	font-size: 16px;
+	font-family:"微软雅黑";
+	font-weight: bold;
+}
+.login_href{
+	margin-top: 20px;
+}
+.login_href .p_href{
+	line-height: 20px;
+	color: #B6B8AB;
+	font-size: 12px;
+}
+.href li{
+	float: left;
+}
+.href a{
+	display: inline-block;
+	line-height: 20px;
+	font-size: 12px;
+}
+.href span{
+	display: inline-block;
+	width:1px;
+	/*height: 22px;*/
+	line-height: 20px;
+	color: #E0E0E0;
+	padding:0px 3px;
+}
+.href img{
+	position: relative;
+	top: 3px;
+}
+.sign{
+	background: url(images/c4.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+	width: 115px;
+	line-height: 30px;
+	border:1px solid #F5F5F5;
+	border-radius: 3px;
+	margin-left: 620px;
+	text-align: center;
+	margin-top: -1px;
+}
+.sign .free{
+	color: #FFFFFF;
+}

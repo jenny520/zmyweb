@@ -1,0 +1,145 @@
+.full-header {
+	position: relative;
+	height:1rem;
+	line-height: 1rem;
+	border-top: 1px solid #eeeeee;
+	background: #367CEE;
+	padding: 0 0 0 0.14rem;
+	text-align: center;
+	font-size: 0.34rem;
+	letter-spacing: 0.04rem;
+	font-family: '宋体';
+	display: block;
+	color:#fff;
+	width: 100%;
+}
+.full-header a {
+	position: absolute;
+	top: 0;
+	padding: 0 0.1rem;
+	color: #999999;
+	display: block;
+	left:0.14rem;
+	color:#fff;
+}
+.intro{
+	width:100%;
+	height:2.2rem;
+    overflow: hidden;
+    background-image:linear-gradient(to bottom,#002860 0%,#206C9D 100%);
+}
+.intro .p-content{
+	width:100%;
+	padding:0.3rem;
+	padding-top:0.5rem;
+}
+.intro .p-icon{
+	width:1.2rem;
+	height:1.2rem;
+	line-height: 1.2rem;
+	border:1px solid #fefefe;
+	border-radius: 50%;
+	text-align: center;
+	font-size:0.5rem;
+	color:#eee;
+	float: left;
+	margin-top:0.1rem;
+}
+.intro .p-text{
+	margin-left:1.4rem;
+}
+.intro .p-title{
+	height:0.8rem;
+	line-height: 0.8rem;
+	color:#f1f1f1;
+}
+.intro .p-title h3{
+    font-size:0.4rem;
+    float: left;
+}
+.intro .p-title h3 i{
+	margin-left:0.1rem;
+	background-color:#FDB506;
+	padding:0.02rem;
+	color:#fff;
+}
+.intro .p-right{
+	float:right;
+}
+.intro .p-right span{
+	margin-right:0.1rem;
+}
+.intro .p-right em{
+	font-size:0.5rem;
+	margin-right:0.06rem;
+	font-family: '宋体';
+}
+.intro .p-detail{
+	line-height: 0.4rem;
+	color:#ddd;
+	font-family: '宋体';
+	font-size:0.3rem;
+}
+.intro .p-detail .p-left{
+	float:left;
+	font-family: '微软雅黑';
+	letter-spacing: 0.02rem;
+}
+.list{
+	width:100%;
+	background-color:#fff;
+}
+.list li{
+	width:100%;
+	padding:0.3rem 0.3rem;
+	border-bottom:1px solid #ddd;
+	font-size:0.32rem;
+}
+.list li h3{
+	height:0.8rem;
+	line-height: 0.8rem;
+	color:#000;
+}
+.list li h3 span{
+	display: inline-block;
+	margin-right:0.1rem;
+	width:3px;
+	height:0.3rem;
+	vertical-align: middle;
+	background-color:#367CEE;
+	position: relative;
+	top:-0.03rem;
+}
+.list p{
+	line-height: 0.7rem;
+}
+.list p span{
+	color:#999;
+}
+.list p em{
+	color:#333;
+}
+.list p span,.list p em{
+	display:block;
+}
+.list li .left{
+	float:left;
+}
+.list p:nth-of-type(2){
+	text-align: right;
+}
+.list li .right{
+	float: right;
+}
+.btn{
+	display: block;
+	width:100%;
+	height:1rem;
+	text-align: center;
+	line-height: 1rem;
+	color:#fff;
+	background-color:#ea4f39;
+	font-size:0.34rem;
+	letter-spacing: 0.04rem;
+	margin-bottom:0.3rem;
+}

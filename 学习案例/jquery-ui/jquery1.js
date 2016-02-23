@@ -1,0 +1,24 @@
+$(document).ready(function(){
+	$('#box').on('click',function(){
+		$('#box').addClass('color-style',1000,'easeInOutCubic',function(){
+		$(this).removeClass('color-style',1000,'easeInOutCubic');
+	})
+	});
+	$(document).click(function(){
+		$('#box1').toggle('blind',{direction:'down'});
+	});
+	$('#clickBtn').click(function(){
+
+		$('#box2').show('blind',1000).animate({
+			'backgroundColor':'red',
+			'width':'500px',
+			'borderColor':'black'
+		},1000);
+	});
+	$('#box3').click(function(){
+		$(this).hide('drop',{direction:'right'},1000);
+	});
+	$('#box4').click(function(){
+		$(this).toggleClass('changeBox',1000);
+	})
+})

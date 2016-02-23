@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CheckBox_demo</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript">
+       function createTag(){
+       	var linodes = document.getElementById("checkList").getElementsByTagName("li");
+       	var label;
+       	for(var i = 0;i<linodes.length;i++){
+       		var label = linodes[i].getElementsByTagName("label");
+       		var bTag = document.createElement("b");
+       		linodes[i].insertBefore(bTag,label[0]);
+       	}
+       }
+       window.onload=createTag;
+	</script>
+</head>
+<body>
+	<div class="typelist">
+		<form action="" method="post" name="typelist">
+			<ul id="checkList">
+				<li onclick="show(0)"><input type="checkbox" name="typelist" id="xioa"/><label for="xioa">消费者保障</label></li>
+				<li onclick="show(1)"><input type="checkbox" id="broken"/><label for="broken">破损补寄</label></li>
+				<li onclick="show(2)"><input type="checkbox" id="zhengpin"/><label for="zhengpin">正品保障</label></li>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>

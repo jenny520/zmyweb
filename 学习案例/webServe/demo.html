@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+       $(document).ready(function(){
+       	$('.boxCenter').delay(800).slideDown();
+       	$('.close').click(function(){
+       		$('.boxCenter').slideUp(400);
+       	})
+       })
+	</script>
+</head>
+<body>
+	<div class="boxR">
+		<div class="boxTop"></div>
+		<div class="boxMain">
+			<img src="images/kf.gif">
+			<p>
+				<span>在线客服</span>
+				<a href="#">网页设计</a>
+			</p>
+			<p>
+				<span>在线客服</span>
+				<a href="#">网页设计</a>
+			</p>
+			<p>
+				<span>在线客服</span>
+				<a href="#">网页设计</a>
+			</p>
+			<p>
+				<span>在线客服</span>
+				<a href="#">网页设计</a>
+			</p>
+			<img src="images/zx.gif">
+		</div>
+		<div class="boxBottom"></div>
+	</div>
+	<div class="boxCenter" style="display: none">
+		<a href="#" class="close"></a>
+		<a href="#" target="_blank" class="clnode" style="left:145px"></a>
+		<a href="#" target="_blank" class="clnode" style="left:232px"></a>
+	</div>
+</body>
+</html>

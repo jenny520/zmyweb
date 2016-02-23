@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+       $(document).ready(function(){
+       	$('.Box').hover(function(){
+       		$(this).find('img').addClass('apaha');
+       	},function(){
+       		$(this).find('img').removeClass('apaha');
+       	});
+       	$('.Box').find('li').hover(function(){
+            	$(this).children('img').stop().animate({'top':'-20px','left':'-20px'},'slow').addClass('indexImg');
+            },function(){
+            	$(this).children('img').stop().animate({'top':'0px','left':'0px'},'slow').removeClass('indexImg');
+            });
+       })
+	</script>
+</head>
+<body>
+	<div class="Box">
+		<li>
+			<img src="../images/b3.jpg" width="180px" height="160px">
+			<span>懒人之家文字</span>
+		</li>
+		<li>
+			<img src="../images/b4.jpg" width="180px" height="160px">
+			<span>懒人之家文字</span>
+		</li>
+		<li>
+			<img src="../images/b5.jpg" width="180px" height="160px">
+			<span>懒人之家文字</span>
+		</li>
+		<li>
+			<img src="../images/b6.jpg" width="180px" height="160px">
+			<span>懒人之家文字</span>
+		</li>
+	</div>
+</body>
+</html>

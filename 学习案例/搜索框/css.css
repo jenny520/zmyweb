@@ -1,0 +1,91 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background-color:#333;
+}
+.clear{
+	clear:both;
+	height: 0px;
+	overflow:hidden;
+}
+.nav{
+	width:1228px;
+	height: 20px;
+	margin:10px auto;
+	background-color: #2D2C2C;
+	opacity: 0.6;
+	padding-left: 20px;
+}
+.nav a{
+	text-decoration: none;
+	color:#FFFFFF;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	margin-right: 20px;
+}
+.bg_box{
+	background-image:url(images/river.jpg);
+	width:1228px;
+	height:669px;
+	margin:0px auto;
+	position:relative;
+}
+.search_box{
+	position:absolute;
+	top:180px;
+	left:20%;
+}
+.icon{
+	background-image: url(images/logo.png);
+	width:107px;
+	height: 53px;
+	float: left;
+	margin-right: 20px;
+	position:relative;
+	top:-5px;
+}
+form{
+	background-color: #FFFFFF;
+	float: left;
+	padding:4px;
+}
+.search_text{
+	border:0px;
+	float:left;
+	width:350px;
+	height: 25px;
+	line-height: 25px;
+	outline: none;
+}
+.search_btn{
+	border:0px;
+	background-image: url(images/search-button.png);
+	background-repeat: no-repeat;
+	width:28px;
+	height: 28px;
+}
+.search_list{
+	position: absolute;
+	/*top:216px;
+	left: 433px;*/
+	width:385px;
+	background-color: #FFFFFF;
+	border:1px solid #CFCCCC;
+	overflow: hidden;
+	display: none;
+}
+.search_list ul{
+	list-style: none;
+}
+.search_list li{
+	padding:5px;
+	cursor: pointer;
+	color: #777;
+}
+.search_list li:hover{
+	text-decoration: underline;
+    background-color: #E3DFDF;
+}

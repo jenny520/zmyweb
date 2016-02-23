@@ -1,0 +1,30 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size: 14px;
+}
+ul{
+	list-style-type: none;
+	width: 800px;
+	margin-top: 20px;
+	margin-left: 40px;
+}
+ul li a{
+	text-decoration: none;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	width:120px;
+	background-color:#efefef;
+	margin-right: 2px;
+	text-align: center;
+	color:#000000;
+	float:left;
+}
+a:hover{
+	color: #FFFFFF;
+	background: #FF8000;
+	height: 40px;
+	margin-top: -10px;
+	line-height: 40px;
+}

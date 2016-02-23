@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+		tile my jade template
+		style.
+			body{
+			    color:#f50;
+			}
+	body
+		//h1 缩进- var data = 'text'
+		- var data = 'text'
+		- var htmldata= '<span>hi</span>'
+		h1 !{htmldata}
+		h2 \!{htmldata}
+		input(name='course',type='text',value='jade')
+		input(name='type',type='checkbox',checked)
+		p
+			| 1.aa
+			span hello
+			| 2.bb
+		h2 book
+		ul#book
+			li
+				a(href='#')
+			li
+				a(href='#') Book
+		- var foo = "hello world"
+		h1=foo
+		li hello<em>world</em>

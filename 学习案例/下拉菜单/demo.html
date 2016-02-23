@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下拉菜单</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+        	$('#nav li').hover(
+        	function(){
+        	  $('ul',this).slideDown(100);
+        	},function(){
+              $('ul',this).slideUp(100);
+        	});
+        })
+	</script>
+</head>
+<body>
+	<ul id="nav" class="nav">
+		<li>
+		  <a href="javascript:;">Parent1</a>
+		</li>
+		<li>
+		  <a href="javascript:;">Parent2</a>
+		  <ul>
+		  	<li><a href="javascript:;">item1</a></li>
+		  	<li><a href="javascript:;">item2</a></li>
+		  	<li><a href="javascript:;">item3</a></li>
+		  </ul>
+		  <div class="clear"></div>
+		</li>
+		<li><a href="javascript:;">Parent3</a></li>
+		<li><a href="javascript:;">Parent4</a></li>
+	</ul>
+	<div class="clear"></div>
+</body>
+</html>

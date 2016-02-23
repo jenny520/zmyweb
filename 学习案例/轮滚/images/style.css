@@ -1,0 +1,198 @@
+html, body { margin: 0; padding: 0; }
+#superContainer { height: 100%; position: relative; }
+.section { position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.slide { float: left; }
+.slide, .slidesContainer { height: 100%; display: block; }
+.slides { height: 100%; overflow: hidden; position: relative; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
+.section.table, .slide.table { display: table; width: 100%; }
+.tableCell { display: table-cell; vertical-align: middle; width: 100%; height: 100%; }
+.slidesContainer { float: left; position: relative; }
+.controlArrow { position: absolute; top: 50%; cursor: pointer; width: 0; height: 0; border-style: solid; margin-top: -38px; }
+.controlArrow.prev { left: 15px; width: 0; border-width: 38.5px 34px 38.5px 0; border-color: transparent #fff transparent transparent; }
+.controlArrow.next { right: 15px; border-width: 38.5px 0 38.5px 34px; border-color: transparent transparent transparent #fff; }
+.scrollable { overflow: scroll; }
+.easing { -webkit-transition: all 0.7s ease-out; -moz-transition: all 0.7s ease-out; -o-transition: all 0.7s ease-out; transition: all 0.7s ease-out; }
+#fullPage-nav { position: fixed; z-index: 100; margin-top: -32px; top: 50%; opacity: 1; }
+#fullPage-nav.right { right: 17px; }
+#fullPage-nav.left { left: 17px; }
+.fullPage-slidesNav { position: absolute; z-index: 4; left: 50%; opacity: 1; }
+.fullPage-slidesNav.bottom { bottom: 17px; }
+.fullPage-slidesNav.top { top: 17px; }
+#fullPage-nav ul, .fullPage-slidesNav ul { margin: 0; padding: 0; }
+#fullPage-nav li, .fullPage-slidesNav li { display: block; width: 14px; height: 13px; margin: 7px; position: relative; }
+.fullPage-slidesNav li { display: inline-block; }
+#fullPage-nav li a, .fullPage-slidesNav li a { display: block; position: relative; z-index: 1; width: 100%; height: 100%; cursor: pointer; text-decoration: none; }
+#fullPage-nav li .active span, .fullPage-slidesNav .active span { background: #333; }
+#fullPage-nav span, .fullPage-slidesNav span { top: 2px; left: 2px; width: 8px; height: 8px; border: 1px solid #000; background: rgba(0, 0, 0, 0); -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; position: absolute; z-index: 1; }
+.fullPage-tooltip { position: absolute; color: #fff; font-size: 14px; font-family: arial, helvetica, sans-serif; top: -2px; }
+.fullPage-tooltip.right { right: 20px; }
+.fullPage-tooltip.left { left: 20px; }
+
+#menu { position: fixed; right: 20px; top: 40%; z-index: 10; list-style-type: none; }
+#menu li { width: 90px; height: 27px; margin-top: 7px; overflow: hidden;}
+#menu a { display: block; height: 27px; padding-right: 30px; line-height: 27px; background: url(dot.png) right -34px no-repeat; color: #fff; text-align: right; text-shadow: 1px 1px 0px #333; text-decoration: none; overflow: hidden;}
+#menu span { display: block; width: 60px; height: 27px; font-size: 12px; text-indent: 200px; opacity: 0.6; filter:alpha(opacity=60); overflow: hidden;}
+#menu a:hover span { text-indent: 0;}
+#menu .active a { background-position: right 0;}
+
+.section { position: relative; overflow: hidden;}
+.section .bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.middle { position: relative; width: 1000px; height: 100%; margin-left: auto; margin-right: auto;}
+
+.section1 { background: url(bg1.png) 0 50% repeat-x; }
+.logo1 { position: absolute; left: 50%; top: 30px; z-index: 20; width: 169px; height: 65px; margin-left: -85px; text-indent: -9999px; background-image: url(logo.png); overflow: hidden;}
+.bg1-1 { background: url(bg1-1.png) 50% 50% no-repeat;}
+.bg1-2 { background: url(bg1-2.png) 50% 50% no-repeat;}
+.bg1-3 { opacity: 0; background: url(bg1-3.png) 50% 50% no-repeat;}
+.left1 { position: absolute; left: -200%; top: 50%; width: 444px; height: 514px; margin: -260px 0 0 -50px; background-image: url(l1.png);}
+.right1 { position: absolute; left: 200%; top: 50%; width: 655px; height: 658px; margin: -300px 0 0 -70px; background-image: url(r1.png);}
+
+.section2 { background: url(bg2.png) 0 50% repeat-x;}
+.logo2 { position: absolute; left: 50%; top: 30px; z-index: 20; width: 326px; height: 82px; margin-left: -163px; text-indent: -9999px; background: url(logo.png) 0 -99px; overflow: hidden;}
+.bg2-1 { background: url(bg2-1.png) 50% 50% no-repeat;}
+.bg2-2 { background: url(bg2-2.png) 50% 50% no-repeat;}
+.bg2-3 { background: url(bg2-3.png) 50% -300% no-repeat; transition: all 1.5s;}
+.left2 { position: absolute; left: -200%; top: 50%; width: 830px; height: 558px; margin: -253px 0 0 -80px; background: url(l2.png) 0 0 no-repeat;}
+.left2-1 { position: absolute; left: 0; top: 53px; width: 487px; height: 366px; background-image: url(l2-1.png); opacity: 0; transition: all 1.5s;}
+.left2-2 { position: absolute; left: -10px; top: 75px; width: 510px; height: 396px; background-image: url(l2-2.png); opacity: 0;}
+.right2 { position: absolute; left: 200%; top: 50%; width: 593px; height: 518px; margin-top: -269px; background-image: url(r2.png);}
+.tip { position: absolute; left: 300%; top: 50%; width: 331px; height: 194px; margin-top: -170px; background-image: url(tip.png); opacity: 0;}
+.hand { position: absolute; left: 300%; top: 50%; width: 331px; height: 194px; margin-top: -170px; background-image: url(hand.png);}
+
+.section3 { background: url(bg3.png) 0 50% repeat-x;}
+.logo3 { position: absolute; left: 50%; top: 30px; width: 257px; height: 65px; margin-left: -149px; text-indent: -9999px; background: url(logo.png) 0 -199px; overflow: hidden;}
+.bg3-1 { background: url(bg3-1.png) 50% 50% no-repeat;}
+.bg3-2 { background: url(bg3-2.png) 50% 50% no-repeat;}
+.bg3-3 { background: url(bg3-3.png) 50% 10% no-repeat; opacity: 0; transition: all 1s;}
+.bg3-4 .bg { background: url(bg3-4.png) 50% 10% no-repeat; opacity: 0; transition: all 1s;}
+.left3 { position: absolute; left: -200%; top: 50%; width: 602px; height: 244px; margin: -122px 0 0 -50px; background: url(l3.png) 50% 50% no-repeat;}
+.right3 { position: absolute; left: 200%; top: 50%; width: 519px; height: 630px; margin: -315px 0 0 50px; background-image: url(r3.png);}
+
+.section4 { background: url(bg4.png) 0 50% repeat-x;}
+.logo4 { position: absolute; left: 50%; top: 30px; width: 257px; height: 63px; margin-left: -149px; text-indent: -9999px; background: url(logo.png) 0 -286px; overflow: hidden;}
+.bg4-1 { background: url(bg4-1.png) 50% 50% no-repeat; overflow: hidden;}
+.bg4-2 { background: url(bg4-2.png) 50% 50% no-repeat;}
+.left4 { position: absolute; left: -200%; top: 50%; width: 294px; height: 619px; margin: -310px 0 0 27px; background: url(l4.png) 50% 50% no-repeat;}
+.left4-1 { position: absolute; left: -57px; top: 50%; width: 524px; height: 636px; margin: -310px 0 0 -23px; background: url(l4-1.png) 50% 50% no-repeat; opacity: 0;}
+.left4-2 { position: absolute; left: -66px; top: 50%; width: 367px; height: 620px; margin: -310px 0 0 81px; background: url(l4-2.png) 50% 50% no-repeat; opacity: 0;}
+.left4-3 { position: absolute; left: 0; top: 50%; width: 710px; height: 372px; margin: -165px 0 0 -110px; background: url(l4-3.png); opacity: 0;}
+.dian { position: absolute; left: 50%; top: 50%; width: 40px; height: 40px; margin: -193px 0 0 -58px; opacity: 0;}
+.dian span { display: block; width: 40px; height: 40px; background-image: url(s4-l4.png);}
+.left4-4 { position: absolute; left: 50%; top: 50%; width: 710px; height: 372px; margin: -165px 0 0 -610px; background: url(l4-4.png) 137px 23px no-repeat; opacity: 0;}
+.left4-5 { position: absolute; left: 50%; top: 50%; width: 152px; height: 360px; margin: -20px 0 0 -290px; background: url(l4-5.png) 0 0 no-repeat; opacity: 0;}
+.right4 { position: absolute; left: 200%; top: 50%; width: 595px; height: 341px; margin: -175px 0 0 10px; background-image: url(r4.png);}
+
+.section5 { background: #fff url(bg5.png) 0 50% repeat-x;}
+.logo5 { position: absolute; left: 50%; top: 30px; width: 259px; height: 66px; margin-left: -129px; text-indent: -9999px; background: url(logo.png) 0 -371px; overflow: hidden;}
+.bg5-1 { background: url(bg5-1.png) 50% 50% no-repeat; overflow: hidden;}
+.bg5-2 { background: url(bg5-2.png) 50% 50% no-repeat;}
+.bg5-3 { background: url(bg5-3.png) 50% 0 no-repeat;}
+.bg5-4 { background: url(bg5-4.png) 50% 0 no-repeat;}
+.left5 { position: absolute; left: -200%; top: 50%; width: 588px; height: 505px; margin: -253px 0 0 -80px; background: url(l5.png) 50% 50% no-repeat;}
+.right5 { position: absolute; left: 200%; top: 50%; width: 600px; height: 408px; margin-top: -204px; background-image: url(r5.png);}
+
+/* 动画 */
+.left { transition: all 1.5s;}
+.right { transition: all 1.5s;}
+.active .left, .ltie10 .left { left: 0;}
+.active .right, .ltie10 .right { left: 50%;}
+.godown span { -webkit-animation: fade 3s infinite linear; animation: fade 3s infinite linear;}
+@-webkit-keyframes fade {
+	0% { opacity: 1;}
+	50% { opacity: 0.3;}
+	100% { opacity: 1;}
+}
+@keyframes fade {
+	0% { opacity: 1;}
+	50% { opacity: 0.3;}
+	100% { opacity: 1;}
+}
+
+/* 第一屏动画 */
+.active .bg1-3, .ltie10 .bg1-3 { opacity: 1; -webkit-animation: bg1-3 3s; animation: bg1-3 3s;}
+@-webkit-keyframes bg1-3 {
+	0% { opacity: 0;}
+	50% { opacity: 0;}
+	100% { opacity: 1;}
+}
+@keyframes bg1-3 {
+	0% { opacity: 0;}
+	50% { opacity: 0;}
+	100% { opacity: 1;}
+}
+
+/* 第二屏动画 */
+.active .bg2-3, .ltie10 .bg2-3 { background-position: 50% 0; transition-delay: 0.5s;}
+.active .left2-1, .ltie10 .left2-1 { opacity: 1; transition-delay: 1.5s;}
+.active .left2-2,  .ltie10 .left2-2 { left: 38px; top: 0; opacity: 1; transition: all 1s ease 2.5s;}
+.active .tip, .ltie10 .tip { left: 62px; opacity: 1; transition: all 1s ease 3s;}
+.active .hand { -webkit-animation: hand 2s ease 3s; animation: hand 2s ease 3s;}
+@-webkit-keyframes hand {
+	0% { left: 300%;}
+	50% { left: 62px;}
+	70% { left: 62px;}
+	100% { left: 300%;}
+}
+@keyframes hand {
+	0% { left: 300%;}
+	50% { left: 62px;}
+	70% { left: 62px;}
+	100% { left: 300%;}
+}
+
+/* 第三屏动画 */
+.active .bg3-3, .ltie10 .bg3-3 { background-position: 50% 50%; opacity: 1; transition-delay: 0.7s;}
+.active .bg3-4 .bg, .ltie10 .bg3-4 .bg { background-position: 50% 50%; opacity: 1; transition-duration: 1.5s; transition-delay: 1s;}
+.active .bg3-4 { -webkit-animation: bg3-4 3s ease infinite 2.5s; animation: bg3-4 3s ease infinite 2.5s;}
+@-webkit-keyframes bg3-4 {
+	0 { opacity: 1;}
+	50% { opacity: 0.3;}
+	100 { opacity: 1;}
+}
+@keyframes bg3-4 {
+	0 { opacity: 1;}
+	50% { opacity: 0.3;}
+	100 { opacity: 1;}
+}
+
+/* 第四屏动画 */
+.active .left4-1, .ltie10 .left4-1 { left: 0; opacity: 1; transition: all 1s ease 1.5s;}
+.active .left4-2, .ltie10 .left4-2 { left: 0; opacity: 1; transition: all 1s ease 2.3s;}
+.active .left4-5, .ltie10 .left4-5 { opacity: 1; transition: all 1s ease 3s;}
+.active .left4-4, .active .left4-3, .ltie10 .left4-4, .ltie10 .left4-3 { opacity: 1; transition: all 1s ease 4s;}
+.active .dian, .ltie10 .dian { opacity: 1; transition: all 1s ease 4.5s; }
+.active .dian span { -webkit-animation: dian 2s infinite linear 4.5s; animation: dian 2s infinite linear 4.5s;}
+@-webkit-keyframes dian {
+	0% { -webkit-transform: scale(1, 1);}
+	100% { -webkit-transform: scale(2, 2);}
+}
+@keyframes dian {
+	0% { transform: scale(1, 1);}
+	100% { transform: scale(2, 2);}
+}
+
+/* 第五屏动画 */
+.bg5-3 { -webkit-animation: bg5-3 20s linear infinite 0s; animation: bg5-3 20s linear infinite 0s;}
+@-webkit-keyframes bg5-3 { 
+	0% { background-position: 50% 0;}
+	100% { background-position: 50% 100%;}
+}
+@keyframes bg5-3 { 
+	0% { background-position: 50% 0;}
+	100% { background-position: 50% 100%;}
+}
+
+.qtcode { position: absolute; right: 20px; bottom: 20px; z-index: 4; width: 361px; height: 69px; background-image: url(qtcode.png);}
+.godown { *display: none; position: absolute; left: 50%; bottom: 20px; z-index: 100; width: 50px; height: 53px; margin-left: -25px;}
+.godown span { display: block; width: 50px; height: 53px; background-image: url(godown.png);}
+
+.link { position: absolute; height: 52px; text-indent: -9999px; overflow: hidden;}
+.a1-1 { width: 202px; left: 45px; bottom: 63px;}
+.a2-1 { width: 268px; left: 20px; bottom: 237px;}
+.a2-2 { width: 270px; left: 78px; bottom: 158px;}
+.a3-1 { width: 268px; left: 20px; bottom: 10px;}
+.a3-2 { width: 270px; right: 22px; bottom: 10px;}
+.a4-1 { width: 268px; left: 20px; bottom: 10px;}
+.a4-2 { width: 270px; right: 18px; bottom: 10px;}
+.a5-1 { width: 268px; left: 20px; bottom: 10px;}
+.a5-2 { width: 270px; right: 20px; bottom: 10px;}

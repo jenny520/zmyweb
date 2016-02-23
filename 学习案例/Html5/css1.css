@@ -1,0 +1,26 @@
+article aside{
+	width:270px;
+	text-align: center;
+	margin:0px;
+	padding:0px;
+	font-family: georgia,serif;
+	font-size:140%;
+	letter-spacing: -1px;
+	line-height: 1em;
+	color:#555;
+	float:right;
+}
+#quote{
+	margin:0 10px 0 0;
+	padding:20px 20px 10px 20px;
+}
+#author{
+	margin:0 10px 0 0;
+	padding:0 0 10px 0;
+	font-size:60%;
+}
+#author a{
+	margin:0 10px 0 0;
+	padding:0 0 10px 0;
+	color:#999;
+}

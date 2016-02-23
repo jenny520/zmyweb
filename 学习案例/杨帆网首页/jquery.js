@@ -1,0 +1,10 @@
+$(".li1").hover(function(){
+    $(this).children("ul").css('z-index',10).slideDown('slow');
+    },function(){
+    $(this).children('ul').css('z-index',10).slideUp('slow');
+});
+$('.li2').hover(function(){
+    	$(this).children('.s_ul1').slideDown('slow');
+    },function(){
+    	$(this).children('.s_ul1').slideUp('slow');
+    })

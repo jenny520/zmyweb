@@ -1,0 +1,35 @@
+/* CSS Document */
+*{
+		margin:0px;
+		padding:0px;
+	}
+	body{
+		background:url(../images/images/main_04.gif) repeat-x;
+	}
+	.head
+	{
+		width:1300px;float:left;
+	}
+	#head_logo
+	{
+		 margin-left:30px;width:400px;border:0px red solid;float:left;
+	}
+	.head_font
+	{
+		border:0px red solid;width:700px;float:right; margin-top:20px; margin-left:100px;
+	}
+	.bg
+	{
+		height:79px; background:url(../images/images/h2.png) repeat; border:0px red solid;
+
+	}
+	.time_01
+	{
+		float:left;width:200px;border:0px #fff solid;
+		color:#fff;
+	}
+	.time_02
+	{
+		float:right;width:350px; border:0px #fff solid;
+	}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex测试</title>
+	<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width"/>
+	<style type="text/css">
+        .flex{
+	       	display:-webkit-flex;
+			display:flex;
+			-webkit-flex-wrap:wrap;
+			flex-direction:wrap;
+			width:200px;height:200px;
+			-webkit-align-content:center;
+	        align-content:center;
+	        list-style-type:none;
+        }
+        .flex :nth-child(1){
+        	flex:1 auto;
+            background-color:red;
+            width:100px;
+        }
+        .flex :nth-child(2){
+        	flex:1 auto;
+        	background-color:yellow;
+        	height:200px;
+        	width:200px;
+        }
+        .flex :nth-child(3){
+        	flex:auto;
+        	background-color:blue;
+        }
+	</style>
+</head>
+<body>
+	<ul class="flex">
+	    <li>a11ccccccc</li>
+	    <li>b</li>
+    </ul>
+</body>
+</html>

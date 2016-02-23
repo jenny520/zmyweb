@@ -1,0 +1,41 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:12px;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+#moocBox{
+	width:450px;
+	height:110px;
+	margin:20px auto;
+	overflow: hidden;
+}
+#moocBox .box{
+	width:5000px;
+	height: 110px;
+}
+#moocBox ul{
+	float:left;
+	width:580px;
+}
+#moocBox ul li{
+	float:left;
+	width:100px;
+	height: 110px;
+	margin-right:15px;
+}
+#moocBox ul li img{
+	border:1px solid #efefef;
+	padding:2px;
+}
+#moocBox ul li .text{
+	width:100px;
+	height: 25px;
+	line-height: 20px;
+	text-align: center;
+}

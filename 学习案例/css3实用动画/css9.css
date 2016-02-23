@@ -1,0 +1,58 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background-color:#000;
+}
+@keyframes updown{
+	to{
+		transform:translateY(200px);
+	}
+}
+@-moz-keyframes updown{
+	to{
+		-moz-transform:translateY(200px);
+	}
+}
+@-webkit-keyframes updown{
+	to{
+		-webkit-transform:translateY(200px);
+	}
+}
+.figure{
+	margin-left:120px;
+	animation:updown 1s infinite alternate ease-in-out;
+	-moz-animation:updown 1s infinite alternate ease-in-out;
+	-webkit-animation:updown 1s infinite alternate ease-in-out;
+}
+@keyframes circle{
+	to{
+		transform:rotate(-1turn);
+	}
+}
+@-webkit-keyframes circle{
+	to{
+		-webkit-transform:rotate(-1turn);
+	}
+}
+@-moz-keyframes circle{
+	to{
+		-moz-transform:rotate(-1turn);
+	}
+}
+.butterfly{
+	width:150px;
+	height:142px;
+	margin:0px auto;
+	transform-origin: center 200%;
+	-moz-transform-origin: center 200%;
+	-webkit-transform-origin: center 200%;
+	animation:circle 2s infinite linear;
+	-moz-animation:circle 2s infinite linear;
+	-webkit-animation:circle 2s infinite linear;
+}
+.butterfly img{
+	width:100%;
+	height: auto;
+}

@@ -1,0 +1,473 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	/*background:#efefef;*/
+	min-width:1200px;
+	min-height:600px;
+	-webkit-font-smoothing:antialiased;
+	font-family:'微软雅黑';
+}
+.main{
+	background:url(img/bg.jpg) #000 no-repeat;
+	width:1200px;
+	height: 600px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-600px;
+	margin-top:-300px;
+	overflow: hidden;
+}
+/*粽子盒子*/
+.main .zongziBox{
+	width:312px;
+	height: 305px;
+	position:absolute;
+	left:700px;
+	top:184px;
+}
+@keyframes rock{
+	0%{
+		transform:rotate(0deg);
+	}
+	10%{
+		transform:rotate(3deg);
+	}
+	20%{
+		transform:rotate(-3deg);
+	}
+	30%{
+		transform:rotate(2deg);
+	}
+	40%{
+		transform:rotate(-2deg);
+	}
+	50%{
+		transform:rotate(1deg);
+	}
+	60%{
+		transform:rotate(-1deg);
+	}
+	70%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(0deg);
+	}
+}
+@-webkit-keyframes rock{
+	0%{
+		-webkit-transform:rotate(0deg);
+	}
+	10%{
+		-webkit-transform:rotate(3deg);
+	}
+	20%{
+		-webkit-transform:rotate(-3deg);
+	}
+	30%{
+		-webkit-transform:rotate(2deg);
+	}
+	40%{
+		-webkit-transform:rotate(-2deg);
+	}
+	50%{
+		-webkit-transform:rotate(1deg);
+	}
+	60%{
+		-webkit-transform:rotate(-1deg);
+	}
+	70%{
+		-webkit-transform:rotate(0deg);
+	}
+	100%{
+		-webkit-transform:rotate(0deg);
+	}
+}
+@-moz-keyframes rock{
+	0%{
+		-moz-transform:rotate(0deg);
+	}
+	10%{
+		-moz-transform:rotate(3deg);
+	}
+	20%{
+		-moz-transform:rotate(-3deg);
+	}
+	30%{
+		-moz-transform:rotate(2deg);
+	}
+	40%{
+		-moz-transform:rotate(-2deg);
+	}
+	50%{
+		-moz-transform:rotate(1deg);
+	}
+	60%{
+		-moz-transform:rotate(-1deg);
+	}
+	70%{
+		-moz-transform:rotate(0deg);
+	}
+	100%{
+		-moz-transform:rotate(0deg);
+	}
+}
+.main .zongzi-rock{
+   animation:rock 2s infinite;
+   -webkit-animation:rock 2s infinite;
+   -moz-animation:rock 2s infinite;
+}
+/*粽子*/
+.zongziBox .cZongzi{
+   width:312px;
+   height: 305px;
+   background:url(img/zz.png) no-repeat;
+   transition:all 2s;
+   -webkit-transition:all 2s;
+   -moz-transition:all 2s;
+}
+.zongziBox .cZongzi-out{
+	opacity:0;
+	transform:scale(.5);
+	-webkit-transform:scale(.5);
+	-moz-transform:scale(.5);
+}
+/*绳子*/
+.zongziBox .cShengzi{
+	position: absolute;
+	left:10px;
+	top:120px;
+	z-index:999;
+	cursor: pointer;
+}
+.zongziBox .cShengzi1{
+	width:218px;
+	height: 180px;
+	background:url(img/line_1.png) no-repeat;
+}
+.zongziBox .cShengzi2{
+	width:219px;
+	height: 159px;
+	background:url(img/line_2.png) no-repeat;
+	left:10px;
+	top:158px;
+}
+.zongziBox .cShengzi3{
+	width:264px;
+	height: 117px;
+	background:url(img/line_3.png) no-repeat;
+	left:10px;
+	top:220px;
+}
+.zongziBox .cShengzi4{
+	width:288px;
+	height: 56px;
+	background:url(img/line_4.png) no-repeat;
+	left:10px;
+	top:290px;
+}
+.zongziBox .cShengzi0{
+	display: none;
+}
+/*粽子肉*/
+.zongziBox .cZongzirou{
+	width:282px;
+	height: 206px;
+	background:url(img/zzr_1.png) no-repeat;
+	background-size:282px 206px;
+	position: absolute;
+	left:50px;
+	top:54px;
+	z-index: 110;
+	opacity:0;
+	transition:all 1s;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	transform-origin: center;
+	-webkit-transform-origin:center;
+	-moz-transform-origin: center;
+	transform:scale(.8);
+	-webkit-transform:scale(.8);
+	-moz-transform:scale(.8);
+}
+.zongziBox .cZongzirou-in{
+	opacity: 1;
+	transform:scale(1);
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+}
+/*左叶*/
+.zongziBox .cZouye{
+	width:147px;
+	height: 266px;
+	background:url(img/leaf_left.png) no-repeat;
+	position:absolute;
+	top:-40px;
+	left:20px;
+	z-index: 1;
+	/*display: none;*/
+	opacity:0;
+	transition:all 1s;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	transform-origin: left bottom;
+	-webkit-transform-origin: left bottom;
+	-moz-transform-origin: left bottom;
+}
+.zongziBox .cZouye-in{
+	opacity: 1;
+	transform:rotate(-5deg);
+	-webkit-transform:rotate(-5deg);
+	-moz-transform:rotate(-5deg);
+}
+.zongziBox .cZouye-out{
+	opacity: 0;
+	transform:rotate(-15deg);
+	-webkit-transform:rotate(-15deg);
+	-moz-transform:rotate(-15deg);
+}
+/*右叶*/
+.zongziBox .cYouye{
+	width:318px;
+	height: 388px;
+	background:url(img/leaf_right.png) no-repeat;
+	position: absolute;
+	left:90px;
+	top:-10px;
+	z-index: 111;
+	/*display: none;*/
+	opacity:0;
+	transition:all 1s;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	transform:scale(.8);
+	-webkit-transform:scale(.8);
+	-moz-transform:scale(.8);
+}
+.zongziBox .cYouye-in{
+	opacity: 1;
+	transform:rotate(5deg) scale(.8);
+	-webkit-transform:rotate(5deg) scale(.8);
+	-moz-transform:rotate(5deg) scale(.8);
+}
+.zongziBox .cYouye-out{
+	opacity: 0;
+	transform:rotate(15deg) scale(.8);
+	-webkit-transform:rotate(15deg) scale(.8);
+	-moz-transform:rotate(15deg) scale(.8);
+}
+/*底叶*/
+.zongziBox .cDiye{
+	width:618px;
+	height: 464px;
+	background:url(img/leaf_expand.png) no-repeat;
+	position: absolute;
+	left:-150px;
+	top:-60px;
+	z-index:99;
+	/*display: none;*/
+	opacity:0;
+	transition:all 1s;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+}
+.zongziBox .cDiye-in{
+	opacity: 1;
+}
+/*吉祥*/
+.zongziBox .c-text1{
+	width:180px;
+	height: 100px;
+	background:url(img/t_haoyun.png) no-repeat;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-70px;
+	margin-top:-50px;
+	z-index: 200;
+	transform-origin: center center;
+	-webkit-transform-origin: center center;
+	-moz-transform-origin: center center;
+	-ms-transform-origin: center center;
+	transform:scale(0.8);
+	-webkit-transform:scale(0.8);
+	-moz-transform:scale(0.8);
+	-ms-transform:scale(0.8);
+	/*display: none;*/
+	opacity:0;
+	transition:all 1s;
+}
+/*如意*/
+.zongziBox .c-text2{
+	width:180px;
+	height: 100px;
+	background:url(img/t_ruyi.png) no-repeat;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-70px;
+	margin-top:-50px;
+	z-index: 200;
+	transform-origin: center center;
+	-webkit-transform-origin: center center;
+	-moz-transform-origin: center center;
+	-ms-transform-origin: center center;
+	transform:scale(0.8);
+	-webkit-transform:scale(0.8);
+	-moz-transform:scale(0.8);
+	-ms-transform:scale(0.8);
+	/*display: none;*/
+	opacity:0;
+	transition:all 1s;
+}
+.zongziBox .c-text{
+	opacity: 1;
+}
+/*文字效果*/
+.text{
+	width:400px;
+	height: 370px;
+	position: absolute;
+	left:180px;
+	top:140px;
+	font-size:14px;
+	line-height: 20px;
+	color:#000;
+}
+.text .caption{
+	width:400px;
+	height: 240px;
+	background:url(img/caption.png) no-repeat;
+	margin-left: 40px;
+	opacity:0;
+	transition:all 2s;
+	-webkit-transition:all 2s;
+	-moz-transition:all 2s;
+}
+.text .to{
+    width:400px;
+    height: 30px;
+    margin-left:40px;
+    margin-top:10px;
+    background:url(img/to-2.png) no-repeat;
+	opacity:0;
+	transition:all 2s .5s;
+	-webkit-transition:all 2s .5s;
+	-moz-transition:all 2s .5s;
+}
+.text .from{
+	width:400px;
+	height: 30px;
+	background:url(img/from.png) no-repeat;
+	background-position: right center;
+	margin-left:40px;
+	text-align:right;
+	opacity:0;
+	transition:all 2s 1.5s;
+	-webkit-transition:all 2s 1.5s;
+	-moz-transition:all 2s 1.5s;
+}
+.text .msg{
+	width:400px;
+	height: 70px;
+	background: url(img/msg-2.png) no-repeat;
+	margin-left:40px;
+	margin-top:5px;
+	opacity:0;
+	transition:all 2s 1s;
+	-webkit-transition:all 2s 1s;
+	-moz-transition:all 2s 1s;
+}
+.text-in .caption,.text-in .to,.text-in .from,.text-in .msg{
+	opacity: 1;
+	margin-left: 0px;
+}
+/*粽子肉的视角(旋转)*/
+.zongziBox .cZongzirou-view_2{
+	background:url(img/zzr_2.png) no-repeat;
+}
+.zongziBox .cZongzirou-view_3{
+	background:url(img/zzr_3.png) no-repeat;
+}
+.zongziBox .cZongzirou-view_4{
+	background:url(img/zzr_4.png) no-repeat;
+}
+.zongziBox .cZongzirou-view_0{
+	transition:all 0s;
+	-webkit-transition:all 0s;
+	-moz-transition:all 0s;
+	background:url(img/zzr_1.png) no-repeat;
+	transform:rotateY(180deg);
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+}
+/*文字的视角*/
+.zongziBox .c-text-view1{
+	transition:all 0s;
+	-webkit-transition:all 0s;
+	-moz-transition:all 0s;
+	transform:scale(.8);
+	-webkit-transform:scale(.8);
+	-moz-transform:scale(.8);
+}
+.zongziBox .c-text-mirror1{
+	transition:all 0s;
+	-webkit-transition:all 0s;
+	-moz-transition:all 0s;
+	display: none;
+	opacity: 0;
+}
+.zongziBox .c-text-view2{
+	background: url(img/t_jixiang.png) no-repeat;
+   transition:all 0s;
+	-webkit-transition:all 0s;
+	-moz-transition:all 0s;
+   transform:scale(.8) rotateY(45deg) translate(-25px,0) rotate(8deg);
+   -webkit-transform:scale(.8) rotateY(45deg) translate(-25px,0) rotate(8deg);
+   -moz-transform:scale(.8) rotateY(45deg) translate(-25px,0) rotate(8deg);
+}
+.zongziBox .c-text-mirror2{
+	transition:all 0s;
+	-webkit-transition:all 0s;
+	-moz-transition:all 0s;
+    transform:scale(.7) rotateY(70deg) translate(298px,-2px) rotate(-8deg);
+    -webkit-transform:scale(.7) rotateY(70deg) translate(298px,-2px) rotate(-8deg);
+    -moz-transform:scale(.7) rotateY(70deg) translate(298px,-2px) rotate(-8deg);
+}
+.zongziBox .c-text-view3{
+	background:url(img/t_ruyi.png) no-repeat;
+	transition:all 0s;
+	-webkit-transition:all 0s;
+	-moz-transition:all 0s;
+	transform:scale(.75) rotateY(49deg) translate(-94px,0) rotate(15deg);
+	-webkit-transform:scale(.75) rotateY(49deg) translate(-94px,0) rotate(15deg);
+	-moz-transform:scale(.75) rotateY(49deg) translate(-94px,0) rotate(15deg);
+}
+.zongziBox .c-text-mirror3{
+	transition:all 0s;
+	-webkit-transition:all 0s;
+	-moz-transition:all 0s;
+    transform:scale(.75) rotateY(49deg) translate(118px,0) rotate(-15deg);
+    -webkit-transform:scale(.75) rotateY(49deg) translate(118px,0) rotate(-15deg);
+    -moz-transform:scale(.75) rotateY(49deg) translate(118px,0) rotate(-15deg);
+}
+.zongziBox .c-text-view4{
+	background:url(img/t_xingfu.png) no-repeat;
+	transition:all 0s;
+	-webkit-transition:all 0s;
+	-moz-transition:all 0s;
+	transform:scale(.6) rotateY(50deg) translate(-50px,10px) rotate(24deg);
+	-webkit-transform:scale(.6) rotateY(50deg) translate(-50px,10px) rotate(24deg);
+	-moz-transform:scale(.6) rotateY(50deg) translate(-50px,10px) rotate(24deg);
+}
+.zongziBox .c-text-mirror4{
+	transition:all 0s;
+	-webkit-transition:all 0s;
+	-moz-transition:all 0s;
+    transform:scale(.8) rotateY(65deg) translate(228px,10px) rotate(-5deg);
+	-webkit-transform:scale(.8) rotateY(65deg) translate(228px,10px) rotate(-5deg);
+	-moz-transform:scale(.8) rotateY(65deg) translate(228px,10px) rotate(-5deg);
+}

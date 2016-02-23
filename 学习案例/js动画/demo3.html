@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css2.css">
+	<script type="text/javascript" src="js2.js"></script>
+	<script type="text/javascript">
+         window.onload=function(){
+         	var lis = document.getElementsByTagName('li');
+         	for(var i = 0;i < lis.length;i++){
+         		lis[i].timer = null;
+         		// lis[i].index=i;
+         		lis[i].onmouseover = function(){
+         			var that = this;
+         			// startMove(this,400,'width',function(){
+         			// 	startMove(that,200,'height',function(){
+         			// 		startMove(that,100,'opacity');
+         			// 	});
+         			// });
+                    startMove(this,{'width':400,'height':200,'opacity':100});
+         		}
+         		lis[i].onmouseout = function(){
+         			var that = this;
+         			// startMove(this,30,'opacity',function(){
+         			// 	startMove(that,100,'height',function(){
+         			// 		startMove(that,200,'width');
+         			// 	})
+         			// });
+                    startMove(this,{'width':200,'height':100,'opacity':30});
+         		}
+         	}
+         }
+	</script>
+</head>
+<body>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>

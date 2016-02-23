@@ -1,0 +1,184 @@
+/*初始化*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* HTC and Width = 400 */
+@media (min-width:400px) {
+  html {
+    font-size: 62.5px;
+  }
+}
+
+/* Reset - Mobile */
+
+/* All */
+html {
+  font-size: 50px;
+}
+
+/* iPhone 4/5 */
+@media (min-width:320px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+/* Android */
+@media (min-width:360px) {
+  html {
+    font-size: 56.25px;
+  }
+}
+
+/* iPhone6 */
+@media (min-width:375px) {
+  html {
+    font-size: 58.59375px;
+  }
+}
+
+/* iPhone6 Plus */
+@media (min-width:414px) {
+
+  /*html { font-size:64.6875px;}*/
+
+  /*这里改了  为了b1那个table的边框*/
+  html {
+    font-size: 65px;
+  }
+}
+/*ipad*/
+@media (min-width:768px){
+  html{
+    font-size:120px;
+  }
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, dl, dt, dd, li, cite, fieldset, em, i {
+  list-style: none;
+  font-weight: normal;
+  font-style: normal;
+}
+sup, sub {
+  vertical-align: baseline;
+}
+a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+ul, ol, li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+body, th, td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse
+  border-spacing:0;
+}
+input, textarea {
+  outline: none;
+}
+a {
+  blr: expression_r(this.onFocus=this.blur());
+}
+area {
+  blr: expression_r(this.onFocus=this.blur());
+}
+*:not(input, textarea) {
+  -webkit-touch-callout: inherit;
+  -webkit-user-select: auto;
+}
+body {
+  width: 100%;
+  font-family: 'Microsoft Yahei' Hiragino Sans GB, Arial, Helvetica, "ºÚÌå", sans-serif;
+  color: #878787;
+  -webkit-touch-callout: inherit;
+  -webkit-user-select: auto;
+  background-color: #eee;
+  font-size: 0.28rem;
+}
+a {
+  color: #878787;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:hover {
+  text-decoration: none;
+}
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+dt, dd {
+  display: inline-block;
+}
+textarea, input {
+  resize: none;
+  outline: none;
+  border: none;
+}
+textarea,input{
+  resize: none;
+  -webkit-appearance: none;
+}
+ul, ol, li {
+  list-style: none;
+}
+em {
+  font-style: normal;
+}
+img {
+  display: block;
+  border: none;
+}
+.text-overflow{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.clearfix::after {
+  clear: both;
+  display: block;
+  line-height: 0;
+  visibility: hidden;
+  content: '';
+}
+.clear {
+  clear: both;
+}
+.full-header {
+  position: relative;
+  height:0.9rem;
+  line-height: 0.9rem;
+  border-bottom: 1px solid #eeeeee;
+  background: #407CEA;
+  padding: 0 0 0 0.14rem;
+  text-align: center;
+  font-size: 0.34rem;
+  letter-spacing: 0.01rem;
+  font-family: '宋体';
+  display: block;
+  color:#fff;
+  width: 100%;
+}
+.full-header a {
+  position: absolute;
+  top: 0;
+  padding: 0 0.1rem;
+  color: #999999;
+  display: block;
+  left:0.14rem;
+  color:#fff;
+}
+.full-header a .iconfont{
+  font-size:0.32rem;
+}

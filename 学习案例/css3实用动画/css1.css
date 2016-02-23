@@ -1,0 +1,52 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background-color:#000;
+	margin:8px;
+}
+.cardfan{
+	width:300px;
+	height:200px;
+	margin:20px auto;
+	cursor:pointer;
+}
+.cardfan img{
+	position:absolute;
+	border:10px solid #fff;
+	box-sizing:border-box;
+	box-shadow:4px 4px 3px rgba(0, 0, 0, 0.2);
+	transform-origin: center 400px;
+	-moz-transform-origin: center 400px;
+	-webkit-transform-origin: center 400px;
+	-o-transform-origin: center 400px;
+	transition:transform 0.7s;
+	-moz-transition:transform 0.7s;
+	-webkit-transition:transform 0.7s;
+	-o-transition:transform 0.7s;
+}
+.cardfan img:first-child{
+	transform:rotate(-5deg);
+	-moz-transform:rotate(-5deg);
+	-webkit-transform:rotate(-5deg);
+	-o-transform:rotate(-5deg);
+}
+.cardfan img:last-child{
+	transform:rotate(5deg);
+	-moz-transform:rotate(5deg);
+	-webkit-transform:rotate(5deg);
+	-o-transform:rotate(5deg);
+}
+.cardfan:hover img:first-child{
+	transform:rotate(-25deg);
+	-moz-transform:rotate(-25deg);
+	-webkit-transform:rotate(-25deg);
+	-o-transform:rotate(-25deg);
+}
+.cardfan:hover img:last-child{
+	transform:rotate(25deg);
+	-moz-transform:rotate(25deg);
+	-webkit-transform:rotate(25deg);
+	-o-transform:rotate(25deg);
+}

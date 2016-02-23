@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery_helloWorld</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+        // $(document).ready(function(){
+        //    $("button").click(function(){
+        //         var btn = $("button");
+        //         alert(btn.length);
+        //         // alert(btn[0].firstChild.nodeValue);
+        //         var vle = document.getElementById("btn");
+        //         alert($(vle).text());
+
+        //    });
+        // });
+        // $(document).ready(function(){
+        // 	$("li:has('label')").css("color","red");
+        // });
+        // $(document).ready(function(){
+        // 	var $ltime = 0;
+        // 	var $rtime = 0;
+        // 	$("#left").bind("click",function(){
+        // 		$ltime++;
+        // 		$("div").animate({
+        // 			left:"-=50"
+        // 		},1000,function(){
+        // 			$("div").html("左移"+$ltime+"次");
+        // 		});
+        // 	});
+        // 	$("#right").bind("click",function(){
+        // 		$rtime++;
+        // 		$("div").animate({
+        // 			left:"+=50"
+        // 		},1000,function(){
+        // 			$("div").html("右移"+$rtime+"次");
+        // 		});
+        // 	});
+        // });
+        $(document).ready(function(){
+        	var jsonStr = [{name:"张三",sex:"男"},{name:"李四",sex:"女"}];
+        	var html = '';
+        	$.each(jsonStr,function(index,val){
+        		html+="学生姓名:"+val.name+"&nbsp;&nbsp"+"学生性别："+val.sex+"<br>";
+        	});
+        	$("div").html(html);
+        })
+	</script>
+</head>
+<body>
+	<!-- <button id="btn">click me</button>
+	<button>click he</button> -->
+	<!-- <ul>
+		<li><p>p先生</p></li>
+		<li><label>妹纸</label></li>
+	</ul> -->
+	<!-- <input id="left" type="button" value="向左移动">
+	<input id="right" type="button" value="向右移动">
+	<div class="dnode"></div> -->
+	<div></div>
+</body>
+</html>

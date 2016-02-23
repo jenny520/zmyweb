@@ -1,0 +1,16 @@
+.title p{
+	padding-top:0.6rem;
+	padding-bottom:0.3rem;
+}
+.title p a{
+	display: block;
+	width:3rem;
+	text-align: center;
+	color:#f1f1f1;
+	background-color: #ea4f39;
+	height:0.7rem;
+	line-height: 0.7rem;
+	border-radius: 4px;
+	font-family: '宋体';
+    font-size:0.28rem;
+}

@@ -1,0 +1,95 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:16px;
+}
+#box{
+	width:500px;
+	height:200px;
+	border:1px solid #000000;
+	background:#FFFFFF;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-100px 0 0 -150px;
+}
+#box ul{
+	list-style-type: none;
+}
+.province{
+	width:320px;
+	height:35px;
+	background: #FF0000;
+	margin: 20px auto;
+	position: relative;
+	/*padding-left: 5px;*/
+}
+.province strong{
+	width:70px;
+	height:35px;
+	display: block;
+	color: #FFFFFF;
+	float:left;
+	margin-left: 5px;
+	line-height:35px;
+}
+#selectProvince{
+	width:200px;
+	height: 25px;
+	line-height: 25px;
+	background: #FFFFFF;
+	margin-top: 5px;
+	float: left;
+	padding-left: 8px;
+	background-image:url(images/province_sprites.png);
+	background-repeat: no-repeat;
+	background-position: 190px 0px;
+	color: #494949;
+	cursor: pointer;
+}
+#allProvince{
+	width:318px;
+    height: auto;
+    line-height: 30px;
+    /*padding-left: 10px;*/
+    clear:both;
+    border:1px solid #E0E1DD;
+    border-top: none;
+    position: absolute;
+    top:35px;
+    display: none;
+    z-index: 101;
+}
+#allProvince li{
+	height: 30px;
+	border-bottom: 1px solid #E0E1DD;
+}
+#allProvince li b{
+	font-weight: bold;
+	display: inline-block;
+	width: 30px;
+	text-align: center;
+}
+#allProvince li span{
+	padding-right: 15px;
+	cursor: pointer;
+}
+#allProvince li span:hover{
+	color: #FF0000;
+}
+#layer{
+	width: 100%;
+	height: 100%;
+	background:#FFFFFF;
+    z-index: 100;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    opacity: 0;
+    display: none;
+}
+/*#selectProvince .show{
+	background-position:190px -17px;
+	color:#000000;
+}
+*/

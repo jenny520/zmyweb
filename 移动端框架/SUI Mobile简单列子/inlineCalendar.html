@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/sm.min.css">
+    <link rel="stylesheet" type="text/css" href="css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<title>内联日历</title>
+</head>
+<body>
+    <div class="page-group">
+        <div class="page page-current">
+            <div class="content">
+                <div data-toggle='date'></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://g.alicdn.com/sj/lib/zepto/zepto.min.js" charset='utf-8'></script>
+    <script type="text/javascript" src='js/sm.js'></script>
+    <script type="text/javascript" src='js/sm-extend.js'></script>
+    <script type="text/javascript">
+        $(function(){
+            $.init();
+        })
+    </script>
+</body>
+</html>

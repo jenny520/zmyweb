@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+       $(document).ready(function(){
+       	$('li').hover(function(){
+       		$(this).siblings().animate({'height':'20px'},'slow').find('img').hide();
+       		$(this).siblings().find('a').animate({'padding-top':'0px'},'slow');
+       		$(this).find('a').animate({'padding-top':'0px'},'slow');
+            $(this).animate({'height':'20px'},'slow').addClass('currentLi');
+            $(this).find('img').hide();
+       	},function(){
+       		$(this).removeClass('currentLi');
+       		$(this).animate({'height':'65px'},'slow');
+       		$(this).find('img').show();
+       		$(this).find('a').animate({'padding-top':'45px'},'slow');
+       		$(this).siblings().animate({'height':'65px'},'slow').find('img').show();
+       		$(this).siblings().find('a').animate({'padding-top':'45px'},'slow');
+       	})
+       })
+	</script>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li>
+			  <a href="#">
+			  	<img src="../images/1.jpg" width="30px" height="30px">
+			  	<span>话费</span>
+			  </a>
+			</li>
+			<li>
+			  <a href="#">
+			  	<img src="../images/2.jpg" width="30px" height="30px">
+			  	<span>机票</span>
+			  </a>
+			</li>
+			<li>
+			  <a href="#">
+			  	<img src="../images/3.jpg" width="30px" height="30px">
+			  	<span>电影票</span>
+			  </a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

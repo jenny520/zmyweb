@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+	  $(document).ready(function(){
+        $('.side .sideTitle').find('a').hover(function(){
+       	  $(this).find('em').css('display','block');
+       	  $(this).css('background-color','red');
+        },function(){
+        	$(this).css('background-color','#efefef');
+       	  $(this).find('em').css('display','none');
+        });
+        $('.sideTitle span').hover(function(){
+        	$(this).css('background-color','red');
+        	$(this).find('em').css('display','block');
+        },function(){
+        	$(this).css('background-color','#efefef');
+        	$(this).find('em').css('display','none');
+        });
+	  })
+	</script>
+</head>
+<body style="height:1900px;">
+	<div class="side">
+		<div class="sideTitle"> 
+			<a href="#" class="a1"><em>建站咨询</em></a>
+			<a href="#" class="a2"><em>关注此活动</em></a>
+			<a href="#" class="a3"></a>
+			<a href="#" class="a4"><em>建站咨询</em></a>
+			<span><em>返回顶部</em></span>
+		</div>
+		<div class="sideContent" style="display: none">
+			<ul class="showContent">
+				<li><span class="s1"></span><em>新浪微博</em></li>
+				<li><span class="s2"></span><em>腾讯微博</em></li>
+				<li><span class="s3"></span><em>网易微博</em></li>
+				<li><span class="s4"></span><em>人人网</em></li>
+			    <li><span class="s5"></span><em>QQ空间</em></li>
+			    <li><span class="s6"></span><em>蘑菇街</em></li>
+			    <li><span class="s7"></span><em>开心网</em></li>
+			    <li><span class="s8"></span><em>豆瓣</em></li>
+			    <div class="clear"></div>
+			</ul>
+			<ul class="hideContent">
+				<li><span class="s9"></span><em>Facebook</em></li>
+				<li><span class="s0"></span><em>Twitter</em></li>
+				<li><span class="s11"></span><em>Pinterest</em></li>
+				<li><span class=="s12"></span><em>Google+</em></li>
+			</ul>
+			<div class="sideDes">
+				<span class="all"><em>+</em>查看全部</span>
+				<span class="portion" style="display:none"><em>-</em>查看部分</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

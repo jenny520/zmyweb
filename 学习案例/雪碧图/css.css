@@ -1,0 +1,38 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:12px;
+}
+ul{
+	list-style: none;
+}
+.divBox{
+	margin:20px;
+	width:120px;
+	background:#FCFAFA;
+}
+.divBox li{
+	height: 25px;
+	line-height: 25px;
+	/*text-align: center;*/
+	border-bottom:1px solid #F5F4F4;
+	overflow: hidden;
+}
+i{
+	background-image: url(sidebar.png);
+	display: inline;
+	background-repeat: no-repeat;
+	width:30px;
+	height: 30px;
+	float:left;
+	margin-left: 8px;
+}
+.item i{
+	background-position: 0 4px;
+}
+.item1 i{
+    background-position:0 -25px;
+}
+.item2 i{
+    background-position:0 -48px;
+}

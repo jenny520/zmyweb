@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+       $(document).ready(function(){
+       	  $('.z-box img').hover(function(){
+       	  	$(this).animate({marginTop:'5px'},100);
+       	  },function(){
+       	  	$(this).animate({marginTop:'15px'},100);
+       	  });
+       })
+	</script>
+</head>
+<body>
+	<div class="z-box">
+		<img src="images/1.jpg" width="150px" height="100px">
+	</div>
+</body>
+</html>

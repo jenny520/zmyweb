@@ -1,0 +1,63 @@
+*{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+a{
+	text-decoration: none;
+}
+#box{
+	height: auto;
+	width:550px;
+	border:1px solid #aaa;
+	margin:0 auto;
+	overflow: auto;
+	padding-left: 10px;
+}
+.top{
+	height: 40px;
+	margin-bottom: 10px;
+}
+.top a{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	float: right;
+	margin:5px;
+}
+.btn-list-off{
+	background:url(images/btns.jpg);
+	background-repeat: no-repeat;
+	background-position: -38px 0px;
+}
+.btn-car-on{
+	background:url(images/btns.jpg);
+	background-repeat: no-repeat;
+	background-position: -20px -33px;
+}
+#box ul li{
+	height:auto;
+	width:164px;
+	border:1px solid #aaa;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+.a-img{
+	width:164px;
+	height: 164px;
+	display: block;
+	overflow: hidden;
+}
+p a,p span{
+	display: block;
+	height: 23px;
+	padding-left:10px;
+	line-height: 23px;
+}
+.bottom{
+	height: 40px;
+	background:#808080;
+	text-align: center;
+	line-height: 40px;
+}

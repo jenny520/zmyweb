@@ -1,0 +1,88 @@
+.full-header {
+	width: 100%;
+	height: 0.8rem;
+	position: relative;
+	line-height: 0.8rem;
+	text-align: center;
+	font-size: 0.32rem;
+	padding-left: 0.14rem;
+	background-color: #fff;
+	color: #333;
+}
+.full-header a {
+	position: absolute;
+	left: 0.14rem;
+	padding: 0 0.1rem;
+	top: 0;
+	height: 0.8rem;
+}
+.content {
+	width: 100%;
+	padding: 0.4rem;
+	text-align: center;
+}
+.content .p_icon span {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	background-color: #Fff;
+	border: 0.1rem solid #fff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: .8rem;
+}
+.content .p_icon span i {
+	font-size: 0.5rem;
+	color: #5FCEC0;
+}
+.content .p_text {
+	color: red;
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+.content .p_time {
+	color: #333;
+	font-size: 0.23rem;
+	font-family: '微软雅黑';
+	height: 0.6rem;
+	line-height: 0.6rem;
+}
+footer {
+	width: 100%;
+}
+footer section {
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	background-color: #fff;
+}
+footer section a {
+	float: left;
+	display: inline;
+	padding: 0 0.3rem;
+	color: #4761ab;
+}
+footer section .right {
+	float: right;
+}
+footer article {
+	width: 100%;
+	text-align: center;
+	padding: 0.2rem 0 1rem 0;
+	background-color: #eee;
+}
+footer article .version {
+	line-height: 0.6rem;
+	height: 0.6rem;
+}
+footer article .version a {
+	padding: 0 0.3rem;
+	color: #4761ab;
+}
+footer article .version .touch {
+	color: #e94f37;
+}
+footer article .copyright {
+	font-size: 0.24rem;
+	color: #999;
+}

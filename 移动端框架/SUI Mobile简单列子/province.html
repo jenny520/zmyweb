@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/sm.min.css">
+	<title>省市区查询</title>
+</head>
+<body>
+    <div class="page-group">
+        <div class="page page-current" id="page-1455763300930">
+            <header class="bar bar-nav">
+                <h1 class="title">省市区选择</h1>
+            </header>
+            <div class="content native-scroll">
+                <div class="content-block-title">省市区</div>
+                <div class="content-block">
+                    <div class="list-block">
+                        <ul>
+                        <!-- Text inputs -->
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">收货地址</div>
+                                        <div class="item-input">
+                                          <input type="text" placeholder="" id="city-picker" value="广东 广州 越秀区" readonly="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://g.alicdn.com/sj/lib/zepto/zepto.min.js" charset='utf-8'></script>
+    <script type="text/javascript" src='js/sm.js' charset='utf-8'></script>
+    <script type="text/javascript" src='js/sm-city-picker.js' charset='utf-8'></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#city-picker").cityPicker({
+                toolbarTemplate: '<header class="bar bar-nav">\
+                <button class="button button-link pull-right close-picker">确定</button>\
+                <h1 class="title">选择收货地址</h1>\
+                </header>'
+            });
+        })
+    </script>
+</body>
+</html>

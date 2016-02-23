@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+        	$('.pic img').animate({width:'100px'},0);
+        	$('.pic img').mouseover(function(){
+        		$(this).stop().animate({width:'200px'},50);
+        	});
+        	$('.pic img').mouseout(function(){
+        		$(this).stop().animate({width:'100px'},50);
+        	});
+        })
+	</script>
+</head>
+<body>
+  <div class="box">
+	<div class="pic">
+		<a href="#" class="a0">
+			<img src="images/1.jpg" width="100px">
+		</a>
+		<a href="#" class="a1">
+			<img src="images/2.jpg" width="100px">
+		</a>
+		<a href="#" class="a2">
+			<img src="images/3.jpg" width="100px">
+		</a>
+		<a href="#" class="a3">
+			<img src="images/4.jpg" width="100px">
+		</a>
+	</div>
+  </div>
+</body>
+</html>

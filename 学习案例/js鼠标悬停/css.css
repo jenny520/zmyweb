@@ -1,0 +1,100 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:12pt;
+	font-family: 微软雅黑;
+}
+body{
+	background:url(images/baidu_demo.png);
+	background-repeat: no-repeat;
+	background-position: center 0px;
+}
+.link{
+	line-height: 24px;
+	text-align: right;
+	padding-right: 40px;
+}
+.mask{
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color:#000000;
+	filter: alpha(opacity=40);
+	opacity: 0.4;
+	z-index: 20;
+	width:100%;
+	height: 100%;
+	display:none;
+}
+.dialog-ui{
+	background-color: #FFFFFF;
+	position:absolute;
+	/*top:20px;
+	left:400px;*/
+	width:400px;
+	z-index:100;
+	border:1px solid #DFDFDF;
+	display: none;
+}
+.dialog-title{
+	height: 48px;
+	line-height:48px;
+	padding:0px 20px;
+	color:#424439;
+	background:#F7F7F7;
+	cursor: move;
+	border-bottom: 1px solid #efefef;
+}
+.dialog-title .close{
+	display: block;
+	background:url(images/close_def.png);
+	background-repeat: no-repeat;
+	position:absolute;
+	top:10px;
+	right:10px;
+	width:16px;
+	height:16px;
+}
+.dialog-title .close:hover{
+	background:url(images/close_hov.png);
+}
+.dialog-content{
+	padding:20px;
+}
+.dialog-user{
+	padding-top:10px;
+}
+.dialog-input{
+	width:360px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 25px;
+	border:1px solid #EFEFEF;
+	color:#C4C4C4;
+}
+.user{
+	background:url(images/input_username.png);
+	background-repeat: no-repeat;
+	background-position:3px center;
+}
+.pst{
+	background:url(images/input_password.png);
+	background-repeat: no-repeat;
+	background-position: 3px center;
+}
+.dialog-find{
+	text-align:right;
+	padding:10px 0px;
+}
+.dialog-find a{
+	color:#400080;
+	font-size:9pt;
+	text-decoration: none;
+}
+.submit{
+	text-align: center;
+	line-height: 40px;
+	display: block;
+	background-color:#0080C0;
+	color:#F9F9F9;
+}

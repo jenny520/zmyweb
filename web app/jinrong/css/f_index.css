@@ -1,0 +1,238 @@
+.full-header {
+	position: relative;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #eeeeee;
+	background: #ffffff;
+	padding: 0 0 0 0.14rem;
+	text-align: center;
+	font-size: 16px;
+	display: block;
+	width: 100%;
+}
+.full-header a {
+	position: absolute;
+	top: 0;
+	padding: 0 0.1rem;
+	color: #999999;
+	display: block;
+}
+.full-header .iconleft {
+	left: 0.14rem;
+}
+.full-header .iconright {
+	right: 0.14rem;
+}
+.tabmenulist {
+	width: 100%;
+	height: 0.82rem;
+	background-color: #fff;
+	font-size: 0.24rem;
+}
+.tabmenulist li {
+	float: left;
+	width: 33.3%;
+	height: 0.78rem;
+	line-height: 0.78rem;
+	text-align: center;
+}
+.tabmenulist li a {
+	display: block;
+	width: 100%;
+	height: 0.78rem;
+	line-height: 0.78rem;
+}
+.tabmenulist li.active a {
+	color: #4663a9;
+}
+.tabmenulist li.active {
+	border-bottom: 0.04rem solid #4663a9;
+	height: 0.82rem;
+}
+.search {
+	width: 100%;
+	padding: 0.36rem;
+}
+.search .search-content {
+	height: 0.74rem;
+	padding: 0.15rem 0.8rem 0.15rem 0.2rem;
+	background-color: #fff;
+	position: relative;
+	font-size: 0.24rem;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+.search .search-content input {
+	height: 0.42rem;
+	line-height: 0.42rem;
+	width: 100%;
+}
+.search .search-content .search-btn {
+	position: absolute;
+	top: 0.15rem;
+	right: 0;
+	height: 0.42rem;
+	line-height: 0.42rem;
+	border-left: 1px solid #ccc;
+	width: 0.8rem;
+	text-align: center;
+}
+.money-list {
+	width: 100%;
+	padding: 0.24rem;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0.2rem;
+	background-color: #fff;
+}
+.money-list h2 {
+	width: 100%;
+	position: relative;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	font-size: 0.32rem;
+	font-weight: bold;
+	color: #333;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	padding-right: 0.8rem;
+}
+.money-list h2 a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-weight: normal;
+	font-size: 0.24rem;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	text-align: center;
+	color: #fff;
+	background-color: #aeaeae;
+	padding: 0 0.1rem;
+	border-radius: 3px;
+}
+.money-list .b-span {
+	width: 100%;
+	height: 0.48rem;
+	line-height: 0.48rem;
+}
+.money-list span {
+	font-size: 0.24rem;
+	height: 0.42rem;
+	line-height: 0.42rem;
+	color: #333;
+	display: block;
+}
+.money-list .b-span em {
+	font-size: 0.28rem;
+	font-weight: bold;
+	color: #ea4f39;
+}
+.money-list article {
+	padding-top: 0.3rem;
+	width: 100%;
+}
+.money-list article a {
+	display: inline-block;
+	width: 45%;
+	height: 0.6rem;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 0.6rem;
+	color: #fff;
+	margin-right: 0.2rem;
+}
+.money-list article .red {
+	background-color: #ea4f39;
+}
+.money-list article .blue {
+	background-color: #4761ab;
+}
+.more {
+	width: 100%;
+	padding: 0 0.3rem;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	margin: 0.3rem 0;
+	text-align: center;
+}
+.more a {
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 5px;
+	color: #333;
+}
+footer {
+	width: 100%;
+}
+footer section {
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	background-color: #fff;
+}
+footer section a {
+	float: left;
+	display: inline;
+	padding: 0 0.3rem;
+	color: #4761ab;
+}
+footer section .right {
+	float: right;
+}
+footer article {
+	width: 100%;
+	text-align: center;
+	padding: 0.2rem 0 1rem 0;
+	background-color: #eee;
+}
+footer article .version {
+	line-height: 0.6rem;
+	height: 0.6rem;
+}
+footer article .version a {
+	padding: 0 0.3rem;
+	color: #4761ab;
+}
+footer article .version .touch {
+	color: #e94f37;
+}
+footer article .copyright {
+	font-size: 0.24rem;
+	color: #999;
+}
+.toTop {
+	position: fixed;
+	right: 0.3rem;
+	bottom: 3rem;
+	width: 0.9rem;
+	height: 0.9rem;    /*opacity: 0;*/
+	transition: opacity 0.5s ease;
+	-webkit-transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+	-ms-transition: opacity 0.5s ease;
+}
+.toTop.show {
+	opacity: 1;
+}
+.toTop aside {
+	width: 0.9rem;
+	height: 0.9rem;
+	background-color: #000;
+	opacity: 0.4;
+	border-radius: 50%;
+}
+.toTop article {
+	position: absolute;
+	top: 0.18rem;
+	left: 0.2rem;
+	width: 0.6rem;
+	height: 0.8rem;
+	color: #fff;
+	font-size: 0.24rem;
+	outline: none;
+}

@@ -1,0 +1,24 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:14px;
+}
+.box{
+	width:1190px;
+	margin:0 auto;
+}
+#top{
+	width:40px;
+	height:40px;
+	background: url(images/top_bg.png);
+	position: fixed;
+	left:50%;
+	bottom: 30px;
+	margin-left: 600px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: none;
+}
+#top:hover{
+	background-position: left -40px;
+}

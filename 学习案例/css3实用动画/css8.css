@@ -1,0 +1,43 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background-color:#000;
+}
+@keyframes circle{
+	to{
+		transform:rotate(1turn);
+	}
+}
+@-moz-keyframes circle{
+	to{
+		-moz-transform:rotate(1turn);
+	}
+}
+@-webkit-keyframes circle{
+	to{
+		-webkit-transform:rotate(1turn);
+	}
+}
+.stage{
+	width:400px;
+	height:400px;
+	margin:100px auto;
+    background-image:url(http://p2.qhimg.com/t01d0bccc09b80b460d.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.stage .roketship{
+	width:135px;
+	height:250px;
+	background-image:url(http://p5.qhimg.com/t018efa521643aa9ede.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	transform-origin:200% center;
+	-webkit-transform-origin:200% center;
+	-moz-transform-origin:200% center;
+	animation:circle 1s infinite linear;
+	-moz-animation:circle 1s infinite linear;
+	-webkit-animation:circle 1s infinite linear;
+}

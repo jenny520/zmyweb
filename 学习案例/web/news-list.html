@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>news-list</title>
+	<link rel="stylesheet" type="text/css" href="../jquery-file/jquery-ui.min.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript" src="../jquery-file/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/libs/modernizr.min.js"></script>
+    <link  rel="stylesheet" type="text/css" href="css/add.css"/>
+</head>
+<body>
+<div class="container clearfix">
+    <div class="main-wrap">
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">新闻-增加新闻信息</span></div>
+        </div>
+        <table background="width="100%";"  cellpadding="0px" cellspacing="0px">
+        <p style="height: 20px"></p>
+		<tr style="margin-top:20px">
+			<th>
+				title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</th>
+			<td>
+				<input type="text"  class="myinput"/>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				content&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</th>
+			<td>
+				<textarea rows="20" cols="72"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				timer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</th>
+			<td>
+				<input type="text"  class="myinput" id="timer" readonly="readonly"/>
+			</td>
+		</tr>
+		<tr>
+			<td  colspan="2" style="text-align:center;">
+				<input type="button" value="保存" class="btn1" style="outline: none"/>
+				<input type="button" value="删除"  class="btn1" style="outline: none"/>
+			</td>
+		</tr>
+	</table>
+    </div>
+</div>
+ <script type="text/javascript">
+         $(function(){
+         	$('.btn1').button();
+         })
+    </script>
+</body>
+</html>

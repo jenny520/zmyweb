@@ -1,0 +1,131 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+html{
+	height: 100%;
+}
+body{
+	background:url(images/body.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 100%;
+}
+#mask{
+	width:100%;
+	height:980px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	background:#000000;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+	display: none;
+}
+#searchTip{
+	display: none;
+	width:980px;
+	height:800px;
+	/*background:#ccc;*/
+	position: absolute;
+	left: 50%;
+	margin-left:-491px;
+}
+#searchTip div{
+	position:absolute;
+	display: none;
+}
+#searchTip div a{
+	position: absolute;
+	width:100px;
+	height: 32px;
+    /*background:#ccc;*/
+    text-indent: -999px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#searchTip div span{
+	position:absolute;
+	height:30px;
+	width: 30px;
+	/*background:#FF0000;*/
+	text-indent: -999px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.stepA{
+	/*display: none;*/
+	width:745px;
+	height: 329px;
+	background:url(images/guide11.png);
+	top:130px;
+	left:-4px;
+}
+#searchTip .stepA a{
+    left:490px;
+    top:230px;
+}
+#searchTip .stepA span{
+    top:144px;
+    left:685px;
+}
+.stepB{
+	/*display: none;*/
+	height: 405px;
+	width:647px;
+    left: 324px;
+    background: url(images/guide21.png);
+    top:10px;
+}
+#searchTip .stepB a{
+    left:140px;
+    top:306px;
+}
+#searchTip .stepB span{
+    top:197px;
+    left:333px;
+}
+.stepC{
+	/*display: none;*/
+	height: 257px;
+	width:654px;
+    left: 322px;
+    background: url(images/guide31.png);
+    top:296px;
+}
+#searchTip .stepC a{
+    left:399px;
+    top:155px;
+}
+#searchTip .stepC span{
+    top:45px;
+    left:588px;
+}
+.stepD{
+	/*display: block;*/
+	height: 348px;
+	width:558px;
+    left: 170px;
+    background: url(images/guide41.png);
+    top:80px;
+}
+#searchTip .stepD a{
+    left:299px;
+    top:245px;
+}
+#searchTip .stepD span{
+    top:135px;
+    left:495px;
+}
+.stepE{
+	/*display: none;*/
+	height: 342px;
+	width:397px;
+    left:267px;
+    background: url(images/guide51.png);
+    top:80px;
+}
+#searchTip .stepE a{
+    left:149px;
+    top:247px;
+}

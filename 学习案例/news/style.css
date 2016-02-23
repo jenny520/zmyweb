@@ -1,0 +1,20 @@
+.page{
+	height: 40px;
+	text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.page a{
+	border: 1px solid #D0D1C9;
+	text-decoration: none;
+	margin: 5px;
+	padding:5px 10px;
+	display: inline-block;
+}
+.page a:link,.page a:visited{
+	color: #0B0B09;
+}
+.page a:hover,.page a:active{
+	color: #FFFFFF;
+	background:#E30000;
+}

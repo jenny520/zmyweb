@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body onselectstart="return false;">
+	<div class="wrap" id="wrap"> 
+	     <!-- photo负责平移和旋转 -->
+		<div class="photo photo-front" onclick="turn(this)" id="photo_{{index}}">
+		    <!-- photo-wrap负责翻转 --> 
+		    <div class="photo-wrap">
+			    <div class="side side-front">
+				    <p class="images"><img src="{{img}}"></p>
+				    <p class="caption">{{caption}}</p>
+			    </div>
+			    <div class="side side-back">
+				    <p class="desc">{{desc}}</p>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="data.js"></script>
+	<script type="text/javascript" src="js.js"></script>
+</body>
+</html>

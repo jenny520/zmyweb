@@ -1,0 +1,296 @@
+/*初始化*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* HTC and Width = 400 */
+@media (min-width:400px) {
+  html {
+    font-size: 62.5px;
+  }
+}
+
+/* Reset - Mobile */
+
+/* All */
+html {
+  font-size: 50px;
+}
+
+/* iPhone 4/5 */
+@media (min-width:320px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+/* Android */
+@media (min-width:360px) {
+  html {
+    font-size: 56.25px;
+  }
+}
+
+/* iPhone6 */
+@media (min-width:375px) {
+  html {
+    font-size: 58.59375px;
+  }
+}
+
+/* iPhone6 Plus */
+@media (min-width:414px) {
+
+  /*html { font-size:64.6875px;}*/
+
+  /*这里改了  为了b1那个table的边框*/
+  html {
+    font-size: 65px;
+  }
+}
+/*ipad*/
+@media (min-width:768px){
+  html{
+    font-size:120px;
+  }
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, dl, dt, dd, li, cite, fieldset, em, i {
+  list-style: none;
+  font-weight: normal;
+  font-style: normal;
+}
+sup, sub {
+  vertical-align: baseline;
+}
+a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+ul, ol, li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+body, th, td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse
+  border-spacing:0;
+}
+input, textarea {
+  outline: none;
+}
+a {
+  blr: expression_r(this.onFocus=this.blur());
+}
+area {
+  blr: expression_r(this.onFocus=this.blur());
+}
+*:not(input, textarea) {
+  -webkit-touch-callout: inherit;
+  -webkit-user-select: auto;
+}
+body {
+  width: 100%;
+  font-family: 'Microsoft Yahei' Hiragino Sans GB, Arial, Helvetica, "ºÚÌå", sans-serif;
+  color: #878787;
+  -webkit-touch-callout: inherit;
+  -webkit-user-select: auto;
+  background-color: #eee;
+  font-size: 0.28rem;
+}
+a {
+  color: #878787;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:hover {
+  text-decoration: none;
+}
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+dt, dd {
+  display: inline-block;
+}
+textarea, input {
+  resize: none;
+  outline: none;
+  border: none;
+}
+textarea {
+  resize: none;
+  -webkit-appearance: none;
+}
+ul, ol, li {
+  list-style: none;
+}
+em {
+  font-style: normal;
+}
+img {
+  display: block;
+  border: none;
+}
+body {
+  padding-top: 0.98rem;
+  padding-bottom: 0.9rem;
+}
+.header {
+  width: 100%;
+  background-color: #fff;
+  padding: 0.28rem 0.2rem;
+  height: 0.98rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  border-bottom: 1px solid #eee;
+}
+.header h1 {
+  width: 2rem;
+  height: 0.5rem;
+  float: left;
+}
+.header h1 img {
+  width: 2rem;
+  height: 0.5rem;
+  display: block;
+}
+.header .slogo {
+  float: left;
+  width: 3rem;
+  padding-left: 0.08rem;
+  font-size: 0.24rem;
+  height: 0.54rem;
+  overflow: hidden;
+}
+.header .slogo span {
+  display: block;
+  color: #b6190f;
+  font-weight: bold;
+  font-size: 0.28rem;
+  height: 0.28rem;
+  line-height: 0.28rem;
+}
+.header .slogo p {
+  color: #999999;
+  height: 0.28rem;
+  line-height: 0.28rem;
+}
+.header .user {
+  float: right;
+  width: 0.52rem;
+  height: 0.52rem;
+  text-align: center;
+}
+.header .user a {
+  display: block;
+  width: 0.52rem;
+  height: 0.52rem;
+}
+.header .user a i {
+  color: #999999;
+  font-size: 0.4rem;
+}
+.tishi{
+  width:100%;
+  background-color:#fff;
+  height:0.8rem;
+  line-height: 0.8rem;
+  padding-left:0.2rem;
+  font-size:0.32rem;
+}
+.tishi a{
+  display: inline-block;
+  padding:0 0.25rem;
+  height:0.8rem;
+}
+.fixBottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 0.9rem;
+  z-index: 100;
+  color: #fff;
+  background-color: #eee;
+  border-top: 1px solid #ddd;
+}
+.fixBottom li {
+  flex: 1;
+  width: 25%;
+  border-right: 1px solid #ddd;
+  text-align: center;
+}
+.fixBottom > li:nth-child(3) {
+  background-color: #ea4f39;
+}
+.fixBottom > li:nth-child(3) a {
+  color: #fff;
+}
+.fixBottom li a {
+  display: block;
+  width: 100%;
+  height: 0.9rem;
+}
+.fixBottom li a span {
+  display: block;
+  height: 0.5rem;
+  font-size: 0.4rem;
+  line-height: 0.5rem;
+}
+.fixBottom li a i {
+  margin-bottom: 0.1rem;
+  font-size: 0.34rem;
+}
+.tiwen {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  height: 1.2rem;
+  color: #fff;
+  background-color: #fff;
+  margin-bottom:0.3rem;
+}
+.back{
+  width:100%;
+  text-align: center;
+  padding:0.3rem;
+  background-color:#fff;
+}
+.back a,.back span{
+  font-size:0.34rem;
+  margin-right:0.1rem;
+}
+.back span:nth-of-type(1){
+  margin:0 0.2rem;
+}
+.clearfix::after {
+  clear: both;
+  display: block;
+  line-height: 0;
+  visibility: hidden;
+  content: '';
+}
+.clear {
+  clear: both;
+}

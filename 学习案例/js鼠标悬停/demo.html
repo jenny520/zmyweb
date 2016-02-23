@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="js.js" defer></script>
+</head>
+<body>
+    <div id="link" class="link">
+    	<a href="javascript:showdialog()">登录</a>
+    </div>
+    <div id="mask" class="mask" onselectstart='return false'>
+    </div>
+    <div id="dialog-ui" class="dialog-ui">
+    	<div class="dialog-title" id="dialog-title">登录通行证<a href="javascript:hidedialog()" class="close"></a></div>
+    	<div class="dialog-content">
+    		<div class="dialog-user">
+    			<input class="dialog-input user" type="input" value="手机/邮箱/用户名"/>
+    		</div>
+    		<div class="dialog-user">
+    			<input class="dialog-input pst" type="input" value="123456"/>
+    		</div>
+    		<div class="dialog-find"><a href="javascript:void(0)">忘记密码</a></div>
+    		<div><a href="javascript:void(0)" class="submit">登录</a></div>
+    		<div class="dialog-find"><a href="javascript:void(0)">注册</a></div>
+    	</div>
+    </div>
+</body>
+</html>

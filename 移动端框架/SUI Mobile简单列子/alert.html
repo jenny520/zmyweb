@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://m.sui.taobao.org/dist/css/sm.min.css">
+    <link rel="stylesheet" href="http://m.sui.taobao.org/dist/css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<title>对话框</title>
+</head>
+<body>
+    <header class="bar bar-nav">
+        <h1 class="title">Alert</h1>
+    </header>
+    <div class="content">
+        <div class="content-block">
+            <p><a href="#" class="alert-text">Alert With Text</a></p>
+            <p><a href="#" class="alert-text-title">Alert With Text and Title</a></p>
+            <p><a href="#" class="alert-text-title-callback">Alert With Text and Title and Callback</a></p>
+            <p><a href="#" class="alert-text-callback">Alert With Text and Callback</a></p>
+        </div>
+    </div>
+	<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='http://m.sui.taobao.org/dist/js/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='http://m.sui.taobao.org/dist/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript">
+        $(function(){
+            $(document).on('click','.alert-text',function () {
+                $.alert('Here goes alert text');
+            });
+
+            $(document).on('click','.alert-text-title', function () {
+                $.alert('Here goes alert text', 'Custom Title!');
+            });
+
+            $(document).on('click', '.alert-text-title-callback',function () {
+                $.alert('Here goes alert text', 'Custom Title!', function () {
+                    $.alert('Button clicked!')
+                });
+            });
+
+            $(document).on('click', '.alert-text-callback',function () {
+                $.alert('Here goes alert text', function () {
+                    $.alert('Button clicked!')
+                });
+            });
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.list{
+	width:100%;
+	padding:0.3rem;
+	background-color:#fff;
+	margin-bottom:0.2rem;
+}
+.list h3{
+	text-align: center;
+	height:0.8rem;
+	line-height: 0.8rem;
+	border-bottom:1px solid #ddd;
+}
+.list li{
+	padding:0.2rem 0;
+	border-bottom:1px dashed #ddd;
+}
+.list p{
+	line-height: 0.6rem;
+}
+.list p span,.list p em{
+	display:block;
+}
+.list li .left{
+	float:left;
+}
+.list p:nth-of-type(2){
+	text-align: right;
+}
+.list li .right{
+	float: right;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/sm.min.css">
+    <link rel="stylesheet" type="text/css" href="css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<title>操作表</title>
+</head>
+<body>
+    <header class="bar bar-nav">
+        <h1 class="title">操作表</h1>
+    </header>
+    <div class="content">
+        <div class="content-block">
+          <!-- In data-popup attribute we specify CSS selector of popup we need to open -->
+            <p><a href="#" class="create-actions">选择操作</a></p>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://g.alicdn.com/sj/lib/zepto/zepto.min.js" charset='utf-8'></script>
+    <script type="text/javascript" src='js/sm.js'></script>
+    <script type="text/javascript" src='js/sm-extend.js'></script>
+    <script type="text/javascript">
+        $(document).on('click','.create-actions', function () {
+            var buttons1 = [
+                {
+                  text: '请选择',
+                  label: true
+                },
+                {
+                  text: '卖出',
+                  bold: true,
+                  color: 'danger',
+                  onClick: function() {
+                    $.alert("你选择了“卖出“");
+                  }
+                },
+                {
+                  text: '买入',
+                  onClick: function() {
+                    $.alert("你选择了“买入“");
+                  }
+                }
+            ];
+            var buttons2 = [
+                {
+                  text: '取消',
+                  bg: 'danger'
+                }
+            ];
+            var groups = [buttons1, buttons2];
+            $.actions(groups);
+        });
+    </script>
+</body>
+</html>

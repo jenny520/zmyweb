@@ -1,0 +1,48 @@
+/* CSS Document */
+*
+	{
+		margin:0px;
+		padding:0px;
+		font-size:12px;
+	}
+	.main-wrap table
+	{
+		 width:100%;
+		 /*border:1px #CCCCCC solid;*/
+	}
+	.main-wrap th
+	{
+		text-align:right;
+		width:20%;
+		height:40px;
+	}
+	.main-wrap td
+	{
+		width:70%;
+		height:40px;
+		margin-left:30px;
+	}
+	.myinput
+	{
+		width:595px;
+		height:25px;
+		 border:1px #CCCCCC solid;
+	}
+	.myinput1
+	{
+		width:px;
+		height:25px;
+		 border:1px #CCCCCC solid;
+	}
+	.btn
+	{
+		width:50px;
+		height:30px;
+		background:url(../images/bt_bg.gif);
+	}
+	.myhead
+	{
+		background:url(../images/main_10.gif) repeat-x; height:38px; line-height:38px;
+		font-size:12px;
+	}
+

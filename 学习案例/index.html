@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+       .box{
+       	width:200px;
+       	height:200px;
+       	padding:10px;
+       	margin:50px auto;
+       	perspective: 800px;
+       }
+       @keyframes transform-5{
+       	0%{
+       		transform: perspective(400px) rotateY(180deg);
+       		-webkit-transform: perspective(400px) rotateY(180deg);
+       		-moz-transform: perspective(400px) rotateY(180deg);
+       	}
+       	100%{
+       		transform: perspective(400px) rotateY(0deg);
+       		-webkit-transform: perspective(400px) rotateY(0deg);
+       		-moz-transform: perspective(400px) rotateY(0deg);
+       	}
+       }
+       .box img{
+       	animation:transform-5 5s 500ms;
+       	-webkit-animation:transform-5 5s 500ms;
+       	-moz-animation:transform-5 5s 500ms;
+       }
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="images/1.jpg" class="imgbox" width="200px" height="200px">
+	</div>
+</body>
+</html>

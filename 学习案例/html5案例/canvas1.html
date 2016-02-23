@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	   canvas{
+	   	background-color:red;
+	   }
+	</style>
+</head>
+<body>
+	<canvas width=200 height=200 id="canvs"></canvas>
+</body>
+<script type="text/javascript">
+	var cNode = document.getElementById('canvs');
+	var cContext = cNode.getContext('2d');
+	var colorObj = cContext.createLinearGradient(0,0,100,0);
+     colorObj.addColorStop(0,'red');
+     colorObj.addColorStop(0.5,'green');
+     colorObj.addColorStop(1,'black');
+	cContext.shadowColor = 'rgb(188,140,23)';
+	cContext.shadowOffsetX = 3;
+	cContext.shadowOffsetY = 3;
+	cContext.shadowBlur = 3;
+	cContext.fillStyle = colorObj;
+	cContext.strokeStyle="#f50";
+	cContext.fillRect(0,0,100,100);
+	cContext.strokeRect(100,100,100,100);
+</script>
+</html>

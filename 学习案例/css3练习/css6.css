@@ -1,0 +1,22 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+div{
+	width:200px;
+	height:200px;
+	background-color:red;
+	margin:20px auto;
+	border-radius:50%;
+	/*-webkit-transition:width 0.5s ease-in 0.18s,height 0.5s ease-in 0.18s;
+	-moz-transition:width 0.5s ease-in 0.18s,height 0.5s ease-in 0.18s;
+	*/
+	/*-webkit-transition:border-radius 5s ease-in-out 0.18s;
+	-moz-transition:border-radius 5s ease-in-out 0.18s;*/
+	-webkit-transition:background-color 0.5s ease 0.18s;
+	-moz-transition:background-color 0.5s ease 0.18s;
+}
+div:hover{
+	border-radius:0px;
+	background-color:yellow;
+}

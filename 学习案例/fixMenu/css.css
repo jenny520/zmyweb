@@ -1,0 +1,33 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.keTitle {
+   width:100%;
+   height: 40px;
+   line-height: 40px;
+   background:url(images/bodyBg1.gif);
+   background-repeat: repeat-x;
+   background-color: #090909;
+   color:#FFFFFF;
+   text-align: center;
+   padding:10px;
+   filter: alpha(opacity=60);
+   opacity:0.6;
+   position: absolute;
+   top:0px;
+   left:0px;
+}
+#wrap{
+	position: absolute;
+	bottom:0px;
+	text-align: center;
+	width:100%;
+}
+#wrap a{
+	outline-style: none;
+	text-decoration: none;
+}
+#wrap img{
+     border:0px;
+}

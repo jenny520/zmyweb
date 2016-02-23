@@ -1,0 +1,52 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:12px;
+}
+.jiugong{
+	width:543px;
+	height:303px;
+	overflow: hidden;
+	margin:40px auto;
+}
+.jiugong ul{
+    width: 543px;
+    height: 303px;
+}
+.jiugong ul li{
+	float:left;
+	width:180px;
+	height:100px;
+	position:relative;
+	z-index: 10;
+	border-right:1px solid #FFFFFF;
+	border-bottom:1px solid #FFFFFF;
+	list-style: none;
+	z-index: 10;
+}
+.jiugong ul li img{
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:20;
+}
+.jiugong ul li a{
+	display: block;
+	background-color:#181717;
+	opacity:0.8;
+	width:180px;
+	height: 100px;
+	border:1px solid #FFFFFF;
+	color:#FFFFFF;
+	text-align: center;
+	line-height: 100px;
+	font-size:14px;
+	/*z-index:40;*/
+	position:absolute;
+	left:0px;
+	top:0px;
+	text-decoration: none;
+}
+.jiugong ul li .default{
+	z-index: 30;
+}

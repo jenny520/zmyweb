@@ -1,0 +1,46 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.poster-main{
+	width:800px;
+	height:270px;
+	position:relative;
+	margin:20px auto;
+}
+.poster-main a,.poster-main img{
+	display: block;
+}
+.poster-main .poster-list{
+	width:800px;
+	height:270px;
+	list-style: none;
+}
+.poster-main .poster-item1{
+    position:absolute;
+    left:0px;
+    top:0px;
+    overflow: hidden;
+}
+.poster-main .poster-btn{
+	width:100px;
+	height:270px;
+	position:absolute;
+	top:0px;
+	z-index:10;
+	background-color:#fff;
+	cursor: pointer;
+	opacity: 0.5;
+}
+.poster-main .prev-btn{
+	left:0px;
+	background-image:url(images/btn_l.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.poster-main .next-btn{
+	right:0px;
+	background-image:url(images/btn_r.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}

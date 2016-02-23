@@ -1,0 +1,49 @@
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+.first
+	{
+		border:0px red solid;height:350px ;width:1000px;margin:auto;margin-top:200px
+	}
+	.one
+	{
+		border:0px blue solid; width:400px;
+	}
+	.two
+	{
+		border:0px green solid;width:306px ; float:left;
+	}
+	.three
+	{
+	 	border:0px yellow solid;width:690px;height:190px ; float:left; background:url(../images/bg.png);
+	}
+	.forth
+	{
+		margin-top:210px;width:680px;height:40px;position:absolute;z-index:1;border:0px red solid;
+	}
+	.five
+	{
+		 margin-top:220px; margin-left:10px; color:#FFFFFF;position:absolute;z-index:2;border:0px red solid;
+		 width:600px;
+	}
+	.version
+	{
+		 border:0px red solid;width:100px; float:left; font-weight:bolder;
+	}
+	.address
+	{
+		border:0px red solid;width:400px; float:left; color:#000000; margin-left:100px; font-size:12px;
+	}
+	a
+	{
+		color:#000000; text-decoration:none;/*无下划线*/
+	}
+	a:hover
+	{
+		color:#FF0000;
+		text-decoration:underline;/*有下划线*/
+		/*cursor:crosshair;*/
+	}
+

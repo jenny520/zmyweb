@@ -1,0 +1,27 @@
+.attention .a-content .a-img i{
+	color:#F479A1;
+}
+.attention .a-content .a-img{
+	padding-left:0;
+	width:20%;
+}
+.attention .a-content .a-img i:last-of-type{
+	font-size:0.61rem;
+	position:relative;
+	top:0.01rem;
+}
+.attention .a-content .a-text{
+	width:80%;
+	margin-left:20%;
+}
+.list li .content h3{
+	line-height: 0.6rem;
+	font-size:0;
+}
+.list li:first-of-type .content h3 a{
+	color:#FB6156;
+	font-size:0.34rem;
+}
+.list li:first-of-type .content h3 a span{
+	margin-left:-0.06rem;
+}

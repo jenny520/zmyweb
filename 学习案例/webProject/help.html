@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>帮助中心</title>
+<link rel="stylesheet" type="text/css" href="img/style.css"/>
+</head>
+<script type="text/javascript" src="img/tab.js"></script>
+<script type="text/javascript" src="img/jquery-1.3.2.min.js"></script>
+<!--[if lt IE 7]>
+<script type="text/javascript" src="img/putaojiayuan.js"></script>
+<![endif]-->
+
+<body>
+<div class="top">
+  <div class="top_bar">
+    <div class="logo"></div>
+    <div class="at1">手机访问WAP.INBAI.COM</div>
+    <div class="clear"></div>
+  </div>
+  <div class="nav">
+    <ul>
+      <li><a href="index.html">亿贝首页</a></li>
+      <li><a href="call.html">亿贝CALl</a></li>
+      <li><a href="tongxun.html">亿贝通讯录</a></li>
+      <li><a href="dongtai2.html">最新动态</a></li>
+      <li><a href="liuyang.html">留言板</a></li>
+      <li class="hover"><a href="help.html">帮助中心</a></li>
+    </ul>
+  </div>
+</div>
+<div class="content">
+  <div class="main">
+    <div class="banner2"><img src="img/banner2.jpg"  width="1000" height="100"/></div>
+    <div class="bar"><b>用户中心</b><span>当前位置：<a href="#">首页 ></a><a href="#">用户中心</a></span></div>
+    <div class="left1">
+          <div class="box7">
+             <h3 class="bar5">亿贝CALL</h3>
+             <ul class="menu6">
+                <li><a href="#">Symbian平台</a></li>
+                <li><a href="#">android平台</a></li>
+                <li><a href="#">通用J2me平台</a></li>
+             </ul>
+             <h3 class="bar5">亿贝通讯录</h3>
+             <ul class="menu6">
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">其他问题</a></li>
+             </ul>
+          </div>
+    </div>
+    <div class="right1">
+<div class="wenti" style="width:640px; margin:0 auto;">
+		
+		<script>
+			$(function(){
+				$('dt').hover(function(){
+					if($(this).hasClass('expand')) return;
+					$(this).attr('class','focus');
+				},function(){
+					if($(this).hasClass('expand')) return;
+					$(this).attr('class','original');}
+				);
+ 
+				$('dt').click(function(){
+					if($(this).hasClass('expand')){
+						$(this).next().hide();
+						$(this).attr('class','original');;
+						return;
+					}
+					$('dd').hide();
+					$('dt').attr('class','original');
+					$(this).attr('class','expand');
+					$(this).next().show();
+				});
+ 
+			})
+		</script>
+ 
+		 <dl>
+		 	<dt class="original">如何使用亿贝</dt>
+			<dd>先看看我们特别为您准备的入门教程吧。<a href="#">立即查看</a></dd>
+			
+			<dt class="original">我收到了手机短信，应该怎么使用？</dt>
+			<dd>凭手机短信中的拉手券密码就可直接到店消费！</dd>
+			
+			<dt class="original">拉手券可以给朋友吗？</dt>
+			<dd>
+			<p><strong>方法一、</strong>在我的拉手券页面中,点“赠送”按钮,输入好友在拉手网的账号，就直接赠送给朋友了。<a href="#">去看看吧</a></p><br/>
+			<p><strong>方法二、</strong>直接转发短信或者将打印的拉手券交给朋友就可以啦！拉手券不是实名制的，所以也请您保管好自己的拉手账户哦！</p>
+			</dd>
+			
+
+		 </dl>
+ 
+		</div>
+      
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="foot">
+  <div class="foot_nav"><a href="#">帮助中心</a>|<a href="#">隐私条款</a>|<a href="#">关于我们</a>  来源:<a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
+  <div class="foot_bar"><img src="img/logo2.jpg"  width="114" height="42" align="left"/>&copy;2009.INBAI Technology Co.Ltd<br />
+    粤ICP备09104593</div>
+  <div class="clear"></div>
+</div>
+</body>
+</html>

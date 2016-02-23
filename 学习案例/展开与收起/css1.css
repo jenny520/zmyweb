@@ -1,0 +1,23 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+#pn{
+	margin:0 auto;
+	background:#CDCDCD;
+	display: block;
+	padding:5px;
+	width:600px;
+	height: auto;
+	text-align: center;
+	color:#272822;
+	font-size: 9pt;
+}
+.content{
+	margin:0 auto;
+	width:600px;
+	background:#67695A;
+	color:#FFFFFF;
+	text-align: center;
+	padding:7px 0px;
+}

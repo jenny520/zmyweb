@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>juery_demo1</title>
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+	 // $(document).ready(function(){
+	 // 	$("button").click(function(){
+	 // 		// $("p").css("background-color","red");
+	 // 		$("p").hide();
+	 // 	});
+	 // });
+     // $(document).ready(function(){
+     // 	$("#hide").click(function(){
+     // 		$("p").hide(1000);
+     // 	});
+     // 	$("#show").click(function(){
+     // 		$("p").show();
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("p").toggle(1000);
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("#div2").fadeIn("slow");
+     // 		$("#div3").fadeIn(3000);
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("#div2").fadeOut(3000);
+     // 		$("#div3").fadeOut("slow");
+     // 	})
+     // })
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("#div2").fadeToggle();
+     // 		$("#div3").fadeToggle();
+     // 	})
+     // })
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("#div2").fadeTo("slow",0);
+     // 		$("#div3").fadeTo("slow",0.4);
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$(".flip").click(function(){
+     // 		$(".panel").slideToggle("slow");
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("div").animate({left:'250px',opacity:'0.5',height:'150px',width:'150px'});
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("div").animate({
+     // 			left:'250px',
+     // 			height:'+=150px',
+     // 			width:'+=150px'
+     // 		});
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("div").animate({
+     // 			height:'toggle'
+     // 		})
+     // 	})
+     // })
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		var div = $("div");
+     // 		div.animate({height:'300px',opacity:'0.4'},"slow");
+     // 		div.animate({width:'300px',opacity:'0.8'},"slow");
+     // 		div.animate({height:'100px',opacity:'0.4'},"slow");
+     // 		div.animate({width:'100px',opacity:'0.8'},"slow");
+     // 	});
+     // });
+     $(document).ready(function(){
+     	$("button").click(function(){
+     		var div = $("div");
+     		div.animate({left:'100px'},"slow");
+     		div.animate({fontSize:'3em'},"slow");
+     	});
+     });
+	</script>
+	<!-- <style type="text/css">
+     div.panel,p.flip{
+     	margin:0px;
+     	padding:5px;
+     	text-align:center;
+     	background:#EBECE8;
+     	border:1px solid #E4E6E1;
+     }
+     div.panel{
+     	height:120px;
+     	/*display:none;*/
+     }
+	</style> -->
+</head>
+<body>
+	<!-- <h2>This is a heading</h2>
+	<p>This is a paragraph.</p>
+	<p>This is another paragraph.</p>
+	<button type="button">Click me</button> -->
+	<!-- <p id="p1">如果点击“隐藏”按钮，我就会消失
+	</p>
+	<button id="hide" type="button">隐藏</button>
+	<button id="show" type="button">显示</button> -->
+	<!-- <button type="button">切换</button>
+	<p>这是一个段落</p>
+	<p>这是其中一个段落</p> -->
+	<!-- <p>演示带有不同参数的fadeOut()方法。</p>
+	<button>点击这里，使三个矩形淡出</button><br><br>
+	<div id="div2" style="width:80px;height:80px;background-color:red">
+	</div>
+    <br>
+    <div id="div3" style="width:80px;height:80px;background-color:blue"></div> -->
+    <!-- <div class="panel">
+    	<p>W3School-领先的Web技术教程站点</p>
+    	<p>在W3School,你可以找到你所需要的所有网站建设教程</p>
+    </div>
+    <p class="flip">请点击这里</p> -->
+    <button>开始动画</button>
+    <p>默认情况下，所有HTML元素的位置都是静态，并且无法移动。如需对位置进行操作，记得首先把元素的CSS position属性设置为relation,fixed或absolute。</p>
+    <div style="background:#1FD6DA;height:100px;width:100px;position:absolute;">hello</div>
+</body>
+</html>

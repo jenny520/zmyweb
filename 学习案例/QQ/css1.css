@@ -1,0 +1,35 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.title{
+	width:400px;
+	height:70px;
+	margin:0 auto;
+	padding-top:30px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FF0000;
+}
+.btns{
+	width:220px;
+	height: 30px;
+	margin:0 auto;
+	text-align: center;
+}
+.btns span{
+	width:80px;
+	margin-right: 10px;
+	height: 27px;
+	display: inline-block;
+	line-height: 27px;
+	text-align: center;
+	background:#0080FF;
+	font-size: 12px;
+	font-family:"微软雅黑";
+	color: #FFFFFF;
+	border-radius: 7px;
+	border:1px solid #eee;
+	cursor: pointer;
+}

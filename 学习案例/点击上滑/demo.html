@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	   *{
+	   	padding:0px;
+	   	margin:0px;
+	   }
+       .bigBox{
+       	width:40px;
+       	height:40px;
+        margin:70px auto;
+        /*overflow:hidden;*/
+        position:relative;
+       }
+       .redBox{
+       	background:red;
+       	width:40px;
+       	height:40px;
+       	border:1px solid #efefef;
+       	margin:0px;
+       	position:absolute;
+       	top:0px;
+       	left:0px;
+       }
+       .blueBox{
+       	background:blue;
+       	width:40px;
+        height:40px;
+        border:1px solid #efefef;
+        display:none;
+        top:40px;
+        left:0px;
+       }
+	</style>
+</head>
+<body>
+	<div class="bigBox">
+		<div class="redBox"></div>
+		<div class="blueBox"></div>
+	</div>
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+       $('.redBox').click(function(){
+       	$(this).css('background-color','#6F92F6');
+       	$(this).stop().animate({'top':'-40px'},'slow');
+       	// $('.blueBox').css('display','block');
+       	// $('.blueBox').slideDown('slow');
+        $('.blueBox').stop().animate({'left':'0px','top':'0px'},300).show('slow');
+        // $('.blueBox').slideDown('slow');
+       })
+	</script>
+</body>
+</html>

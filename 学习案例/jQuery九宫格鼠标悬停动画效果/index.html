@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery九宫格鼠标悬停动画效果</title>
+<link href="css/lanren.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 代码部分begin -->
+<div class="index-con">
+  <ul>
+    <li class="in-kct in-course"> <a href="#" title="视频">
+      <div class="in-block"> <i class="bigger"></i> <span class="ch show" style="display: block;">视频</span> <i class="in-none"></i> <span class="in-text" style="display: none;">
+        <p><em>零基础</em>&nbsp;&nbsp;通关保障 </p>
+       
+        </span> </div>
+      </a> </li>
+    <li class="in-kct in-quest"> <a href="#" title="题库">
+      <div class="in-block"> <i class=""></i> <span class="ch" style="display: inline;">题库</span> <i class="in-none"></i> <span class="in-text" style="display: none; width: 280px; left: 30px">
+        <p><em>4.34万</em>道试题、<em>4640</em>份试卷</p>
+        <p>让你的水平提<em>升更容易</em>！</p>
+        </span> </div>
+      </a> </li>
+    <li class="in-jbk in-plan"> <a href="#" title="每日一练">
+      <div class="in-block"> <i style="display: block;"></i> <span style="display: inline;">每日一练</span> <i class="in-none toLeft1" style="display: none;"></i> <span class="in-text" style="display: none;">
+        <p>完备的规划是指引</p>
+        <p>我们取得成功的前提</p>
+        </span> </div>
+      </a> </li>
+    <li class="in-jbk in-report"> <a href="#" title="真题演练">
+      <div class="in-block"> <i style="display: block;"></i> <span style="display: inline;">真题演练</span> <i class="in-none toLeft2" style="display: none;"></i> <span class="in-text" style="display: none;">
+        <p>预测成绩</p>
+        <p>知识点强弱项目分析</p>
+        </span> </div>
+      </a> </li>
+    <li class="in-zxl in-forma"> <a href="#" title="精选试题">
+      <div class="in-block"> <i style="display: block;"></i> <span style="display: inline;">精选试题</span> <i class="in-none toLeft0 toLeft4" style="display: none;"></i> <span class="in-text" style="display: none;">
+        <p>更简洁、更简单、更强大、更专业</p>
+     
+        </span> </div>
+      </a> </li>
+    <li class="in-zxl in-means"> <a href="#" title="资料">
+      <div class="in-block"> <i></i> <span>资料</span> <i class="in-none"></i> <span class="in-text">
+        <p>辅导资料、常用软件</p>
+        <p>应有尽有</p>
+        </span> </div>
+      </a> </li>
+    <li class="in-jbk in-client"> <a href="#" target="_blank" title="微社区">
+      <div class="in-block"> <i></i> <span>微社区</span> <i class="in-none"></i> <span class="in-text">
+        <p>在线交流</p>
+        <p>让你学习考试更简单</p>
+        </span> </div>
+      </a> </li>
+  </ul>
+</div>
+<script src="js/core.js"></script>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script>
+    seajs.use('jquery',function($) {
+        $(function () {
+             //
+            $(".index-con .in-kct").hover(function() {
+                $(this).find('i:first').addClass('smaller').removeClass('bigger')
+                $(this).find('span:first').fadeOut('')
+                $(this).find('.in-text').show('fast').addClass('show')
+                $(this).find('.ch').removeClass('')
+            }, function() {
+                $(this).find('i:first').removeClass('smaller').addClass('bigger')
+                $(this).find('span:first').fadeIn('')
+                $(this).find('.in-text').hide('').removeClass('fast')
+                $(this).find('.ch').addClass('show')
+            })
+            $(".index-con .in-jbk").hover(function() {
+                $(this).find('i:first').addClass('hide')
+                $(this).find('span:first').hide('')
+                $(this).find('.in-text').show('').addClass('show')
+                var num = $(this).index('.in-jbk') + 1;
+                $(this).find('.in-none').show('').addClass('toLeft' + num).removeClass('toRight' + num)
+                $(this).find('.ch1').removeClass('show')
+            }, function() {
+                $(this).find('i:first').addClass('hide')
+                $(this).find('span:first').fadeIn('')
+                $(this).find('.in-text').hide('').removeClass('show')
+                var num = $(this).index('.in-jbk') + 1;
+                $(this).find('.in-none').show().addClass('toRight' + num).removeClass('toLeft' + num)
+                $(this).find('.ch1').addClass('show')
+            })
+            $(".index-con .in-zxl").hover(function() {
+                $(this).find('i:first').addClass('hide')
+                $(this).find('span:first').hide('')
+                $(this).find('.in-text').show().addClass('show')
+                var nums = $(this).index('.in-zxl') + 1;
+                $(this).find('.in-none').show().addClass('toLeft4').removeClass('toRight4')
+                $(this).find('.ch2').removeClass('show')
+            }, function() {
+                $(this).find('i:first').addClass('hide')
+                $(this).find('span:first').fadeIn('fast')
+                $(this).find('.in-text').hide().removeClass('show')
+                $(this).find('.in-none').show().addClass('toRight4').removeClass('toLeft4')
+                $(this).find('.ch2').addClass('show')
+            });
+        });
+    })
+</script>
+<!-- 代码部分end -->
+</body>
+</html>

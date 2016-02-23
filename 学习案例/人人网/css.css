@@ -1,0 +1,151 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:9pt;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility:hidden;
+}
+.clearfix{
+
+}
+#list{
+	width:540px;
+	margin:0 auto;
+	position:relative;
+	padding-top: 20px;
+}
+.box{
+	padding:20px 0px;
+	/*margin:10px 0px;*/
+	border-top: 1px solid #CFCFCF;
+}
+.close{
+	font-size:20px;
+	width:28px;
+    height: 28px;
+    border:1px solid #CCCCCC;
+    position:absolute;
+    right:0px;
+    top: 0px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 27px;
+    background:#f2f4f7;
+    color:#CFCFCF;
+    display: none;
+}
+.head{
+	float: left;
+	margin-right: 10px;
+	width:60px;
+	height: 60px;
+}
+.content{
+	float: left;
+	width:440px;
+}
+.txt{
+	margin-bottom: 10px;
+}
+.user{
+	color:#369;
+}
+.pic{
+	width:200px;
+	border:1px solid #E6E6E6;
+	box-shadow: 0px 0px 2px #E1E2DE;
+	margin-bottom: 10px;
+}
+.time{
+	float: left;
+	padding-left:20px;
+	background:url(images/bg1.jpg);
+	background-repeat: no-repeat;
+	color:#D7D7D7;
+	line-height: 20px;
+}
+.prefer{
+	float: right;
+	color:#369;
+	text-decoration: none;
+	padding-left: 20px;
+	background:url(images/bg2.jpg);
+	background-repeat: no-repeat;
+}
+.praise_total{
+	height: 20px;
+	line-height: 19px;
+	padding:5px 5px 5px 25px;
+	background:url(images/praise.png);
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	background-color: #D2D2D2;
+	margin:10px 0px;
+}
+.comment_box{
+	border-top:1px solid #C9C9C9;
+	padding:10px 0px;
+}
+.comment_box .pic1{
+	float: left;
+	width:40px;
+	height: 40px;
+	margin-right:15px;
+}
+.comment_box .comment_con{
+	width:385px;
+	float: left;
+	line-height: 20px;
+}
+.comment_time{
+	color:#D7D7D7;
+	position:relative;
+}
+.comment_praise{
+	display: inline-block;
+	position: absolute;
+	top:-1px;
+	right:50px;
+	text-decoration: none;
+	color:#369;
+	padding-left: 15px;
+	background:url(images/bg2.jpg);
+	background-repeat: no-repeat;
+}
+.comment{
+	border: 1px solid #eee;
+    color: #ccc;
+    display: block;
+    height: 20px;
+    padding: 5px;
+    resize: none;
+    width: 428px;
+    font-size: 16px;
+}
+.btn {
+    background: none repeat scroll 0 0 #4679ac;
+    border: 1px solid #0c528d;
+    color: #fff;
+    display: none;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    width: 65px;
+}
+.btn-off{
+	background:#CCCCCC;
+	border-color: #CCCCCC;
+	display: none;
+}
+.word {
+    color: #666;
+    display: none;
+    float: right;
+    margin: 7px 10px 0 0;
+}

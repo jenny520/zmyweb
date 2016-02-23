@@ -1,0 +1,66 @@
+*{
+	padding:0px;
+	margin:0px;
+	list-style: none;
+}
+#myjquery{
+	width:439px;
+	height:315px;
+	position:relative;
+	overflow:hidden;
+	margin:20px auto;
+}
+#myjquery #jqueryContent{
+	width:2634px;
+	height:315px;
+	position:absolute;
+	left:-439px;
+	top:0px;
+}
+#myjquery #jqueryContent li{
+	float:left;
+	width:439px;
+	height:315px;
+	position:relative;
+}
+#myjquery .nav{
+	position:absolute;
+	top:125px;
+	height:50px;
+	width:25px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	background-color:#000000;
+	opacity:0.6;
+	filter:alpah(opacity=60);
+	display: none;
+	color:#ffffff;
+}
+#myjquery .leftNav{
+	left:0px;
+}
+#myjquery .rightNav{
+	right:0px;
+}
+#myjqueryNav{
+	width:100px;
+	height: 15px;
+	position: absolute;
+	bottom:20px;
+	left:42%;
+	z-index:6;
+	line-height: 15px;
+}
+#myjqueryNav span{
+	display: inline-block;
+	width:10px;
+	height: 10px;
+	margin-right: 5px;
+	border-radius: 50%;
+	background-color:#F56716;
+	cursor: pointer;
+}
+#myjqueryNav .current{
+	background-color:#000000;
+}

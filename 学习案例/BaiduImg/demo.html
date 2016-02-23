@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+       $(document).ready(function(){
+       	$('.pic').each(function(index,target){
+       		$(target).mouseenter(function(){
+       			$(target).stop();
+       			$(target).find('.tagBox').stop(false,true);
+       			$(target).parent().addClass('cur');
+       			$('.pic').not($(target)).addClass('not_cur');
+       			$(target).find('.tagBox').animate({width:'210px'},'normal');
+       			$(target).animate({width:'200px',height:'150px',left:'-20px',top:'-15px'},'normal');
+       			$(target).find('.tagBox').animate({bottom:'10px'});
+       		});
+       		$(target).mouseleave(function(){
+       			$(target).stop();
+       			$(target).find('.tagBox').stop(false,true);
+       			$(target).parent().removeClass('cur');
+       			$('.pic').not($(target)).removeClass('not_cur');
+       			$(target).find('.tagBox').animate({width:'50px'},'normal');
+       			$(target).animate({width:'150px',height:'80px',left:'0px',top:'0px'},'normal');
+       			$(target).find('.tagBox').animate({bottom:'0px'});
+       		})
+       	})
+       })
+	</script>
+</head>
+<body>
+	<div class="picBox">
+		<ul class="ulBox">
+			<li class="liBox">
+				<div class="pic" style="width:150px,height:80px,left:0px,top:0px">
+					<a href="#">
+						<img src="images/1.jpg" width="100%">
+					</a>
+				    <div class="tagBox" style="bottom:0px">
+				    	<ul>
+				    		<li><a href="#">特效</a></li>
+				    		<li><a href="#">科e互联</a></li>
+				    		<li><a href="#">网页特效</a></li>
+				    	</ul>
+				    </div> 
+				</div>
+			</li>
+			<li class="liBox">
+				<div class="pic">
+					<a href="#">
+						<img src="images/2.jpg" width="100%">
+					</a>
+				    <div class="tagBox">
+				    	<ul>
+				    		<li><a href="#">特效</a></li>
+				    		<li><a href="#">科e互联</a></li>
+				    		<li><a href="#">网页特效</a></li>
+				    	</ul>
+				    </div>
+				</div>
+			</li>
+			<li class="liBox">
+				<div class="pic">
+					<a href="#">
+						<img src="images/3.jpg" width="100%">
+					</a>
+				    <div class="tagBox">
+				    	<ul>
+				    		<li><a href="#">特效</a></li>
+				    		<li><a href="#">科e互联</a></li>
+				    		<li><a href="#">网页特效</a></li>
+				    	</ul>
+				    </div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

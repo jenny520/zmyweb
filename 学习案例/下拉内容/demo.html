@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+        <script type="text/javascript" src="js.js"></script>
+	<script type="text/javascript">
+	 $(document).ready(function(){
+         $('.cate-wrap a').toggle(function(){
+         	$('.cate-drop').slideDown(400);
+         },function(){
+         	$('.cate-drop').slideUp(400);
+         })
+         $('.cate-drop li').hover(function(){
+         	$(this).css('background-color','#F05F5F');
+         	$('.cate-div').text($(this).text());
+         },function(){
+         	$(this).css('background-color','#D1D1D1');
+         })
+	 })
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="cate-wrap">
+			<div class="cate-div">懒人之家</div>
+			<a href="#"></a>
+			<div class="clear"></div>
+		</div>
+        <div class="cate-drop">
+        	<ul>
+        	<li>焦点图特效</li>
+                <li>菜单导航</li>
+                <li>flash素材</li>
+                <li>jquery特效</li>
+        	</ul>
+        </div>
+	</div>
+</body>
+</html>

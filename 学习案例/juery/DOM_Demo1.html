@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dom_demo1</title>
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+       // $(document).ready(function(){
+       // 	$("#btn1").click(function(){
+       // 		alert("Text:"+$("#test").text());
+       // 	});
+       // 	$("#btn2").click(function(){
+       // 		alert("HTML:"+$("#test").html());
+       // 	});
+       // });
+       // $(document).ready(function(){
+       // 	$("button").click(function(){
+       // 		alert("Value:"+$("#test").val());
+       // 	});
+       // });
+       // $(document).ready(function(){
+       // 	$("#btn1").click(function(){
+       // 		$("#test1").text("Hello world!");
+       // 	});
+       // 	$("#btn2").click(function(){
+       // 		$("#test2").html("<b>Hello World!<b/>");
+       // 	});
+       // 	$("#btn3").click(function(){
+       // 		$("#test3").val("Dolly Duck");
+       // 	});
+       // });
+     // $(document).ready(function(){
+     // 	$("#btn1").click(function(){
+     // 		$("#test1").text(function(i,origText){
+     // 		return "yes";
+     // 	});
+     //  });	
+     // });
+     // $(document).ready(function(){
+     // 	$("#btn1").click(function(){
+     // 		$("p").append("<b>Appended text</b>.");
+     // 	});
+     // 	$("#btn2").click(function(){
+     // 		$("ol").append("<li>Appended item</li>");
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("#div1").empty();
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("p").remove(".italic");
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("h1,h2,p").addClass("blue");
+     // 		$("div").addClass("important");
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("#div1").addClass("important blue");
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("h1,h2,p").removeClass("blue");
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("h1,h2,p").toggleClass("blue");
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		alert("Background color = "+$("p").css("background-color"));
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("p").css("background-color","yellow");
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		$("p").css({"background-color":"yellow","font-size":"200%"});
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	$("#start").click(function(){
+     // 		$("div").animate({left:'100px'},2000);
+     // 		$("div").animate({fontSize:'3em'},2000);
+     // 		$("div").animate({backgroudColor:'#3131EE'},2000);
+     // 	});
+     // });
+     // $(document).ready(function(){
+     // 	var txt = "";
+     // 	txt+="Width of div:"+$("#div1").width()+"</br>";
+     // 	txt+="Height of div:"+$("#div1").height();
+     // 	$("#div1").html(txt);
+     // })
+     // $(document).ready(function(){
+     // 	$("button").click(function(){
+     // 		var txt = "";
+     // 		txt+="Width of div:"+$("#div1").width()+"</br>";
+     // 		txt+="Height of div:"+$("#div1").height()+"</br>";
+     // 		txt+="Outer width of div:"+$("#div1").outerWidth()+"</br>";
+     // 		txt+="Outer height of div:"+$("#div1").outerHeight();
+     // 		$("#div1").html(txt);
+     // 	});
+     // });
+    $(document).ready(function(){
+    	$(".ex .hide").click(function(){
+    		$(this).parents(".ex").hide("slow");
+    	});
+    });
+	</script>
+	<style type="text/css">
+       /*.important{
+       	font-weight: bold;
+       	font-size:xx-large;
+       }
+       .blue{
+       	color: blue;
+       }*/
+       /*.blue{
+       	color:blue;
+       }*/
+       div.ex{
+       	background-color:#4642EE;
+       	padding:7px;
+       	border:1px solid #00FFFF;
+       }
+	</style>
+</head>
+<body>
+   <!-- <p id="test">这是段落中<b>粗体</b>文本</p>
+   <button id="btn1">显示文本</button>
+   <button id="btn2">显示HTML</button> -->
+   <!-- <p>姓名：<input type="text" id="test" value="米老鼠"/></p>
+   <button>显示值</button> -->
+   <!-- <p id="test1">这是段落</p>
+   <p id="test2">这是其中一个段落</p>
+   <p>Input field:<input type="text" id="test3" value="Mickey Mouse" /></p>
+   <button id="btn1">设置文本</button>
+   <button id="btn2">设置</button>
+   <button id="btn3">设置值</button> -->
+   <!-- <p id="test1">这是<b>粗体</b>文本。</p>
+   <p id="test2">这是其中一段<b>粗体</b></p>
+   <button id="btn1">显示旧/新文本</button>
+   <button id="btn2">显示旧/新HTML</button> -->
+   <!-- <p>This is a paragraph.</p>
+   <p>This is another paragraph.</p>
+   <ol>
+   	<li>List item1</li>
+   	<li>List item2</li>
+   	<li>List item3</li>
+   </ol>
+   <button id="btn1">追加文本</button>
+   <button id="btn2">追加列表项</button> -->
+   <!-- <div id="div1" style="height:100px;width:300px;border:1px solid #060606;background-color:#FFFF35;">
+   This is some text in the div.
+   <p>This is a paragraph in the div</p>
+   <p>This is another paragraph in the div.</p>
+   </div>
+   <button>清空div元素</button> -->
+   <!-- <p>This is a paragraph in the div.</p>
+   <p class="italic"><i>This is  another paragraph in the div.</i></p>
+   <p class="italic"><i>This is another paragraph in the div.</i></p>
+   <button>删除class="italic"的所有p元素</button> -->
+   <!-- <h1>标题1</h1>
+   <h2>标题2</h2>
+   <p>这是一个段落</p>
+   <p>这是其中一个段落</p>
+   <div>这是非常重要的文本！</div>
+   <br>
+   <button>向元素添加类</button> -->
+   <!-- <div id="div1">这是一些文本</div>
+   <div id="div2">这是一些文本</div>
+   <br>
+   <button>向第一个div元素添加类</button> -->
+   <!-- <h1 class="blue">标题1</h1>
+   <h2 class="blue">标题2</h2>
+   <p class="blue">这是一个段落</p>
+   <p>这是其中一个段落</p>
+   <br>
+   <button>从元素上删除</button> -->
+   <!-- <h1>标题1</h1>
+   <h2>标题2</h2>
+   <p>这是一个段落</p>
+   <p>这是其中一个段落</p>
+   <button>切换css类</button> -->
+   <!-- <h2>这是标题看</h2>
+   <p style="background-color:#FF0000">这是一个段落</p>
+   <p style="background-color:#20CA28;">这是一个段落</p>
+   <p style="background-color:#1717D2;">这是一个段落</p>
+   <button>返回p元素的背景颜色</button> -->
+   <!-- <h2>这是标题</h2>
+   <p style="background-color:#FF0000">这是一个段落</p>
+   <p style="background-color:#17BB69">这是一个段落</p>
+   <p style="background-color:#1B1BB8">这是一个段落</p>
+   <p>这是一个段落</p>
+   <button>设置p元素的背景色</button> 
+   -->
+   <!-- <h2>这是标题</h2>
+   <p style="background-color:#FF0000">这是一个段落</p>
+   <p style="background-color:#02FF02">这是一个段落</p>
+   <p style="background-color:#0000FF">这是一个段落</p>
+   <button>为p元素设置多个样式</button> -->
+   <!-- <button id="start">开始</button>
+   <p><b>"开始"</b>按钮会启动动画</p>
+   <p><b>"停止"</b>按钮会停止当前活动的动画，但允许已排队的动画向前执行</p>
+   <div style="background-color:#3ED922;height:100px;width:200px;position:absolute;">Hello</div> -->
+   <!-- <div id="div1" style="height:100px;width:300px;padding:10px;margin:3px;border:1px solid blue;background-color:lightblue;"></div>
+   <br>
+   <button>显示div的尺寸</button>
+   <p>width()-返回元素的宽度</p>
+   <p>height()-返回元素的高度</p> -->
+   <!-- <div id="div1" style="height:100px;width:300px;padding:10px;margin:3px;border:1px solid #1731DF;background-color:#86FF0D;"></div>
+   <br>
+   <button>显示div的尺寸</button>
+   <p>outerWidth()-返回元素的宽度(包括内边距和边框)</p>
+   <p>outerHeight()-返回元素的高度(包括内边距和边框)</p> -->
+   <h3>中国办事处</h3>
+   <div class="ex">
+   	<button class="hide" type="button">隐藏</button>
+   	<p>联系人：张先生<br/>
+   	北三环中路100号<br/>
+   	</p>
+   	</div>
+    <h3>美国办事处</h3>
+    <div class="ex">
+   	 <button class="hide" type="button">隐藏</button>
+   	 <p>联系人：David<br/>
+   	 第五大街200号<br/>纽约</p>
+   </div>
+</body>
+</html>

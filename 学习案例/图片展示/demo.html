@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>z-index</title>
+	<style type="text/css">
+        *{
+        	padding:0px;
+        	margin:0px;
+        }
+        .box{
+        	position:relative;
+        	width:200px;
+        	height:200px;
+        	border:1px solid #EF14E0;
+        	margin:20px auto;
+        }
+        .mask{
+        	position:absolute;
+        	left:0px;
+        	top:0px;
+        	width:200px;
+        	height:200px;
+        	background:#090909;
+        	filter:alpha(opacity=80);
+        	opacity:0.8;
+        	cursor:pointer;
+        }
+	</style>
+	<script type="text/javascript">
+        window.onload = function(){
+        	var mask = document.getElementById('mask');
+        	var img = document.getElementById('box').getElementsByTagName('img')[0];
+        	mask.onclick = function(){
+        		mask.style.zIndex = -3;
+        		img.onclick = function(){
+        			img.style.zIndex = 4;
+        		}
+        	}
+        }
+	</script>
+</head>
+<body>
+	<div class="box" id="box">
+                <input type="text" value="er" />
+		<img src="images/1.jpg" width="200px" height="200px">
+		<span class="mask" id="mask"></span>
+	</div>
+</body>
+</html>

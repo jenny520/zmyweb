@@ -1,0 +1,24 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:9pt;
+}
+#div1{
+	width:200px;
+	height:200px;
+	position:relative;
+	background:#FF0000;
+	left:-200px;
+}
+#div1 span{
+	width:40px;
+	height:70px;
+    position: absolute;
+    background:#0080FF;
+    left:200px;
+    top:65px;
+    color:#FFFFFF;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 5px;
+}

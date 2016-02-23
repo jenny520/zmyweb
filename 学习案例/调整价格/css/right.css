@@ -1,0 +1,69 @@
+/* CSS Document */
+	*
+	{
+		margin:0px;
+		padding:0px;
+		font-size:12px;
+	}
+	a
+	{
+		color:#000;
+		height:35px;
+		line-height:35px;
+		text-decoration: none;
+	}
+	table{
+		border:1px #CCCCCC solid;
+	}
+
+	tr
+	{
+		height:25px;
+		background-color:#FAECE9;
+	}
+	.mytr
+	{
+	 	height:25px;
+		background-color:#DECDC6;
+	}
+	td
+	{
+		text-align:center;
+		width:20%;
+	}
+	.input
+	{
+		width:15px;
+	} 
+	body
+	{
+		/*background:url(../images/main_09.gif) repeat-x;*/
+	}
+	.right
+	{
+		width:1182px;
+	}
+	.right_01
+	{
+		background:url(../images/h3.png) repeat;height:35px;
+		border-top:1px solid #EEEBEB;
+	}
+	.right_02
+	{
+		float:left; width:200px;color:#FFFFFF;
+	}
+	.right_03
+	{
+		float:right; width:200px;color:#FFFFFF;
+	}
+	.right_04
+	{
+		background:url(../images/main_10.gif) repeat-x; height:38px; line-height:38px;
+		padding-left:5px;
+	}
+	.right_05
+	{
+		line-height:40px; text-align:right;
+		margin-right: 20px;
+	}
+

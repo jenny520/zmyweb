@@ -1,0 +1,27 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.wrapper{
+	width:300px;
+	height:100px;
+	border:2px dotted red;
+	margin:30px auto;
+}
+.wrapper div{
+	width:300px;
+	height:100px;
+	line-height:100px;
+	text-align:center;
+	color:#fff;
+	background-color:orange;
+	-webkit-transform:skew(45deg);
+	-moz-transform:skew(45deg);
+	transform:skew(45deg);
+}
+.wrapper span{
+	display:block;
+	-webkit-transform:skew(-45deg);
+	-moz-transform:skew(-45deg);
+	transform:skew(-45deg);
+}

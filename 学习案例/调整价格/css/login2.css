@@ -1,0 +1,61 @@
+    .bg{
+    	width:1000px;
+    	height: 500px;
+    	background:url(../images/bg12.png);
+    	background-repeat: repeat;
+    	margin:0px auto;
+    }
+    .logo{
+    	width:255px;
+    	height: 300px;
+    	position:absolute;
+    	top:100px;
+    	left:300px;
+    }
+	.login
+	{
+		width:252px; height:370px; border:0px red solid;
+		position:absolute;
+		top:50px;
+		right:300px;
+	}
+	.middle
+	{
+		background:url(../images/bg2.png); width:248px; height:240px; padding-top:30px;
+	}
+	.m1
+	{
+		margin-left:30px;
+	}
+	span
+	{
+		font-size:12px; font-family:'微软雅黑';
+	}
+	.input
+	{
+		width:120px;height:20px;border:1px #CCCCCC solid;
+	}
+	.m2
+	{
+		margin-top:30px;margin-left:30px;
+	}
+	.m3
+	{
+		margin-top:30px;margin-left:35px;
+	}
+	.btn
+	{
+		width:70px; height:30px;
+		display:inline-block;
+		text-align: center;
+		line-height: 30px;
+		border:1px solid #BCBABA;
+		margin-right: 15px;
+		text-decoration: none;
+		color:#000;
+	}
+	.bottom
+	{
+		background:url(../images/bg3.png);width:248px;height:20px;
+	}
+

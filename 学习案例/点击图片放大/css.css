@@ -1,0 +1,27 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.bigBox{
+	width:150px;
+	height:150px;
+	overflow: hidden;
+	margin:80px auto;
+	position:relative;
+}
+.smallBox{
+	width:150px;
+	height:150px;
+	/*background:#F03030;
+	position:absolute;
+	left:0px;
+	top:0px;*/
+}
+.smallBox img{
+	transition:transform 1s;
+	-moz-transition:transform 1s;
+}
+.smallBox img:hover{
+	transform: scale(1.2);
+	-moz-transform:scale(1.2);
+}

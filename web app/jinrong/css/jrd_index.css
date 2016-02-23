@@ -1,0 +1,141 @@
+.swiper-container{
+	width:100%;
+	height:3rem;
+	background:url(../images/1.jpg) no-repeat;
+	background-size:cover;
+	text-align:center;
+	color:#fefefe;
+	font-family: '宋体';
+}
+.swiper-container img{
+	width:1rem;
+	height:1rem;
+	background-size:contain;
+	text-align: center;
+	display: inline-block;
+	margin-top:0.3rem;
+}
+.swiper-container h2{
+	font-size:0.4rem;
+	height:0.9rem;
+	line-height: 0.9rem;
+	font-weight: bold;
+}
+.swiper-container p{
+	font-size:0.24rem;
+	font-family: '微软雅黑';
+}
+.list{
+	width:100%;
+	padding:0.2rem 0.3rem;
+	color:#333;
+	font-size:0.3rem;
+}
+.list h3{
+	font-size:0.32rem;
+	height:0.7rem;
+	line-height: 0.7rem;
+}
+.list h3 a{
+	color:#333;
+}
+.list li{
+	background-color:#fff;
+	width:100%;
+	padding:0.2rem 0.3rem;
+	padding-right:0;
+	margin-bottom:0.2rem;
+}
+.list li h3{
+	color:#ea4f39;
+	border-bottom:1px solid #ddd;
+}
+.list li .l-content{
+	width:100%;
+	padding:0.1rem 0;
+	padding-top:0.2rem;
+	padding-right:0.3rem;
+}
+.list li .l-content .p-list{
+	float: left;
+	width:70%;
+}
+.list li .l-content .p-img{
+	margin-left:75%;
+	margin-top:0.3rem;
+	overflow: hidden;
+}
+.list li .l-content .p-img a{
+	display: block;
+	width:1.2rem;
+	height:1.2rem;
+	border-radius: 50%;
+	background-color:#F4F5F7;
+	position: relative;
+	text-align: center;
+	color:#ea4f39;
+}
+.list li .l-content .p-img a i{
+	display: block;
+	height:0.6rem;
+	padding-top:0.3rem;
+}
+.list li.li2 p{
+	margin:0.1rem 0;
+}
+.list li.li3 .l-content,.list li.li4 .l-content .p-mark{
+	font-size:0;
+}
+.list li.li3 .l-content a,.list li.li4 .l-content .p-mark a{
+    display: inline-block;
+    padding:0.1rem;
+    background-color:#EEEEEE;
+    font-size:0.28rem;
+    margin-right:0.1rem;
+    margin-bottom:0.1rem;
+}
+.list li.li4 .l-content dl{
+	margin-top:0.2rem;
+}
+.list li.li6 .l-content dl,.list li.li7 .l-content dl{
+	margin-bottom:0.2rem;
+}
+.list li.li6 .l-content dl dd,.list li.li7 .l-content dl dd{
+	color:#878787;
+}
+.list li.li6 .l-content dl dt,.list li.li7 .l-content dl dd{
+	display: block;
+}
+.praise{
+	background-color: #F4F5F7;
+	width:100%;
+	padding:0.2rem 0.3rem;
+}
+.praise h3{
+	width:100%;
+	height:0.6rem;
+	line-height: 0.6rem;
+	font-size:0.32rem;
+	color:#333;
+	margin-bottom:0.1rem;
+}
+.praise .p-img{
+	width:100%;
+	font-size:0;
+	margin-bottom:0.2rem;
+}
+.praise .p-img a{
+	display: inline-block;
+	width:0.8rem;
+	height:0.8rem;
+	margin-right:0.15rem;
+	margin-bottom:0.15rem;
+	border-radius: 50%;
+}
+.praise .p-img a img{
+	display: inline-block;
+	width:100%;
+	height: 100%;
+	background-size:cover;
+	border-radius: 50%;
+}

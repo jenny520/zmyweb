@@ -1,0 +1,43 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:12px;
+}
+.Box{
+	width:320px;
+	height:280px;
+	margin:100px auto;
+	border:1px solid #efefef;
+	background: #000000;
+}
+.Box li{
+	width:160px;
+	height:140px;
+	float:left;
+	overflow:hidden;
+	position:relative;
+}
+.Box span{
+	width:80px;
+	margin-left:10px;
+	height: 20px;
+	margin-top:7px;
+	line-height: 20px;
+	position:absolute;
+	color:#151414;
+	top:0px;
+	left:0px;
+}
+.Box img{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.apaha{
+	opacity:0.5;
+	filter: alpha(opacity=50);
+}
+.indexImg{
+	opacity:1;
+	filter: alpha(opacity=100);
+}

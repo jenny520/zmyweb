@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<!-- <script type="text/javascript" src="js.js"></script> -->
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+       $(document).ready(function(){
+       	$(window).scroll(function(){
+       		var scrollTop = $(document).scrollTop();
+       		var menu = $('#menu');
+       		var items = $('#content').find('.item');
+       		var curTop = "";
+       		items.each(function(){
+       			var m = $(this);
+       			var top = m.offset().top;
+                if(scrollTop>top-200){
+                	curTop = '#'+m.attr('id');
+                }else{
+                	return false;
+                }
+       		});
+       		var currentLink = $('#menu').find('.current');
+       		if(curTop&&currentLink.attr('href')!=curTop){
+       			currentLink.removeClass('current');
+       			$('#menu').find('[href='+curTop+']').addClass('current');
+       		}
+       	})
+       })
+	</script>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+		  <li><a href="#item1" class="current">1F 男装</a></li>
+		  <li><a href="#item2">2F 女装</a></li>
+		  <li><a href="#item3">3F 美妆</a></li>
+		  <li><a href="#item4">4F 数码</a></li>
+		  <li><a href="#item5">5F 母婴</a></li>
+		</ul>
+	</div>
+	<div id="content" class="content">
+	    <h1>地狗购物网</h1>
+	    <div class="item" id="item1">
+	        <h2>1F 男装</h2>
+	    	<ul>
+	    		<li><a href="#"><img src="images/1F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/1F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/1F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/1F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/1F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/1F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/1F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/1F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/1F.jpg"></a></li>
+	    	</ul>
+	    </div>
+	    <div class="item" id="item2">
+	        <h2>2F 女装</h2>
+	    	<ul>
+	    		<li><a href="#"><img src="images/2F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/2F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/2F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/2F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/2F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/2F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/2F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/2F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/2F.jpg"></a></li>
+	    	</ul>
+	    </div>
+	    <div class="item" id="item3">
+	        <h2>3F 美妆</h2>
+	    	<ul>
+	    		<li><a href="#"><img src="images/3F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/3F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/3F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/3F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/3F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/3F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/3F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/3F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/3F.jpg"></a></li>
+	    	</ul>
+	    </div>
+	    <div class="item" id="item4">
+	        <h2>4F 数码</h2>
+	    	<ul>
+	    		<li><a href="#"><img src="images/4F.png"></a></li>
+	    		<li><a href="#"><img src="images/4F.png"></a></li>
+	    		<li><a href="#"><img src="images/4F.png"></a></li>
+	    		<li><a href="#"><img src="images/4F.png"></a></li>
+	    		<li><a href="#"><img src="images/4F.png"></a></li>
+	    		<li><a href="#"><img src="images/4F.png"></a></li>
+	    		<li><a href="#"><img src="images/4F.png"></a></li>
+	    		<li><a href="#"><img src="images/4F.png"></a></li>
+	    		<li><a href="#"><img src="images/4F.png"></a></li>
+	    	</ul>
+	    </div>
+        <div class="item" id="item5">
+            <h2>5F 母婴</h2>
+	    	<ul>
+	    		<li><a href="#"><img src="images/5F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/5F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/5F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/5F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/5F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/5F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/5F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/5F.jpg"></a></li>
+	    		<li><a href="#"><img src="images/5F.jpg"></a></li>
+	    	</ul>
+	    </div>
+	</div>
+</body>
+</html>

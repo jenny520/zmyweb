@@ -1,0 +1,36 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+form{
+	margin:100px auto;
+	width: 400px;
+	height: 300px;
+}
+form div{
+	text-align: right;
+    margin:10px;
+    width:300px;
+}
+form div input{
+	width:200px;
+	height: 30px;
+	line-height: 30px;
+	padding-left:10px;
+	border:none;
+	outline: none;
+	border:1px solid #ededed;
+	margin-left: 15px;
+	margin-bottom:10px;
+}
+form div .sub{
+	width:70px;
+	color:#fff;
+	line-height: 30px;
+	outline: none;
+	border: none;
+	background:#26CAF6;
+	text-align: center;
+	padding-left:0px;
+	cursor:pointer;
+}

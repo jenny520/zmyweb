@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fullScreen</title>
+	<script type="text/javascript">
+        var video,btn;
+        window.onload = function(){
+        	video = document.getElementById('myVideo');
+            btn = document.getElementById('btn_fullscreen');
+            btn.addEventListener('click',forceFullScreen,false);
+            video.addEventListener('loadedmetadata',makeVisible,false);
+        }
+        function makeVisible(){
+        	if(video.mozSupportFullscreen){
+        		btn.style.visibility = 'visible';
+        	}
+        }
+        function forceFullScreen(){
+        	video.mozEntertFullscreen();
+        }
+	</script>
+</head>
+<body>
+	<div id="video_container">
+		<video width="320px" height="176px" src="IMP/video.mp4" id="myVideo" autoplay></video>
+	</div>
+	<br/>
+	<button type="button" id="btn_fullscreen">Go Fullscreen</button>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery手机腾讯网左右滚动切换效果图</title>
+<link rel="stylesheet" type="text/css" href="css/lanrenzhijia.css" />
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+
+<div class="main">
+	<div class="pro-switch">
+		<div class="slider">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<div class="img">
+						<img src="images/ad_home.jpg" height="450" width"460" alt="" />
+						</div>
+					</li>
+					<li>
+						<div class="img">
+						<img src="images/ad_yuetu.jpg" height="450" width"460" alt="" />
+						</div>
+					</li>
+					<li>
+						<div class="img">
+						<img src="images/ad_nba.jpg" height="450" width"460" alt="" />
+						</div>
+					</li>
+					<li>
+						<div class="img">
+						<img src="images/ad_stock.jpg" height="450" width"460" alt="" />
+						</div>
+					</li>
+					<li>
+						<div class="img">
+						<img src="images/ad_auto.jpg" height="450" width"460" alt="" />
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<script defer src="js/lanrenzhijia.js"></script> 
+<script type="text/javascript">
+    $(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

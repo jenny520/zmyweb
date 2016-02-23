@@ -1,0 +1,22 @@
+@mixin transition ($transition){
+	transition:$transition;
+	-webkit-transition:$transition;
+	-moz-transition:$transition;
+}
+
+@mixin transform-origin ($origin){
+	transform-origin:$origin;
+	-webkit-transform-origin:$origin;
+	-moz-transform-origin:$origin;
+}
+
+@mixin scale ($scale){
+	transform:scale($scale);
+	-webkit-transform:scale($scale);
+	-moz-transform:scale($scale);
+}
+
+@mixin opacity ($opacity){
+	opacity:$opacity;
+	filter: alpha(opacity=$opacity * 100);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://m.sui.taobao.org/dist/css/sm.min.css">
+    <link rel="stylesheet" href="http://m.sui.taobao.org/dist/css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<title>使用js操作侧边栏</title>
+</head>
+<body>
+    <div class="page">
+        <header class="bar bar-nav">
+            <h1 class='title'>侧栏</h1>
+        </header>
+        <div class="content">
+	        <div class="content-block">
+	            <p>
+	                <a href="#" class="button button-fill my-btn">JS打开侧栏</a>
+	            </p>
+	        </div>
+        </div>
+    </div>
+    <div class="panel-overlay"></div>
+    <!-- Left Panel with Reveal effect -->
+    <div class="panel panel-right panel-cover theme-dark" id='panel-js-demo'>
+        <div class="content-block">
+	        <p>我是从右边出现的</p>
+	        <p>并且我是覆盖在页面上而不是推开页面</p>
+	        <p></p>
+	        <!-- Click on link with "close-panel" class will close panel -->
+	        <p><a href="#" class="close-panel">关闭</a></p>
+        </div>
+    </div>
+    <div class="panel panel-right panel-reveal">
+        <div class="content-block">
+	        <p>这是一个侧栏</p>
+	        <!-- Click on link with "close-panel" class will close panel -->
+	        <p><a href="#" class="close-panel">关闭</a></p>
+        </div>
+    </div>
+	<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='http://m.sui.taobao.org/dist/js/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='http://m.sui.taobao.org/dist/js/sm-extend.min.js' charset='utf-8'></script>
+	<script type="text/javascript">
+        $(document).on("click", ".my-btn", function() {
+            $.openPanel("#panel-js-demo");
+        });
+	</script>
+</body>
+</html>

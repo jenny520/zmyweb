@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shopType</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link rel="stylesheet" type="text/css" href="../jquery-file/jquery-ui.min.css">
+	<script type="text/javascript" src="../jquery-file/jquery-1.7.2.js"></script>
+	<script type="text/javascript" src="../jquery-file/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+        	$('.a1').button();
+        })
+	</script>
+	<style type="text/css">
+	    *{
+            padding:0px;
+            margin:0px;
+	    }
+	    a{
+	    	text-decoration:none;
+	        color:#000;
+	    }
+	    h2{
+	    	font-size:16px;
+	    	padding-left:10px;
+	    	border-bottom:1px solid #efefef;
+	    	font-weight:normal;
+	    	padding:10px;
+	    }
+	    span{
+	    	color:red;
+	    }
+	    .clearfix:after {
+            clear: both;
+            content: ".";
+            display: block;
+            height: 0;
+            visibility:hidden;
+        }
+        .box{
+          	width:800px;
+          	height:auto;
+          	margin:20px auto;
+          	padding:10px;
+          /*	border:1px solid #efefef;
+          	border-radius:5px;
+          	box-shadow:0px 0px 5px #efefef;*/
+        }
+        .box ul{
+        	width:800px;
+        }
+        .box ul li{
+        	width:350px;
+        	height:320px;
+        	float:left;
+        	/*border-right:1px solid #efefef;*/
+        	padding-right:40px;
+        	list-style:none;
+        }
+        .box .p-img{
+        	width:300px;
+        	height:270px;
+        	padding:0px 10px;
+        	text-align:center;
+        }
+        .box .p-info{
+        	width:300px;
+        	line-height:20px;
+        	text-align:center;
+        	position: relative;
+        }
+        .box .p-name{
+        	padding:0px 35px;
+        }
+        .box .p-price{
+        	color:red;
+        }
+        .box .a1{
+        	position:absolute;
+        	right:-90px;
+        	bottom:4px;
+        	display:block;
+        	padding:5px;
+        	color:#000;
+        }
+        .a1 span{
+        	color:#000;
+        }
+	</style>
+</head>
+<body>
+	<div class="title">
+		<h2>在线商品</h2>
+	</div>
+	<div class="box">
+		<ul class="clearfix">
+			<li style="margin-right: 10px;">
+				<div class="p-img">
+					<a href="#"><img src="images/m1.png" width="280px" height="250px"></a>
+				</div>
+				<div class="p-info">
+					<div class="p-name">
+						<a href="#">合生元金装配方奶粉</a>
+					</div>
+					<div class="p-price">
+					    <span>￥</span>
+                            239.
+                        <span>00</span>
+				    </div>
+				    <a href="naifen.html" class="a1" style="right:-80px;">奶粉类</a>
+				</div>
+			</li>
+			<li>
+				<div class="p-img">
+					<a href="#"><img src="images/cc9.jpg" width="280px" height="250px"></a>
+				</div>
+				<div class="p-info">
+					<div class="p-name">
+						<a href="#">卡其曼套装</a>
+					</div>
+					<div class="p-price">
+					    <span>￥</span>
+                            239.
+                        <span>00</span>
+				    </div>
+				    <a href="clothes.html" class="a1" style="right:-70px;">套装</a>
+				</div>
+			</li>
+			<li style="margin-right: 10px;">
+				<div class="p-img">
+					<a href="#"><img src="images/c7.jpg" width="280px" height="250px"></a>
+				</div>
+				<div class="p-info">
+					<div class="p-name">
+						<a href="#">小浣熊沐浴露</a>
+					</div>
+					<div class="p-price">
+					    <span>￥</span>
+                            239.
+                        <span>00</span>
+				    </div>
+				    <a href="clean.html" class="a1">洗护用品</a>
+				</div>
+			</li>
+			<li>
+				<div class="p-img">
+					<a href="#"><img src="images/n1.png" width="280px" height="250px"></a>
+				</div>
+				<div class="p-info">
+					<div class="p-name">
+						<a href="#">帮宝适超薄干爽纸尿裤</a>
+					</div>
+					<div class="p-price">
+					    <span>￥</span>
+                            239.
+                        <span>00</span>
+				    </div>
+				    <a href="baby-diapers.html" class="a1">尿不湿</a>
+				</div>
+			</li>
+			<li style="margin-right: 10px;">
+				<div class="p-img">
+					<a href="#"><img src="images/s1.jpg" width="280px" height="250px"></a>
+				</div>
+				<div class="p-info">
+					<div class="p-name">
+						<a href="#">goodboy安全座椅</a>
+					</div>
+					<div class="p-price">
+					    <span>￥</span>
+                            239.
+                        <span>00</span>
+				    </div>
+				    <a href="safe-seat.html" class="a1">安全座椅</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

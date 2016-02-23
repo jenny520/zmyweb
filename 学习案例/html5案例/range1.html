@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RangeAPI</title>
+</head>
+<body>
+	<div id="div" style="color:#f00">这段文字是用来删除</div>
+	<button onclick="deleteText()">删除文字</button>
+	<script type="text/javascript">
+	    function deleteText(){
+	    	var divNode = document.getElementById('div');
+	    	var textValue = divNode.firstChild;
+	    	rangeObj = document.createRange();
+            rangeObj.setStart(textValue,1);
+            rangeObj.setEnd(textValue,4);
+            rangeObj.deleteContents();
+	    }
+	</script>
+</body>
+</html>

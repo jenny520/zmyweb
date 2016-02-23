@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div id="div">这是一段文字内容</div>
+	<button onclick="cloneContent()">点击我</button>
+	<script type="text/javascript">
+        function cloneContent(){
+        	var rangeObj = document.createRange();
+        	rangeObj.selectNodeContents(document.getElementById('div'));
+        	var rangeClone = rangeObj.cloneRange();
+        	alert(rangeClone.toString());
+        }
+	</script>
+</body>
+</html>

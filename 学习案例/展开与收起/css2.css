@@ -1,0 +1,42 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-size:9pt;
+	line-height:1.8;
+}
+#pn{
+	background:#f8f8f8;
+	height:auto;
+	width:750px;
+	margin:0 auto;
+	padding:5px;
+}
+.artTitle{
+	font-size: 11pt;
+	font-weight: bold;
+    color:#0000FF;
+    margin:10px 0px;
+}
+.subTitle{
+	color: #B8B8B8;
+	margin-bottom: 10px;
+}
+.content{
+	border:1px solid #CACACA;
+	padding:5px;
+	height: auto;
+	display: none;
+}
+.btm{
+	text-align: right;
+	height: 30px;
+}
+.content .btn{
+   height: 20px;
+   width:80px;
+   padding:5px 3px;
+  /* display: block;*/
+   text-align: center;
+   text-decoration: none;
+   border:1px solid #DCDDD7;
+}
