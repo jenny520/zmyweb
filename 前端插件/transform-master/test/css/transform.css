@@ -1,0 +1,23 @@
+form .line {
+	margin-bottom: 10px;
+}
+.right-col {
+	background-repeat: no-repeat;
+	background-position: 23px 58px;
+}
+.holder {
+	position: relative;
+	overflow: visible;
+	height: 130px;
+	width: 130px;
+	background-color: #cccccc;
+	margin: 50px;
+}
+
+.transform {
+	height: 100px;
+	width: 100px;
+	background-color: deeppink;
+	border: 5px solid black;
+	padding: 10px;
+}

@@ -1,0 +1,137 @@
+<body onload="start()">
+<script src="jCanvaScript.1.5.15.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function start() {
+        jc.start('myCanvas', true);
+
+        jc.rect(0, 0, 400, 400, '#ccc', true);
+
+        jc.circle(50.6, 50.3, 25.5, '#f00', 1).name('a b').layer('myLayer');
+
+
+        jc.layer('myLayer').translateTo(
+                100.53,
+                100.7,
+                50).mousemove(function(){
+                    console.log('move');
+                }).mouseover(function(){
+                    console.log('over');
+                }).mouseout(function(){
+                    console.log('out');
+                });
+        console.log(jc('.a.b').elements);
+        console.log(jc('.a.b.c').elements);
+        console.log(jc('.a').elements);
+        console.log(jc('.b').elements);
+        jc('.b').elements[0].addName('c');
+        console.log(jc('.a', {layer: 'myLayer'}).elements);
+        console.log(jc('.a.b', {layer: 'myLayer'}).elements);
+        console.log(jc('.a.b.c', {layer: 'myLayer'}).elements);
+        jc.clear();
+        jc.start();
+    }
+
+    var testObject = {
+        r:0,
+        g:0,
+        b:0,
+        a:1,
+        rPrev:0,
+        gPrev:0,
+        bPrev:0,
+        aPrev:0
+    }
+
+    function test() {
+        var start = new Date;
+        for (var i = 0; i < 100000; i += 0.2) {
+            if (testObject.r < 255) {
+                testObject.r += i;
+                testObject.rPrev += i;
+            }
+            else {
+                testObject.r = 0;
+                testObject.rPrev = 0;
+            }
+            testObject.string = 'rgba(' + parseInt(testObject.r) + ', ' + parseInt(testObject.g) + ', ' + parseInt(testObject.b) + ', ' + parseInt(testObject.a * 100) / 100 + ')';
+        }
+        var end = new Date;
+        console.log('now: ' + (end - start));
+        start = new Date;
+        for (var i = 0; i < 100000; i += 0.2) {
+            if (testObject.r < 255) {
+                testObject.r += i;
+                testObject.rPrev += i;
+            }
+            else {
+                testObject.r = 0;
+                testObject.rPrev = 0;
+            }
+            testObject.string = 'rgba(' + testObject.r.toFixed(0) + ', ' + testObject.g.toFixed(0) + ', ' + testObject.b.toFixed(0) + ', ' + testObject.a.toFixed(2) + ')';
+        }
+        end = new Date;
+        console.log('toFixed: ' + (end - start));
+        testObject.a = 1;
+        start = new Date;
+        for (var i = 0; i < 100000; i += 0.2) {
+            if (testObject.r < 255) {
+                testObject.r += i;
+                testObject.rPrev += i;
+            }
+            else {
+                testObject.r = 0;
+                testObject.rPrev = 0;
+            }
+            var rInt = parseInt(testObject.r),
+                    gInt = parseInt(testObject.g),
+                    bInt = parseInt(testObject.b);
+            if (testObject.rPrev !== rInt || testObject.g !== gInt || testObject.b !== bInt || testObject.a !== testObject.aPrev) {
+                testObject.string = 'rgba(' + rInt + ', ' + gInt + ', ' + bInt + ', ' + parseInt(testObject.a * 100) / 100 + ')';
+                testObject.rPrev = rInt;
+                testObject.gPrev = gInt;
+                testObject.bPrev = bInt;
+            }
+        }
+        end = new Date;
+        console.log('withIfWorseCase: ' + (end - start));
+        testObject.a = 0;
+        start = new Date;
+        for (var i = 0; i < 100000; i += 0.2) {
+            if (testObject.r < 255) {
+                testObject.r += i;
+                testObject.rPrev += i;
+            }
+            else {
+                testObject.r = 0;
+                testObject.rPrev = 0;
+            }
+            var rInt = parseInt(testObject.r),
+                    gInt = parseInt(testObject.g),
+                    bInt = parseInt(testObject.b);
+            if (testObject.rPrev !== rInt || testObject.g !== gInt || testObject.b !== bInt || testObject.a !== testObject.aPrev) {
+                testObject.string = 'rgba(' + rInt + ', ' + gInt + ', ' + bInt + ', ' + parseInt(testObject.a * 100) / 100 + ')';
+                testObject.rPrev = rInt;
+                testObject.gPrev = gInt;
+                testObject.bPrev = bInt;
+            }
+        }
+        end = new Date;
+        console.log('withIfBestCase: ' + (end - start));
+    }
+
+</script>
+<style>
+    #myCanvas {
+        border: 1px solid black;
+    }
+</style>
+<div>
+    <canvas id="myCanvas" width="400px" height="400px"></canvas>
+</div>
+<br/>
+<input type="button" onclick="up()" value="1"/>
+<input type="button" onclick="test();" value="2"/>
+<input type="button" onclick="bottom()" value="3"/>
+<input type="button" onclick="left()" value="4"/>
+<input type="button" onclick="next()" value="5"/>
+</body>

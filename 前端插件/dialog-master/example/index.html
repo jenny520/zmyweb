@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>dialog  对话框弹层</title>
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width"/>
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" type="text/css" href="../src/dialog.css">
+	</head>
+	<body>
+		<input type="button" id="btn_dialog" value="打开浮层"/>
+		<div id="dialog-content" style="display:none;">这是内容</div>
+		<script src="../src/jquery-1.9.1.min.js"></script>
+		<script src="../src/dialog.js"></script>
+		<script>
+		var dialog = new Dialog();
+		dialog.init({target:"#dialog-content",trigger:"#btn_dialog",mask:true,width:290,height:200,title:'标题'});
+		</script>
+		<input type="button" id="btn_dialogjquery" value="jq打开浮层"/>
+		<input type="button" id="btn_alert" value="alert"/>
+		<input type="button" id="btn_alert2" value="alert定时关闭"/>
+		<input type="button" id="btn_confirm" value="confirm三种按钮"/>
+		<input type="button" id="btn_confirmdefault" value="confirm默认"/>
+		<div id="dialog-contentjq" style="display:none;">这是内容22</div>
+		<script>
+		$('#btn_dialogjquery').Dialog({target:"#dialog-contentjq",mask:true,width:300,height:300,title:'标题',animate:true})
+		$('#btn_alert').click(function(){
+			$.alert('选好商品才能上传素材哦',true,function(){
+				console.log('你点击了ok');
+				return false;
+			})
+		});
+		$('#btn_alert2').click(function(){
+			$.alert('选好商品才能上传素材哦选好商品才能上传素材哦选好商品才能上传素材哦')
+		});
+		$('#btn_confirm').click(function(){
+			$.confirm('下载全部 9 张图片至本地相册?<div class="confirm-title2">文字内容已复制</div>',[{yes:"是"},{no:'否'},{close:'关闭'}],function(type){
+				$.alert('您点击了'+type);
+				this.hide();
+			});
+		})
+		$('#btn_confirmdefault').click(function(){
+			$.confirm('你确定要删除这条消息吗? ',null,function(type){
+				$.alert('您点击了'+type);
+				this.hide();
+			});
+		})
+		</script>
+	</body>
+</html>

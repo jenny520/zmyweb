@@ -1,0 +1,159 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html class="no-js" xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta charset="utf-8">
+		<title>CSS3 Transform Matrix Calculator</title>
+		<meta name="keywords" content="css3, transform, matrix, rotate, internet explorer">
+		<meta name="description" content="Calculate the correct matrix for Internet Explorer and browsers that support the CSS3 Transform property.">
+		
+		<script src="lib/modernizr-1.5.min.js"></script>
+		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="css/transform.css" />
+		<style type="text/css">
+			.transform {
+				/*-moz-transform: rotate(110deg);
+				-webkit-transform: rotate(110deg);
+				-o-transform: rotate(110deg);
+				
+				-moz-transform-origin: 10%;
+				-webkit-transform-origin: 10%;
+				-o-transform-origin: 10%;*/
+			}
+		</style>
+	</head>
+	<body>
+		<section class="page">
+			<header class="head" role="banner">
+				<hgroup>
+					<h1>CSS3 Transform Matrix Calculator</h1>
+					<h2>Create transformations in all browsers</h2>
+				</hgroup>
+			</header>
+			<article class="body" role="main">
+				<aside class="right-col">
+					<h3>Default Origin (Center)</h3>
+					<div class="holder">
+						<div id="target" class="transform">I've got an origin in my center.</div>
+					</div>
+					<hr />
+					<h3>Top Left Origin</h3>
+					<div class="holder">
+						<div id="target2" class="transform">I transform around my top left corner.</div>
+					</div>
+				</aside>
+				<section class="main">
+					<div class="line">
+						<div class="unit size1of2">
+							<form id="transform" name="transform" action="">
+								<div class="line">
+									<label for="rotate" class="unit size1of4">Rotate:</label>
+									<div class="unit size3of4 lastUnit">
+										<input id="rotate" name="rotate" type="text" class="text" />&deg;
+									</div>
+								</div>
+								<div class="line">
+									<label for="scale-x" class="unit size1of4">Scale:</label>
+									<div class="unit size3of4 lastUnit">
+										<input id="scale-x" name="scale-x" type="text" class="text size1of4" />x
+										<input id="scale-y" name="scale-y" type="text" class="text size1of4" />y
+									</div>
+								</div>
+								<div class="line">
+									<label for="scaleX" class="unit size1of4">Scale X:</label>
+									<div class="unit size3of4 lastUnit">
+										<input id="scaleX" name="scaleX" type="text" class="text" />
+									</div>
+								</div>
+								<div class="line">
+									<label for="scaleY" class="unit size1of4">Scale Y:</label>
+									<div class="unit size3of4 lastUnit">
+										<input id="scaleY" name="scaleY" type="text" class="text" />
+									</div>
+								</div>
+								<div class="line">
+									<label for="skew-x" class="unit size1of4">Skew:</label>
+									<div class="unit size3of4 lastUnit">
+										<input id="skew-x" name="skew-x" type="text" class="text size1of4" />x&deg;
+										<input id="skew-y" name="skew-y" type="text" class="text size1of4" />y&deg;
+									</div>
+								</div>
+								<div class="line">
+									<label for="skewX" class="unit size1of4">Skew X:</label>
+									<div class="unit size3of4 lastUnit">
+										<input id="skewX" name="skewX" type="text" class="text" />&deg;
+									</div>
+								</div>
+								<div class="line">
+									<label for="skewY" class="unit size1of4">Skew Y:</label>
+									<div class="unit size3of4 lastUnit">
+										<input id="skewY" name="skewY" type="text" class="text" />&deg;
+									</div>
+								</div>
+								<div class="line">
+									<label for="translate-x" class="unit size1of4">Translate:</label>
+									<div class="unit size3of4 lastUnit">
+										<input id="translate-x" name="translate-x" type="text" class="text size1of4" />x
+										<input id="translate-y" name="translate-y" type="text" class="text size1of4" />y
+									</div>
+								</div>
+								<div class="line">
+									<label for="translateX" class="unit size1of4">Translate X:</label>
+									<div class="unit size3of4 lastUnit">
+										<input id="translateX" name="translateX" type="text" class="text" />px
+									</div>
+								</div>
+								<div class="line">
+									<label for="translateY" class="unit size1of4">Translate Y:</label>
+									<div class="unit size3of4 lastUnit">
+										<input id="translateY" name="translateY" type="text" class="text" />px
+									</div>
+								</div>
+								<div class="line">
+									<label for="origin-x" class="unit size1of4">Origin:</label>
+									<div class="unit size3of4 lastUnit">
+										<input id="origin-x" name="origin-x" type="text" class="text size1of4" />x%
+										<input id="origin-y" name="origin-y" type="text" class="text size1of4" />y%
+									</div>
+								</div>
+								<div class="line">
+									<div class="unit size1of4">&nbsp;</div>
+									<div class="unit size3of4 lastUnit">
+										<label for="animate"><input id="animate" name="animate" type="checkbox" class="checkbox" value="1" /> Animate?</label>
+									</div>
+								</div>
+								<div class="line">
+									<div class="unit size1of4">&nbsp;</div>
+									<div class="unit size3of4 lastUnit">
+										<ul>
+											<li><label for="reflect"><input id="reflect" name="reflect" type="radio" class="radio" value="reflect" /> Reflect</label></li>
+											<li><label for="reflectX"><input id="reflectX" name="reflect" type="radio" class="radio" value="reflectX" /> Reflect X</label></li>
+											<li><label for="reflectY"><input id="reflectY" name="reflect" type="radio" class="radio" value="reflectY" /> Reflect Y</label></li>
+											<li><label for="reflectXY"><input id="reflectXY" name="reflect" type="radio" class="radio" value="reflectXY" /> Reflect XY</label></li>
+											<li><label for="no-reflect"><input id="no-reflect" name="reflect" type="radio" class="radio" value="no-reflect" checked="checked" /> No Reflection</label></li>
+										</ul>
+									</div>
+								</div>
+								<button id="go">Go!</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</article>
+			<footer class="foot" role="contentinfo">
+			</footer>
+		</section>
+		
+		<!-- JavaScrpt -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.js"></script>
+		<script src="../dist/jquery.transform.js"></script>
+		
+		<script src="js/form.js"></script>
+		<script type="text/javascript">
+			var thing = $('.transform');
+			thing.click(function() {
+				$(this).animate({width: '+=5px', height: '+=5px', rotate: '+=45deg'});
+			});			
+		</script>
+	</body>
+</html>
